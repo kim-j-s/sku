@@ -1,0 +1,39 @@
+<section class="headerType1">
+	<div class="inner">
+		<h1>SK University</h1>
+
+		<div class="inputBox">
+			<input type="text" class="inp sch">
+		</div>
+	</div>
+	@@include("gnb.html")
+</section>
+
+<style>
+
+.headerType1 {position:fixed; top:0; left:0; width:100%; padding:10px 15px 10px 53px; }
+.headerType1 > .inner {position:relative; background:#f4f4f4;}
+
+
+
+
+
+/* common element */
+.inputBox {position:relative; display:inline-block;}
+.inputBox.full {width:100% !important;}
+.inputBox .inp {display:block; width:100%; height:35px; padding:0 10px; border:1px solid #d5d5d5; font-size:14px; transition: all .3s ease; background:transparent;}
+.inputBox .inp:disabled {}
+.inputBox .inp:focus {}
+.inputBox .inp.sch { border:1px solid #f4f4f4; border-radius:3px;}
+.inputBox .inp.sch:focus {background:#f4f4f4;}
+.inputBox .inp.sch.on {background:#f4f4f4;}
+
+
+
+
+
+
+
+
+
+</style>

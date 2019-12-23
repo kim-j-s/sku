@@ -1,0 +1,327 @@
+@@include("head.html")
+<body>
+<style>
+	h2.tt{color: red; padding: 20px 0 0; font-weight: 700;}
+</style>
+<!-- .content -->
+<section class="content">
+
+	<div style="padding: 20px 15px 0">
+
+	<div class="cmntEnter">
+		<div class="inner">
+			<div class="field">
+				<textarea placeholder="Writing..."></textarea>
+			</div>
+			<div class="enter">
+				<div class="area">
+					<span class="byte"><em class="left">0</em>/<em class="total">500</em></span>
+				</div>
+				<button type="button" class="btnPhoto"></button>
+				<button type="button" class="btn">Submit</button>
+			</div>
+		</div>
+	</div>
+
+	<div class="sortArea">
+		<span class="inpD">
+			<label>
+				<input type="radio" name="radio" checked="">
+				<i class="ico radio"></i>
+				<span class="txt">Newest</span>
+			</label>
+		</span>
+		<span class="inpD">
+			<label>
+				<input type="radio" name="radio">
+				<i class="ico radio"></i>
+				<span class="txt">Oldest</span>
+			</label>
+		</span>
+	</div>
+
+	<ul class="cmntArea">
+
+		<!-- 댓글1줄+대댓글 -->
+		<li>
+			<div class="box">
+				<span class="pic"><img src="../../img/temp/profile_80_px.png" alt=""></span>
+				<div class="info">
+					<b class="name">김유니</b>
+					<span class="date">2020.01.06</span>
+				</div>
+				<div class="cmntBtn">
+					<button type="button" class="btn edit"></button>
+					<button type="button" class="btn del"></button>
+					<button type="button" class="btn rep"></button>
+				</div>
+				<div class="cmntText flowText">
+					<p class="txtCont ellipsis2">이거 진짜 안들으면 후회합니다. 1줄일때 560px</p>
+				</div>
+				<div class="moreReplyArea">
+					<button type="button" class="moreReply">View replies <em>3</em><i class="ico"></i></button>
+				</div>
+			</div>
+			<div  class="reply">
+				<ul>
+					<li>
+						<div class="box">
+							<span class="pic"><img src="../../img/temp/profile_80_px.png" alt=""></span>
+							<div class="info">
+								<b class="name">박열정</b>
+								<span class="date">2020.01.06</span>								
+							</div>
+							
+							<div class="cmntText">
+								<p class="txtCont"><b>@김유니</b>난이도 높은 과제나 실습으로 실력을 단기간에 끌어올리고 싶다면 강사님이 운영하는 POCU 교육 사이트에 등록을 해보길 바랍니다. Git과 Slack으로 다른 교육 서비스와 차별화된 온라인 클래스를 경험할 수 있습니다.</p>
+							</div>
+						</div>
+					</li>
+					<li class="deleted">
+						<div class="box">
+							<span class="pic"></span>
+							<div class="info">삭제된 댓글입니다.</div>
+						</div>
+					</li>
+					<li>
+						<div class="box">
+							<span class="pic"><img src="../../img/temp/profile_80_px.png" alt=""></span>
+							<div class="info">
+								<b class="name">최행복</b>
+								<span class="date">2020.01.06</span>
+							</div>
+							<div class="cmntText">
+								<p class="txtCont"><b>@김유니</b>감사합니다.</p>
+							</div>
+						</div>
+					</li>
+				</ul>
+			</div>
+		</li>
+
+		<!-- 댓글2줄이상+대댓글 -->
+		<li>
+			<div class="box">
+				<span class="pic"><img src="../../img/temp/profile_80_px.png" alt=""></span>
+				<div class="info">
+					<b class="name">차은우</b>
+					<span class="date">2020.01.06</span>								
+				</div>
+				<div class="cmntBtn">
+					<button type="button" class="btn rep"></button>
+				</div>
+				<div class="cmntText flowText">
+					<p class="txtCont ellipsis2">이거 진짜 안들으면 후회합니다. 최고의 강사가 귀에 쏙쏙 들어오게 강의하는것 같아요. 2줄 이상 코멘트 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Et soluta tempora voluptas quos vitae veniam, repellat a consequuntur iure velit.</p>
+				</div>
+				<div class="moreReplyArea">
+					<button type="button" class="moreRead">+ View more</button>
+					<button type="button" class="moreReply">View replies <em>3</em><i class="ico"></i></button>
+				</div>
+			</div>
+			<div class="reply">
+				<ul>
+					<li>
+						<div class="box">
+							<span class="pic"><img src="../../img/temp/profile_80_px.png" alt=""></span>
+							<div class="info">
+								<b class="name">차민정</b>
+								<span class="date">2020.01.06</span>								
+							</div>					
+							<div class="cmntText">
+								<p class="txtCont"><b>@차은우</b>난이도 높은 과제나 실습으로 실력을 단기간에 끌어올리고 싶다면 강사님이 운영하는 POCU 교육 사이트에 등록을 해보길 바랍니다. Git과 Slack으로 다른 교육 서비스와 차별화된 온라인 클래스를 경험할 수 있습니다.</p>
+							</div>
+						</div>
+					</li>
+					<li>
+						<div class="box">
+							<span class="pic"><img src="../../img/temp/profile_80_px.png" alt=""></span>
+							<div class="info">
+								<b class="name">김유니</b>
+								<span class="date">2020.01.06</span>
+							</div>
+							<div class="cmntBtn">
+								<button type="button" class="btn edit"></button>
+								<button type="button" class="btn del"></button>
+							</div>
+							<div class="cmntText">
+								<p class="txtCont"><b>@차은우</b>좋은 내용 감사합니다.</p>
+							</div>
+						</div>
+					</li>
+					<li>
+						<div class="box">
+							<span class="pic"><img src="../../img/temp/profile_80_px.png" alt=""></span>
+							<div class="info">
+								<b class="name">최행복</b>
+								<span class="date">2020.01.06</span>
+							</div>
+							<div class="cmntText">
+								<p class="txtCont"><b>@차은우</b>새로운 콘텐츠로 기초를 다시 익히고 다시 배우고 최신 패키지 및 도구를 배울 수있는 좋은 기회입니다</p>
+							</div>
+						</div>
+					</li>
+				</ul>
+				<button type="button" class="moreReplyList">
+					<span>more replies</span>
+					<span>(<em>20</em>/<em>38</em>)</span>
+				</button>
+			</div>
+		</li>
+
+		<!-- 이미지+텍스트1줄 -->
+		<li>
+			<div class="box">
+				<span class="pic"><img src="../../img/temp/profile_80_px.png" alt=""></span>
+				<div class="info">
+					<b class="name">김유니</b>
+					<span class="date">2020.01.06</span>								
+				</div>
+				<div class="cmntBtn">
+					<button type="button" class="btn edit"></button>
+					<button type="button" class="btn del"></button>
+					<button type="button" class="btn rep"></button>
+				</div>
+				<div class="cmntText flowText opened">
+					<p class="txtCont ellipsis2">이미지가 첨부된 한줄 코멘트</p>
+				</div>
+				<span class="img"><img src="../../img/temp/Penguins.jpg" alt=""></span>
+				<div class="moreReplyArea">
+					<button type="button" class="moreReply">View replies <em>2</em><i class="ico"></i></button>
+				</div>
+			</div>
+			<div class="reply">
+				<ul>
+					<li> <!-- 이미지+대댓글 -->
+						<div class="box">
+							<span class="pic"><img src="../../img/temp/profile_80_px.png" alt=""></span>
+							<div class="info">
+								<b class="name">차은우</b>
+								<span class="date">2020.01.06</span>								
+							</div>					
+							<div class="cmntText">
+								<p class="txtCont"><b>@김유니</b>새로운 콘텐츠로 기초를 다시 익히고 다시 배우고 최신 패키지 및 도구를 배울 수있는 좋은 기회입니다</p>
+							</div>
+							<span class="img"><img src="../../img/temp/Penguins.jpg" alt=""></span>
+						</div>
+					</li>
+					<li class="deleted">
+						<div class="box">
+							<span class="pic"></span>
+							<div class="info">삭제된 댓글입니다.</div>
+						</div>
+					</li>
+				</ul>
+			</div>
+		</li>
+
+		<!-- 이미지+텍스트2줄이상 -->
+		<li>
+			<div class="box">
+				<span class="pic"><img src="../../img/temp/profile_80_px.png" alt=""></span>
+				<div class="info">
+					<b class="name">김유니</b>
+					<span class="date">2020.01.06</span>								
+				</div>
+				<div class="cmntBtn">
+					<button type="button" class="btn edit"></button>
+					<button type="button" class="btn del"></button>
+					<button type="button" class="btn rep"></button>
+				</div>
+				<div class="cmntText flowText">
+					<p class="txtCont ellipsis2">이미지가 첨부된 두줄 이상 코멘트 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Et soluta tempora voluptas quos vitae veniam, repellat a consequuntur iure velit.</p>
+				</div>
+				<span class="img"><img src="../../img/temp/Penguins.jpg" alt=""></span>
+				<div class="moreReplyArea">
+					<button type="button" class="moreRead">+ View more</button>
+					<button type="button" class="moreReply">View replies <em>2</em><i class="ico"></i></button>
+				</div>
+			</div>
+			<div class="reply">
+				<ul>
+					<li>
+						<div class="box">
+							<span class="pic"><img src="../../img/temp/profile_80_px.png" alt=""></span>
+							<div class="info">
+								<b class="name">차은우</b>
+								<span class="date">2020.01.06</span>
+							</div>					
+							<div class="cmntText">
+								<p class="txtCont"><b>@김유니</b>새로운 콘텐츠로 기초를 다시 익히고 다시 배우고 최신 패키지 및 도구를 배울 수있는 좋은 기회입니다</p>
+							</div>
+							<span class="img"><img src="../../img/temp/Penguins.jpg" alt=""></span>
+						</div>
+					</li>
+					<li class="deleted">
+						<div class="box">
+							<span class="pic"></span>
+							<div class="info">삭제된 댓글입니다.</div>
+						</div>
+					</li>
+				</ul>
+			</div>
+		</li>
+
+		<!-- 삭제된 댓글 -->
+		<li class="deleted">
+			<div class="box">
+				<span class="pic"></span>
+				<div class="info">삭제된 댓글입니다.</div>
+			</div>
+		</li>
+
+		<!-- 삭제된 댓글 + 대댓 -->
+		<li class="deleted">
+			<div class="box">
+				<span class="pic"></span>
+				<div class="info">삭제된 댓글입니다.</div>
+				<div class="moreReplyArea">
+					<button type="button" class="moreReply">View replies <em>3</em><i class="ico"></i></button>
+				</div>
+			</div>
+			<div class="reply">
+				<ul>
+					<li>
+						<div class="box">
+							<span class="pic"><img src="../../img/temp/profile_80_px.png" alt=""></span>
+							<div class="info">
+								<b class="name">박열정</b>
+								<span class="date">2020.01.06</span>
+							</div>
+							<div class="cmntText">
+								<p class="txtCont"><b>@김유니</b>난이도 높은 과제나 실습으로 실력을 단기간에 끌어올리고 싶다면 강사님이 운영하는 POCU 교육 사이트에 등록을 해보길 바랍니다. Git과 Slack으로 다른 교육 서비스와 차별화된 온라인 클래스를 경험할 수 있습니다.</p>
+							</div>
+						</div>
+					</li>
+					<li class="deleted">
+						<div class="box">
+							<span class="pic"></span>
+							<div class="info">삭제된 댓글입니다.</div>
+						</div>
+					</li>
+					<li>
+						<div class="box">
+							<span class="pic"><img src="../../img/temp/profile_80_px.png" alt=""></span>
+							<div class="info">
+								<b class="name">최행복</b>
+								<span class="date">2020.01.06</span>
+							</div>
+							<div class="cmntText">
+								<p class="txtCont"><b>@김유니</b>감사합니다.</p>
+							</div>
+						</div>
+					</li>
+				</ul>
+			</div>
+		</li>
+	</ul>
+
+	<button type="button" class="btnListMore" type="button"><i class="ico plus"></i>more comments (<em>20</em>/<em>59</em>)</button>
+	<!-- //comment -->
+
+	</div>
+
+</section>
+<!-- // .content -->
+
+</body>
+</html>

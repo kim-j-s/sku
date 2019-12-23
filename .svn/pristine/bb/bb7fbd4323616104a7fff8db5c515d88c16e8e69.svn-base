@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, maximum-scale=1.0, minimum-scale=1.0" />
+    <title>skuniversity</title>
+    <link rel="stylesheet" href="../../css/swiper.min.css">
+    <link rel="stylesheet" href="../../css/style.css">
+    <script src="../../js/jquery-1.12.4.js"></script>
+    <script src="../../js/swiper.min.js"></script>
+    <script src="../../js/Chart.min.js"></script>
+    <script src="../../js/ui.js"></script>
+</head>
+
+<body>
+    <!-- .header -->
+    <header>
+        <section class="listHeader">
+            <a href="#" class="btn pageBack">이전 페이지</a>
+            <div class="keyWord">Learning</div>
+        </section>
+    </header>
+    <!-- // .header -->
+    <!-- .content -->
+    <section class="content">
+
+        <div class="tabBox">
+            <div class="menuWrap">
+                <div class="menu">
+                    <a href="#">In progress<span class="count">+30</span></a>
+                    <a href="#">In My list<span class="count">+30</span></a>
+                    <a href="#" class="active">Enrolled<span class="count">+30</span></a>
+                    <a href="#">Required<span class="count">+99</span></a>
+                    <a href="#">Completed<span class="count">+99</span></a>
+                    <a href="#">Earned Stamp<span class="count">+99</span></a>
+                    <a href="#">Retry<span class="count">+99</span></a>
+                </div>
+            </div>
+        </div>
+
+        <div class="topGuide">
+            <span class="txt">총 <b>30개</b>의 리스트가 있습니다.</span>
+            <button class="btnFilter"><i class="ico filter"></i>Filter<em>(0)</em></button>
+        </div>
+
+        <div class="cardBox">
+
+            <a href="#" class="card">
+                <div class="cardInner">
+                    <div class="titleArea">
+                        <span class="icon">Audio<i class="ico audio"></i></span>
+                        <p class="category teal">Mgmt</p>
+                        <strong class="title">UI/UX design with Adobe XD: Design & Prototype</strong>
+                    </div>
+                    <div class="infoArea">
+                        <p class="label"><i class="ico time"></i><b>2h 40m</b></p>
+                    </div>
+                </div>
+                <div class="btmArea">
+                    <div class="state"><i class="ico check"></i><em>2019.10.10</em> 부터 학습 시작</div>
+                </div>
+            </a>
+
+            <a href="#" class="card">
+                <div class="cardInner">
+                    <div class="titleArea">
+                        <span class="icon">Webpage<i class="ico webpage"></i></span>
+                        <p class="category purple">AI</p>
+                        <strong class="title">TensorFlow로 배우는 Generative Models 알고리즘으로 배우는 딥러닝</strong>
+                    </div>
+                    <div class="infoArea">
+                        <p class="label"><i class="ico time"></i><b>2h 40m</b></p>
+                    </div>
+                </div>
+                <div class="btmArea">
+                    <div class="state"><i class="ico check"></i><em>2019.10.10</em> 부터 학습 시작</div>
+                </div>
+            </a>
+
+            <a href="#" class="card">
+                <div class="cardInner">
+                    <div class="titleArea">
+                        <span class="icon">Document<i class="ico document"></i></span>
+                        <p class="category yellow">행복</p>
+                        <strong class="title">sk실트론 직장내 성희롱예방교육 '마음 푹 행복 쑥'</strong>
+                    </div>
+                    <div class="infoArea">
+                        <p class="label"><i class="ico time"></i><b>2h 40m</b></p>
+                    </div>
+                </div>
+                <div class="btmArea">
+                    <div class="state"><i class="ico check"></i><em>2019.10.10</em> 부터 학습 시작</div>
+                </div>
+            </a>
+
+        </div>
+
+        <button class="btnListMore" type="button"><i class="ico plus"></i>list more (<em>2</em>/<em>5</em>)</button>
+
+    </section>
+    <!-- // .content -->
+
+    <!-- .pageTop -->
+    <div class="pageTop">
+        <button type="button" class="btn gototop"><span>Top</span></button>
+    </div>
+    <!-- // .pageTop -->
+
+    <!-- .toolBar -->
+    <section class="toolBar">
+        <ul class="toolList">
+            <li class="ty1"><a href="#"><span>Home</span></a></li>
+            <li class="ty2 on"><a href="#"><span>Learning</span></a></li>
+            <li class="ty3"><a href="#"><span>Community</span></a></li>
+            <li class="ty4"><a href="#"><span>Notice</span></a></li>
+            <li class="ty5"><a href="#"><span>My page</span></a></li>
+        </ul>
+    </section>
+    <!-- // .toolBar -->
+</body>
+
+</html>

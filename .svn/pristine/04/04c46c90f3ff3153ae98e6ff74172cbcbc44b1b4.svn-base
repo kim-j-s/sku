@@ -1,0 +1,20 @@
+@@include("head.html")
+<body>
+@@include('listheader.html',{
+	"title" : "Recommend"
+})
+<!-- .content -->
+<section class="content">
+	<div style="height:600px; line-height:600px; background:#ddd; text-align:center; color:#000;">content</div>
+</section>
+<!-- // .content -->
+
+@@include('toolbar.html', {
+	"ty1": "",
+	"ty2": "",
+	"ty3": "",
+	"ty4": "",
+	"ty5": ""
+})
+</body>
+</html>

@@ -1,0 +1,25 @@
+@@include("head.html")
+<body style="overflow: hidden;">
+<!-- .content -->
+<section class="content">
+</section>
+<!-- // .content -->
+
+<!-- layer -->
+<section class="popWrap center on">
+	<div class="popBox">
+		<div class="popCont">
+			<strong class="title">PC 접속 안내</strong>
+			<div class="scrollArea">
+				<p class="txt">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod minus et magni earum dolorum eos maxime! Deleniti veritatis ad animi enim numquam totam atque eos aspernatur itaque, molestias quod eius hic magnam minus, nulla mollitia. Animi ex dolores perferendis molestias consequuntur fugiat qui deserunt illum sint optio enim, aperiam veritatis, esse eaque et! Recusandae facere alias ducimus non maxime, nemo culpa, laboriosam nesciunt repellat numquam cum magni ex tempore magnam reprehenderit, laborum itaque quia quod incidunt pariatur iure natus eveniet provident porro. Omnis mollitia placeat a impedit eligendi. Mollitia odit minus illum explicabo accusamus recusandae consequuntur soluta sint eveniet vel.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eligendi atque omnis velit quia, deserunt praesentium! Eligendi odio illo repellendus voluptas laudantium, enim odit, reiciendis dignissimos alias rerum recusandae nihil facilis? ipsum dolor sit amet, consectetur adipisicing elit. Eaque laborum suscipit molestiae voluptatibus quod dicta illo pariatur eius eum, expedita!</p>
+			</div>
+		</div>
+		<div class="popBtm">
+			<button type="button">확인</button>
+		</div>
+	</div>
+</section>
+<!-- //layer -->
+
+</body>
+</html>

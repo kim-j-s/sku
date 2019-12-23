@@ -1,0 +1,98 @@
+@@include("head.html")
+<body style="overflow: hidden;">
+
+<!-- layer -->
+<section class="popWrap full">
+	<div class="popBox">
+		<div class="popTitle">
+			<p>학습 이수 시간</p>
+			<a href="#" class="btnClose">닫기</a>
+		</div>
+		<div class="popCont noPad">
+			<div class="learnTotal big">
+				<div class="inner">
+					<dl class="ltTit">
+						<dt><strong>총 학습시간</strong> <small>2020.01.01~오늘까지</small></dt>
+						<dd><strong class="maxTh2">120</strong>h <strong class="maxTm2">30</strong>m</dd>
+					</dl>
+					<div class="chartWrap">
+						<canvas id="chart2"></canvas>
+					</div>
+					<div class="learnListWrap">
+						<ul class="learnList">
+							<li class="ty1">
+								<span class="tit">SK University</span>
+								<span class="time">
+									<span class="ltTh2">40</span>h <span class="ltTm2">30</span>m
+								</span>
+							</li>
+							<li class="ty2"><span class="tit">My Company</span><span class="time">80h 00m</span></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<div class="learnTime">
+				<div class="tit">College 별 학습 시간</div>
+				<ul class="ltList">
+					<li class="ty1">
+						<dl class="ltClass">
+							<dt>AI</dt>
+							<dd>10h 30m</dd>
+						</dl>
+					</li>
+					<li class="ty2">
+						<dl class="ltClass">
+							<dt>혁신 Design</dt>
+							<dd>10h 30m</dd>
+						</dl>
+					</li>
+					<li class="ty3">
+						<dl class="ltClass">
+							<dt>Mgmt</dt>
+							<dd>10h 30m</dd>
+						</dl>
+					</li>
+					<li class="ty4">
+						<dl class="ltClass">
+							<dt>Leadership</dt>
+							<dd>10h 30m</dd>
+						</dl>
+					</li>
+					<li class="ty5">
+						<dl class="ltClass">
+							<dt>DT</dt>
+							<dd>10h 30m</dd>
+						</dl>
+					</li>
+					<li class="ty6">
+						<dl class="ltClass">
+							<dt>Global</dt>
+							<dd>10h 30m</dd>
+						</dl>
+					</li>
+					<li class="ty7">
+						<dl class="ltClass">
+							<dt>행복</dt>
+							<dd>10h 30m</dd>
+						</dl>
+					</li>
+					<li class="ty8">
+						<dl class="ltClass">
+							<dt>SV</dt>
+							<dd>10h 30m</dd>
+						</dl>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+</section>
+<!-- //layer -->
+
+<script>
+	// My Page 팝업 차트 호출
+	chart2Call();
+</script>
+
+</body>
+</html>

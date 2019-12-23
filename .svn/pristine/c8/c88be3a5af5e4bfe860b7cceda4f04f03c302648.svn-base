@@ -1,0 +1,81 @@
+@@include("head.html")
+<body>
+@@include('listheader.html',{
+	"title" : "Community"
+})
+<!-- .content -->
+<section class="content">
+	
+	<div class="tabBox">
+		<div class="menuWrap">
+			<div class="menu">
+				<a href="#">List<span class="count">+59</span></a>
+				<a href="#" class="active">My Feed<span class="count">+30</span></a>
+			</div>
+		</div>
+	</div>
+
+	<div class="feedWrap">
+
+		<div class="card">
+			<a href="#" class="titleArea">
+				<p class="postTitle"><span>Mobile App UI/UX</span></p>
+				<strong class="title">학습에서 회원님이 남긴 댓글에 <b>4</b>개의 댓글이 달렸습니다.</strong>
+			</a>
+			<p class="addInfo">
+				<span class="date">2020.11.27</span>
+				<span class="name">Mobile App UI/UX</span>
+			</p>
+			<button type="button" class="btnDelFeed"></button>
+		</div>
+
+		<div class="card">
+			<a href="#" class="titleArea">
+				<p class="postTitle"><span>Design Community</span></p>
+				<strong class="title">학습에서 회원님이 남긴 댓글에 <b>99+</b>개의 댓글이 달렸습니다.</strong>
+			</a>
+			<p class="addInfo">
+				<span class="date">2020.11.27</span>
+				<span class="name">Design Community</span>
+			</p>
+			<button type="button" class="btnDelFeed"></button>
+		</div>
+
+		<div class="card">
+			<a href="#" class="titleArea">
+				<p class="postTitle"><span>Mobile App UI/UX</span></p>
+				<strong class="title">학습에서 회원님이 남긴 댓글에 <b>4</b>개의 댓글이 달렸습니다.</strong>
+			</a>
+			<p class="addInfo">
+				<span class="date">2020.11.27</span>
+				<span class="name">Mobile App UI/UX</span>
+			</p>
+			<button type="button" class="btnDelFeed"></button>
+		</div>
+
+		<div class="card">
+			<a href="#" class="titleArea">
+				<p class="postTitle"><span>Design Community</span></p>
+				<strong class="title">학습에서 회원님이 남긴 댓글에 <b>99+</b>개의 댓글이 달렸습니다.</strong>
+			</a>
+			<p class="addInfo">
+				<span class="date">2020.11.27</span>
+				<span class="name">Design Community</span>
+			</p>
+			<button type="button" class="btnDelFeed"></button>
+		</div>
+	</div>
+	
+	<button type="button" class="btnListMore" type="button"><i class="ico plus"></i>list more (<em>20</em>/<em>38</em>)</button>	
+</section>
+<!-- // .content -->
+
+@@include('toolbar.html', {
+	"ty1": "",
+	"ty2": "",
+	"ty3": " on",
+	"ty4": "",
+	"ty5": ""
+})
+</body>
+</html>

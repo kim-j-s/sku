@@ -1,0 +1,138 @@
+@@include("head.html")
+<body>
+@@include('listheader.html',{
+	"title" : "Community"
+})
+<!-- .content -->
+<section class="content">
+	
+	<div class="tabBox">
+		<div class="menuWrap">
+			<div class="menu">
+				<a href="#" class="active">List<span class="count">+59</span></a>
+				<a href="#">My Feed<span class="count">+30</span></a>
+			</div>
+		</div>
+	</div>
+
+	<div class="sortArea">
+		<span class="inpD small">
+			<label>
+				<input type="radio" name="radio" checked="">
+				<i class="ico radio"></i>
+				<span class="txt">Join</span>
+			</label>
+		</span>
+		<span class="inpD small">
+			<label>
+				<input type="radio" name="radio">
+				<i class="ico radio"></i>
+				<span class="txt">My Create</span>
+			</label>
+		</span>
+	</div>
+
+	<div class="cardBoardList">
+
+		<div class="card">
+			<div class="cardInner">
+				<a href="#" class="titleArea">
+					<p class="category red">혁신디자인</p>
+					<strong class="title">Mobile App UI/UX GUI Design Tutorials 모바일 앱 UX UI GUI</strong>
+				</a>
+				<div class="infoArea">
+					<p class="label"><i class="ico time"></i><b>2h 40m</b></p>
+					<p class="label"><i class="ico member"></i><b>2000명 참여중</b></p>
+				</div>
+			</div>
+			<ul class="boardList">
+				<li>
+					<a href="#">
+						<div class="inner">
+							<strong class="title">국내 사회적 기업의 생태계 조성</strong>
+							<div class="postInfo">
+								<span class="date">2020.01.15</span>
+							</div>
+						</div>
+						<p class="reply"><em>12</em>댓글</p>
+					</a>
+				</li>
+				<li>
+					<a href="#">
+						<div class="inner">
+							<strong class="title">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Modi, ratione.</strong>
+							<div class="postInfo">
+								<span class="date">2020.01.15</span>
+							</div>
+						</div>
+						<p class="reply"><em>99+</em>댓글</p>
+					</a>
+				</li>
+			</ul>
+		</div>
+
+		<div class="card">
+			<div class="cardInner">
+				<a href="#" class="titleArea">
+					<p class="category red">혁신디자인</p>
+					<strong class="title">Mobile App UI/UX GUI Community</strong>
+				</a>
+				<div class="infoArea">
+					<p class="label"><i class="ico time"></i><b>2h 40m</b></p>
+					<p class="label"><i class="ico member"></i><b>2000명 참여중</b></p>
+				</div>
+			</div>		
+			<ul class="boardList">
+				<li>
+					<a href="#">
+						<div class="inner">
+							<strong class="title">국내 사회적 기업의 생태계 조성</strong>
+							<div class="postInfo">
+								<span class="date">2020.01.15</span>
+							</div>
+						</div>
+						<p class="reply"><em>12</em>댓글</p>
+					</a>
+				</li>
+				<li>
+					<a href="#">
+						<div class="inner">
+							<strong class="title">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Modi, ratione.</strong>
+							<div class="postInfo">
+								<span class="date">2020.01.15</span>
+							</div>
+						</div>
+						<p class="reply"><em>99+</em>댓글</p>
+					</a>
+				</li>
+			</ul>
+		</div>
+
+		<div class="card">
+			<div class="cardInner">
+				<a href="#" class="titleArea">
+					<p class="category red">혁신디자인</p>
+					<strong class="title">Mobile App UI/UX GUI Community</strong>
+				</a>
+				<div class="infoArea">
+					<p class="label"><i class="ico time"></i><b>2h 40m</b></p>
+					<p class="label"><i class="ico member"></i><b>2000명 참여중</b></p>
+				</div>
+			</div>		
+			<div class="noCont">최근 일주일 내 등록된 최신글이 없습니다.</div>
+		</div>
+	</div>
+
+	<button type="button" class="btnListMore" type="button"><i class="ico plus"></i>list more (<em>20</em>/<em>38</em>)</button>	
+</section>
+<!-- // .content -->
+
+@@include('toolbar.html', {
+	"ty1": "",
+	"ty2": "",
+	"ty3": " on",
+	"ty4": "",
+	"ty5": ""
+})
+</body>
+</html>

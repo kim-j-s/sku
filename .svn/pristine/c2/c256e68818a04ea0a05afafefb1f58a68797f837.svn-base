@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, maximum-scale=1.0, minimum-scale=1.0" />
+    <title>skuniversity</title>
+    <link rel="stylesheet" href="../../css/swiper.min.css">
+    <link rel="stylesheet" href="../../css/style.css">
+    <script src="../../js/jquery-1.12.4.js"></script>
+    <script src="../../js/swiper.min.js"></script>
+    <script src="../../js/ui.js"></script>
+</head>
+
+<body>
+    <!-- .header -->
+    <header>
+        <section class="detailHeader">
+            <a href="#" class="btn pageBack">이전 페이지</a>
+            <div class="keyWord">Mobile App UI/UX GUI Design Tutorials 모바일 앱 UX UI GUI 이론을 통한 실전</div>
+            <div class="shortCuts">
+                <button type="button" class="btn scMenuBtn">Short Cut Menu</button>
+                <ul class="shortCutList">
+                    <li><button type="button" class="btn scBtn ty1">Add to my list</button></li>
+                    <li><button type="button" class="btn scBtn ty2">Share</button></li>
+                    <li><button type="button" class="btn scBtn ty3">Join Survey</button></li>
+                    <li><button type="button" class="btn scBtn ty4">Report Download</button></li>
+                    <li><button type="button" class="btn scBtn ty5">Remove from My List</button></li>
+                    <li><button type="button" class="btn scBtn ty6">Complete Survey</button></li>
+                </ul>
+            </div>
+        </section>
+    </header>
+    <!-- // .header -->
+    <!-- .content -->
+    <section class="content">
+        <div style="height:600px; line-height:600px; background:green; text-align:center; color:#fff;">content</div>
+    </section>
+    <!-- // .content -->
+</body>
+
+</html>

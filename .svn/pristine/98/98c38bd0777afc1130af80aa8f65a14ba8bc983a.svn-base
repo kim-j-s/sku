@@ -1,0 +1,105 @@
+@@include("head.html")
+<body style="overflow: hidden;">
+
+<!-- layer -->
+<section class="popWrap full">
+	<div class="popBox">
+		<div class="popTitle">
+			<p>채널변경</p>
+			<a href="#" class="btnClose">닫기</a>
+		</div>
+		<div class="popCont">
+			<ul class="optList">
+				<li>
+					<span class="inpD">
+						<label>
+							<input type="radio" name="radio" checked>
+							<i class="ico radio"></i>
+							<span class="txt">HR</span>
+						</label>
+					</span>
+				</li>
+				<li>
+					<span class="inpD">
+						<label>
+							<input type="radio" name="radio">
+							<i class="ico radio"></i>
+							<span class="txt">Cloud Developing</span>
+						</label>
+					</span>
+				</li>
+				<li>
+					<span class="inpD">
+						<label>
+							<input type="radio" name="radio">
+							<i class="ico radio"></i>
+							<span class="txt">Speech AI</span>
+						</label>
+					</span>
+				</li>
+				<li>
+					<span class="inpD">
+						<label>
+							<input type="radio" name="radio">
+							<i class="ico radio"></i>
+							<span class="txt">Growth Mindset(Leadership Specialist)</span>
+						</label>
+					</span>
+				</li>
+				<li>
+					<span class="inpD">
+						<label>
+							<input type="radio" name="radio">
+							<i class="ico radio"></i>
+							<span class="txt">마케팅</span>
+						</label>
+					</span>
+				</li>
+				<li>
+					<span class="inpD">
+						<label>
+							<input type="radio" name="radio">
+							<i class="ico radio"></i>
+							<span class="txt">행복 추구 실천</span>
+						</label>
+					</span>
+				</li>
+				<li>
+					<span class="inpD">
+						<label>
+							<input type="radio" name="radio">
+							<i class="ico radio"></i>
+							<span class="txt">DT Basics</span>
+						</label>
+					</span>
+				</li>
+				<li>
+					<span class="inpD">
+						<label>
+							<input type="radio" name="radio">
+							<i class="ico radio"></i>
+							<span class="txt">Biz. Trend & Insight </span>
+						</label>
+					</span>
+				</li>
+				<li>
+					<span class="inpD">
+						<label>
+							<input type="radio" name="radio">
+							<i class="ico radio"></i>
+							<span class="txt">재무</span>
+						</label>
+					</span>
+				</li>
+			</ul>
+		</div>
+		<div class="BtmBtn floating">
+			<div class="btnGroup">
+				<button type="button" class="btnOrange">Apply</button>
+			</div>
+		</div>
+	</div>
+</section>
+<!-- //layer -->
+</body>
+</html>

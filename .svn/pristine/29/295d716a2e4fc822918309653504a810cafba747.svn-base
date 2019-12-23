@@ -1,0 +1,1384 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html lang="ko">
+<head>
+<meta http-equiv="Content-Type" content="txt/html; charset=utf-8" >
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<script
+  src="https://code.jquery.com/jquery-1.12.4.min.js"
+  integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ="
+  crossorigin="anonymous"></script>
+<title>SUNI INDEX</title>
+<script>
+$(document).ready(function(){
+	// 배포날짜 단위 설정 [배포일] 기준과 date 가 맞으면 
+	var dist = "11/01"; // 1차 배포
+	var dist2 = "11/07"; // 2차 배포
+	var dist3 = "11/11"; // 3차 배포
+	var next = "11/15"; // 다음 배포 리스트
+	$('.tbl_sample td').each(function(){
+		if($(this).text() == dist){
+			$(this).closest('tr').addClass('active');
+		}
+		if($(this).text() == dist2){
+			$(this).closest('tr').addClass('active2');
+		}
+		if($(this).text() == dist3){
+			$(this).closest('tr').addClass('active3');
+		}
+		if($(this).text() == next){
+			$(this).closest('tr').addClass('ing');
+		}
+	})
+})
+</script>
+<style>
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, blockquote, pre, a, abbr, acronym, address, big, cite,
+code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, fieldset, form,
+label, legend, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby,
+section, summary, time, mark, audio, video { margin: 0; padding: 0; border: 0; font-size: 100%; }
+body {
+	font-size: 12px;
+	font-family: "Malgun Gothic", arial, dotum, gulim;
+	color: #333;
+	padding: 0;
+	margin: 20px;
+	line-height: 1.3em;
+	min-height: 100%;
+}
+
+/* 배포 텍스트 css */
+/*
+.tbl_row.active td:last-of-type::before{
+	content:'(1차배포)';
+	color:red;
+}
+.tbl_row.active2 td:last-of-type::before{
+	content:'(2차배포)';
+	color:red;
+}
+.tbl_row.active3 td:last-of-type::before{
+	content:'(3차배포)';
+	color:red;
+}
+*/
+.tbl_row.ing td:last-of-type::before{
+	content:'검수요청예정파일';
+	color:brown;
+}
+.talign_center {
+	text-align: center !important;
+}
+.page_title {
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -moz-box;
+	display: -moz-flex;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-align: end;
+	-ms-flex-align: end;
+	-webkit-align-items: flex-end;
+	-moz-align-items: flex-end;
+	align-items: flex-end;
+	height: 60px;
+	box-sizing: border-box;
+	border-bottom: 2px solid #23282F;
+}
+.page_title .left_area {
+	-webkit-box-flex: auto;
+	-webkit-flex: auto;
+	-moz-box-flex: auto;
+	-moz-flex: auto;
+	-ms-flex: auto;
+	flex: auto;
+	padding-bottom: 12px;
+}
+.page_title .title {
+	font-size: 28px;
+	color: #000;
+	line-height: 1.3;
+	cursor: pointer;
+}
+.tbl_horiz, .tbl_vert {
+	margin-top: 20px;
+	border-top: 1px solid #D8D8D8;
+}
+.tbl_horiz > table, .tbl_vert > table {
+	width: 100%;
+	table-layout: fixed;
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+.tbl_horiz.tbl_line .tbl_row, .tbl_vert.tbl_line .tbl_row {
+	border-right: 1px solid #D8D8D8;
+}
+.tbl_horiz .tbl_row {
+	border-bottom: 1px solid #D8D8D8;
+}
+.tbl_horiz.tbl_line .tbl_head, .tbl_horiz.tbl_line .tbl_data, .tbl_vert.tbl_line .tbl_head, .tbl_vert.tbl_line .tbl_data {
+	border-left: 1px solid #D8D8D8;
+}
+.tbl_horiz thead .tbl_head {
+	background-color: #e5e5e5;
+}
+.tbl_horiz thead .tbl_head, .tbl_horiz thead .tbl_data {
+	font-size: 12px;
+	line-height: 1.33em;
+	color: #2F2F2F;
+	font-weight: bold;
+	border-bottom: 1px solid #D8D8D8;
+}
+.tbl_horiz .tbl_head {
+	text-align: left;
+	height: 30px;
+	box-sizing: border-box;
+	padding: 3px 15px;
+	background-color: #EAEAEA;
+}
+.tbl_sample .tbl_row .tbl_data {
+	word-break: break-all;
+}
+.tbl_horiz.tbl_line .tbl_head, .tbl_horiz.tbl_line .tbl_data, .tbl_vert.tbl_line .tbl_head, .tbl_vert.tbl_line .tbl_data {
+	border-left: 1px solid #D8D8D8;
+}
+.tbl_horiz .tbl_data {
+	text-align: left;
+	box-sizing: border-box;
+	height: 30px;
+	padding: 3px 10px;
+}
+.tbl_horiz .tbl_data, .tbl_vert .tbl_data {
+	font-size: 12px;
+	line-height: 1.33em;
+	color: #2F2F2F;
+}
+.tbl_sample .tbl_row .tbl_data a {
+	color: #DF4523;
+}
+.tbl_sample .tbl_row .tbl_data a:hover {
+	font-weight:bold;
+}
+.tbl_horiz .tbl_data > *, .tbl_vert .tbl_data > * {
+	vertical-align: middle;
+}
+a:visited, a:active {
+	text-decoration: none;
+	background-color: transparent;
+}
+a:link, a:visited, a:active {
+	font-family: inherit;
+	color: inherit;
+	text-decoration: none;
+}
+.tbl_sample .tbl_row .tbl_data:last-child {
+	
+}
+.tbl_horiz .tbl_head, .tbl_vert .tbl_head {
+	font-size: 12px;
+	line-height: 1.33em;
+	color: #2F2F2F;
+}
+thead .tbl_row .tbl_head {
+	text-align:center;
+	background-color:#bcbcbc;
+}
+
+
+</style>
+</head>
+<body>
+	<div id="lay_contents">
+		<div class="page_title">
+			<div class="left_area">
+				<span class="title">SUNI Mobile INDEX (LIST last update 2019.12.18)</span>
+			</div>
+		</div>
+		<div class="page_container">
+			<div class="tbl_horiz tbl_line tbl_sample">
+				<table>
+					<colgroup>
+						<col width="100">
+						<col width="*">
+						<col width="*">
+						<col width="80">
+						<col width="300">
+						<col width="*">
+					</colgroup>
+					<thead>
+						<tr class="tbl_row">
+							<th class="tbl_head">대분류</th>
+							<th class="tbl_head">소분류</th>
+							<th class="tbl_head">화면아이디</th>
+							<th class="tbl_head">배포일</th>
+							<th class="tbl_head">수정일</th>
+							<th class="tbl_head">기타</th>
+						</tr>
+					</thead>
+					<tbody>
+						<!-- Common -->
+						<tr class="tbl_row">
+							<th class="tbl_head">Common</th>
+							<td class="tbl_data">Element</td>
+							<td class="tbl_data">
+								<a href="./dist/html/common/element.html" target="_blank">element</a>
+							</td>
+							<td class="tbl_data"></td>
+							<td class="tbl_data"></td>
+							<td class="tbl_data"></td>
+						</tr>
+						<tr class="tbl_row">
+							<th class="tbl_head"></th>
+							<td class="tbl_data">Cards</td>
+							<td class="tbl_data">
+								<a href="./dist/html/common/card.html" target="_blank">card</a>
+							</td>
+							<td class="tbl_data"></td>
+							<td class="tbl_data">12/12<br>- 카드 마크업 수정</td>
+							<td class="tbl_data"></td>
+						</tr>
+						<tr class="tbl_row">
+							<th class="tbl_head"></th>
+							<td class="tbl_data">하단 (floating)버튼</td>
+							<td class="tbl_data">
+								<a href="./dist/html/common/floating_btn.html" target="_blank">floating_btn</a>
+							</td>
+							<td class="tbl_data"></td>
+							<td class="tbl_data">12/12<br>- 버튼 케이스 추가</td>
+							<td class="tbl_data"></td>
+						</tr>
+						<tr class="tbl_row">
+							<th class="tbl_head"></th>
+							<td class="tbl_data">Main header sticky</td>
+							<td class="tbl_data">
+								<a href="./dist/html/common/CO_01_01.html" target="_blank">CO_01_01</a>
+							</td>
+							<td class="tbl_data">11/18</td>
+							<td class="tbl_data"></td>
+							<td class="tbl_data"></td>
+						</tr>
+						<tr class="tbl_row">
+							<th class="tbl_head"></th>
+							<td class="tbl_data">Main header sticky new</td>
+							<td class="tbl_data">
+								<a href="./dist/html/common/CO_01_01_case.html" target="_blank">CO_01_01_case</a>
+							</td>
+							<td class="tbl_data"></td>
+							<td class="tbl_data"></td>
+							<td class="tbl_data">GNB메뉴에 신규항목이 존재할 경우 GNB버튼 아이콘 변경</td>
+						</tr>
+						<tr class="tbl_row">
+							<th class="tbl_head"></th>
+							<td class="tbl_data">List header sticky</td>
+							<td class="tbl_data">
+								<a href="./dist/html/common/CO_01_02.html" target="_blank">CO_01_02</a>
+							</td>
+							<td class="tbl_data">11/18</td>
+							<td class="tbl_data"></td>
+							<td class="tbl_data"></td>
+						</tr>
+						<tr class="tbl_row">
+							<th class="tbl_head"></th>
+							<td class="tbl_data">Detail header sticky</td>
+							<td class="tbl_data">
+								<a href="./dist/html/common/CO_01_03.html" target="_blank">CO_01_03</a>
+							</td>
+							<td class="tbl_data">11/18</td>
+							<td class="tbl_data"></td>
+							<td class="tbl_data"></td>
+						</tr>
+						<tr class="tbl_row">
+							<th class="tbl_head"></th>
+							<td class="tbl_data">Toolbar</td>
+							<td class="tbl_data">
+								<a href="./dist/html/common/CO_01_01.html" target="_blank">CO_01_01</a>
+							</td>
+							<td class="tbl_data">11/18</td>
+							<td class="tbl_data"></td>
+							<td class="tbl_data">CO_01_01 에서 제공</td>
+						</tr>
+						<tr class="tbl_row">
+							<th class="tbl_head"></th>
+							<td class="tbl_data">전체보기</td>
+							<td class="tbl_data">
+								<a href="./dist/html/common/CO_01_01.html" target="_blank">CO_02_01</a>
+							</td>
+							<td class="tbl_data">11/18</td>
+							<td class="tbl_data"></td>
+							<td class="tbl_data">CO_01_01 에서 제공</td>
+						</tr>
+						<tr class="tbl_row">
+							<th class="tbl_head"></th>
+							<td class="tbl_data">POP UP <br>Full Popup Wireframe</td>
+							<td class="tbl_data">
+								<a href="./dist/html/common/CO_03_p01.html" target="_blank">CO_03_p01</a>
+							</td>
+							<td class="tbl_data">11/22</td>
+							<td class="tbl_data"></td>
+							<td class="tbl_data"></td>
+						</tr>
+						<tr class="tbl_row">
+							<th class="tbl_head"></th>
+							<td class="tbl_data">POP UP <br>Confirm Wireframe</td>
+							<td class="tbl_data">
+								<a href="./dist/html/common/CO_03_p02.html" target="_blank">CO_03_p02</a>
+							</td>
+							<td class="tbl_data">11/22</td>
+							<td class="tbl_data"></td>
+							<td class="tbl_data"></td>
+						</tr>
+						<tr class="tbl_row">
+							<th class="tbl_head"></th>
+							<td class="tbl_data">POP UP <br>Alert Wireframe</td>
+							<td class="tbl_data">
+								<a href="./dist/html/common/CO_03_p03.html" target="_blank">CO_03_p03</a>
+							</td>
+							<td class="tbl_data">11/22</td>
+							<td class="tbl_data"></td>
+							<td class="tbl_data"></td>
+						</tr>
+						<tr class="tbl_row">
+							<th class="tbl_head"></th>
+							<td class="tbl_data">Layer POP UP <br>호출 예시</td>
+							<td class="tbl_data">
+								<a href="./dist/html/common/CO_03_case.html" target="_blank">CO_03_case</a>
+							</td>
+							<td class="tbl_data">11/22</td>
+							<td class="tbl_data"></td>
+							<td class="tbl_data">
+								레이어 팝업 호출 시 컨텐츠 내용 길이에 따른 위치 변경을 위한 예시 페이지<br><br>
+								해당페이지 안에 예시 샘플 소스 및 해당 페이지 설명이 되어있습니다.<br><br>
+								호출에 대한 설명은 스크립트 부분에 주석으로 처리되어 있습니다.
+							</td>
+						</tr>
+
+						<tr class="tbl_row">
+							<th class="tbl_head"></th>
+							<td class="tbl_data">Comment > 전체 케이스 포함</td>
+							<td class="tbl_data">
+								<a href="./dist/html/common/CO_04_01.html" target="_blank">CO_04_01</a>
+							</td>
+							<td class="tbl_data">12/06</td>
+							<td class="tbl_data">
+								12/06<br>- 코멘트 리스트 마크업 수정
+							</td>
+							<td class="tbl_data"></td>
+						</tr>
+
+						<tr class="tbl_row">
+							<th class="tbl_head"></th>
+							<td class="tbl_data">Comment > 댓글 작성 필드</td>
+							<td class="tbl_data">
+								<a href="./dist/html/common/CO_04_02.html" target="_blank">CO_04_02</a>
+							</td>
+							<td class="tbl_data">12/06</td>
+							<td class="tbl_data">
+								12/06<br>- 코멘트 리스트 마크업 수정
+							</td>
+							<td class="tbl_data"></td>
+						</tr>
+
+						<!-- <tr class="tbl_row">
+							<th class="tbl_head"></th>
+							<td class="tbl_data">Comment > Comment 입력 팝업</td>
+							<td class="tbl_data">
+								CO_04_01_P01
+							</td>
+							<td class="tbl_data">12/06</td>
+							<td class="tbl_data"></td>
+							<td class="tbl_data"></td>
+						</tr> -->
+
+						<tr class="tbl_row">
+							<th class="tbl_head"></th>
+							<td class="tbl_data">Comment > 입력창 케이스</td>
+							<td class="tbl_data">
+								<a href="./dist/html/common/CO_04_03_case1.html" target="_blank">CO_04_03_case1</a>
+							</td>
+							<td class="tbl_data">12/06</td>
+							<td class="tbl_data"></td>
+							<td class="tbl_data"></td>
+						</tr>
+
+						<tr class="tbl_row">
+							<th class="tbl_head"></th>
+							<td class="tbl_data">Comment > 사람 태그</td>
+							<td class="tbl_data">
+								<a href="./dist/html/common/CO_04_03_case2.html" target="_blank">CO_04_03_case2</a>,
+								<a href="./dist/html/common/CO_04_03_case3.html" target="_blank">CO_04_03_case3</a>
+							</td>
+							<td class="tbl_data">12/06</td>
+							<td class="tbl_data"></td>
+							<td class="tbl_data">사람태그 활성화 / 비활성화</td>
+						</tr>
+
+
+						<tr class="tbl_row">
+							<th class="tbl_head"></th>
+							<td class="tbl_data">Comment > 코멘트 없음</td>
+							<td class="tbl_data">
+								<a href="./dist/html/common/CO_04_04.html" target="_blank">CO_04_04</a>
+							</td>
+							<td class="tbl_data">12/06</td>
+							<td class="tbl_data"></td>
+							<td class="tbl_data"></td>
+						</tr>
+
+						<tr class="tbl_row">
+							<th class="tbl_head"></th>
+							<td class="tbl_data">College Gate page</td>
+							<td class="tbl_data">
+								<a href="./dist/html/common/CO_05_01.html" target="_blank">CO_05_01</a>
+							</td>
+							<td class="tbl_data">12/5</td>
+							<td class="tbl_data"></td>
+							<td class="tbl_data"></td>
+						</tr>
+						<tr class="tbl_row">
+							<th class="tbl_head"></th>
+							<td class="tbl_data">College 전체보기 > AI</td>
+							<td class="tbl_data">
+								<a href="./dist/html/common/CO_05_02.html" target="_blank">CO_05_02</a>
+							</td>
+							<td class="tbl_data">12/5</td>
+							<td class="tbl_data">12/12<br>- 카드 마크업 수정</td>
+							<td class="tbl_data"></td>
+						</tr>
+						<tr class="tbl_row">
+							<th class="tbl_head"></th>
+							<td class="tbl_data">College 전체보기 > 채널 리스트 전체 보기 및 필터 팝업</td>
+							<td class="tbl_data">
+								<a href="./dist/html/common/CO_05_02_P01.html" target="_blank">CO_05_02_P01</a>
+							</td>
+							<td class="tbl_data">12/5</td>
+							<td class="tbl_data"></td>
+							<td class="tbl_data"></td>
+						</tr>
+						<tr class="tbl_row">
+							<th class="tbl_head"></th>
+							<td class="tbl_data">College 전체보기 > List Sorting 팝업</td>
+							<td class="tbl_data">
+								<a href="./dist/html/common/CO_05_03_P01.html" target="_blank">CO_05_03_P01</a>
+							</td>
+							<td class="tbl_data">12/5</td>
+							<td class="tbl_data"></td>
+							<td class="tbl_data"></td>
+						</tr>
+						<tr class="tbl_row">
+							<th class="tbl_head"></th>
+							<td class="tbl_data">College 전체보기 > 특정 채널 필터한 경우</td>
+							<td class="tbl_data">
+								<a href="./dist/html/common/CO_05_02_01.html" target="_blank">CO_05_02_01</a>
+							</td>
+							<td class="tbl_data">12/5</td>
+							<td class="tbl_data">12/12<br>- 카드 마크업 수정</td>
+							<td class="tbl_data"></td>
+						</tr>
+						<tr class="tbl_row">
+							<th class="tbl_head"></th>
+							<td class="tbl_data">College 전체보기 > 특정 채널 전체 보기</td>
+							<td class="tbl_data">
+								<a href="./dist/html/common/CO_05_03.html" target="_blank">CO_05_03</a>
+							</td>
+							<td class="tbl_data">12/5</td>
+							<td class="tbl_data">12/12<br>- 카드 마크업 수정</td>
+							<td class="tbl_data"></td>
+						</tr>
+
+						<!-- blink -->
+						<tr class="tbl_row">
+							<td class="tbl_data tbl_empty" colspan="6"></td>
+						</tr>
+						<!--// blink -->
+
+						<tr class="tbl_row">
+							<th class="tbl_head">Main</th>
+							<td class="tbl_data">Main (학습과정있음 + 추천있음, 학습과정없음 + 추천없음)</td>
+							<td class="tbl_data">
+								<a href="./dist/html/main/MA-01-01.html" target="_blank">MA-01-01</a>
+								<del><a href="./dist/html/main/MA-01-01-2.html" target="_blank">MA-01-01-2</a></del>
+							</td>
+							<td class="tbl_data">11/18</td>
+							<td class="tbl_data">
+								11/25 <br>- 카드 리스트 타이틀 수정(공통) <br>
+								12/04 <br>- Channel별 전체 과정 버튼 추가 <br>
+								12/12 <br>- 카드 마크업 수정
+							</td>
+							<td class="tbl_data"></td>
+						</tr>
+						<tr class="tbl_row">
+							<td class="tbl_data tbl_empty" colspan="6"></td>
+						</tr>
+
+						<!-- Learning -->
+						<tr class="tbl_row">
+							<th class="tbl_head">Learning</th>
+							<td class="tbl_data">card > 기본 유형 카드 </td>
+							<td class="tbl_data">
+								<a href="./dist/html/learning/ML-00-01.html" target="_blank">ML-00-01</a>
+							</td>
+							<td class="tbl_data">11/18</td>
+							<td class="tbl_data">12/12<br>- 카드 마크업 수정</td>
+							<td class="tbl_data"></td>
+						</tr>
+
+						<tr class="tbl_row">
+							<th class="tbl_head"></th>
+							<td class="tbl_data">card > 코스 카드</td>
+							<td class="tbl_data">
+								<a href="./dist/html/learning/ML-00-02.html" target="_blank">ML-00-02</a>
+							</td>
+							<td class="tbl_data">11/18</td>
+							<td class="tbl_data">12/12<br>- 카드 마크업 수정</td>
+							<td class="tbl_data"></td>
+						</tr>
+
+						<tr class="tbl_row">
+							<th class="tbl_head"></th>
+							<td class="tbl_data">card > 클래스 카드</td>
+							<td class="tbl_data">
+								<a href="./dist/html/learning/ML-00-03.html" target="_blank">ML-00-03</a>
+							</td>
+							<td class="tbl_data">11/18</td>
+							<td class="tbl_data">12/12<br>- 카드 마크업 수정</td>
+							<td class="tbl_data"></td>
+						</tr>
+
+						<tr class="tbl_row">
+							<th class="tbl_head"></th>
+							<td class="tbl_data">card > 코스 상세, 코스 내 큐브 카드</td>
+							<td class="tbl_data">
+								<a href="./dist/html/learning/ML-00-04.html" target="_blank">ML-00-04</a>
+							</td>
+							<td class="tbl_data">11/18</td>
+							<td class="tbl_data">12/12<br>- 카드 마크업 수정</td>
+							<td class="tbl_data"></td>
+						</tr>
+
+						<tr class="tbl_row">
+							<th class="tbl_head"></th>
+							<td class="tbl_data">My Learning Detail > In progress</td>
+							<td class="tbl_data">
+								<a href="./dist/html/learning/ML-01-01.html" target="_blank">ML-01-01</a>
+							</td>
+							<td class="tbl_data">11/18</td>
+							<td class="tbl_data">12/12<br>- 카드 마크업 수정</td>
+							<td class="tbl_data"></td>
+						</tr>
+
+						<tr class="tbl_row">
+							<th class="tbl_head"></th>
+							<td class="tbl_data">My Learning Detail > In My list</td>
+							<td class="tbl_data">
+								<a href="./dist/html/learning/ML-01-02.html" target="_blank">ML-01-02</a>
+							</td>
+							<td class="tbl_data">11/18</td>
+							<td class="tbl_data">12/12<br>- 카드 마크업 수정</td>
+							<td class="tbl_data"></td>
+						</tr>
+
+						<tr class="tbl_row">
+							<th class="tbl_head"></th>
+							<td class="tbl_data">My Learning Detail > Enrolled</td>
+							<td class="tbl_data">
+								<a href="./dist/html/learning/ML-01-03.html" target="_blank">ML-01-03</a>
+							</td>
+							<td class="tbl_data">11/18</td>
+							<td class="tbl_data">12/12<br>- 카드 마크업 수정</td>
+							<td class="tbl_data"></td>
+						</tr>
+
+						<tr class="tbl_row">
+							<th class="tbl_head"></th>
+							<td class="tbl_data">My Learning Detail > Required</td>
+							<td class="tbl_data">
+								<a href="./dist/html/learning/ML-01-04.html" target="_blank">ML-01-04</a>
+							</td>
+							<td class="tbl_data">11/18</td>
+							<td class="tbl_data">12/12<br>- 카드 마크업 수정</td>
+							<td class="tbl_data"></td>
+						</tr>
+
+						<tr class="tbl_row">
+							<th class="tbl_head"></th>
+							<td class="tbl_data">My Learning Detail > Completed</td>
+							<td class="tbl_data">
+								<a href="./dist/html/learning/ML-01-05.html" target="_blank">ML-01-05</a>
+							</td>
+							<td class="tbl_data">11/18</td>
+							<td class="tbl_data">12/12<br>- 카드 마크업 수정</td>
+							<td class="tbl_data"></td>
+						</tr>
+
+						<tr class="tbl_row">
+							<th class="tbl_head"></th>
+							<td class="tbl_data">My Learning Detail > Earned Stamp</td>
+							<td class="tbl_data">
+								<a href="./dist/html/learning/ML-01-06.html" target="_blank">ML-01-06</a>
+							</td>
+							<td class="tbl_data">11/18</td>
+							<td class="tbl_data">12/12<br>- 카드 마크업 수정</td>
+							<td class="tbl_data"></td>
+						</tr>
+
+						<tr class="tbl_row">
+							<th class="tbl_head"></th>
+							<td class="tbl_data">My Learning Detail > Retry</td>
+							<td class="tbl_data">
+								<a href="./dist/html/learning/ML-01-07.html" target="_blank">ML-01-07</a>
+							</td>
+							<td class="tbl_data">11/18</td>
+							<td class="tbl_data">12/12<br>- 카드 마크업 수정</td>
+							<td class="tbl_data"></td>
+						</tr>
+
+						<tr class="tbl_row">
+							<th class="tbl_head"></th>
+							<td class="tbl_data">My Learning Detail > 카드 없음 (공통)</td>
+							<td class="tbl_data">
+								<a href="./dist/html/learning/ML-01-08.html" target="_blank">ML-01-08</a>
+							</td>
+							<td class="tbl_data">11/18</td>
+							<td class="tbl_data"></td>
+							<td class="tbl_data"></td>
+						</tr>
+						<tr class="tbl_row">
+							<th class="tbl_head"></th>
+							<td class="tbl_data">My Learning Detail > 카드 없음 (In progress)</td>
+							<td class="tbl_data">
+								<a href="./dist/html/learning/ML-01-08-case.html" target="_blank">ML-01-08-case</a>
+							</td>
+							<td class="tbl_data">11/18</td>
+							<td class="tbl_data"></td>
+							<td class="tbl_data"></td>
+						</tr>
+						<tr class="tbl_row">
+							<th class="tbl_head"></th>
+							<td class="tbl_data">My Learning Detail > List Filter</td>
+							<td class="tbl_data">
+								<a href="./dist/html/learning/ML-01-p01.html" target="_blank">ML-01-p01</a>
+							</td>
+							<td class="tbl_data">11/18</td>
+							<td class="tbl_data"></td>
+							<td class="tbl_data"></td>
+						</tr>
+						<tr class="tbl_row">
+							<th class="tbl_head"></th>
+							<td class="tbl_data">Cube 상세 > Floating_button 케이스</td>
+							<td class="tbl_data">
+								<a href="./dist/html/common/floating_btn.html" target="_blank">floating_btn</a>
+							</td>
+							<td class="tbl_data">11/21</td>
+							<td class="tbl_data"></td>
+							<td class="tbl_data"></td>
+						</tr>
+						<tr class="tbl_row">
+							<th class="tbl_head"></th>
+							<td class="tbl_data">Cube 상세 > Short Cut UI(toggle포함)</td>
+							<td class="tbl_data">
+								<a href="./dist/html/common/CO_01_03.html" target="_blank">CO_01_03</a>
+							</td>
+							<td class="tbl_data">11/21</td>
+							<td class="tbl_data"></td>
+							<td class="tbl_data">CO_01_03 에서 제공</td>
+						</tr>
+						<tr class="tbl_row">
+							<th class="tbl_head"></th>
+							<td class="tbl_data">Cube 상세 > Tool tip 공통</td>
+							<td class="tbl_data">
+								<a href="./dist/html/learning/ML-02-01.html" target="_blank">ML-02-01</a>
+							</td>
+							<td class="tbl_data">11/21</td>
+							<td class="tbl_data"></td>
+							<td class="tbl_data">ML-02-01 에서 제공</td>
+						</tr>
+						<tr class="tbl_row">
+							<th class="tbl_head"></th>
+							<td class="tbl_data">Cube 상세 > classroom (Overview)<br>강좌소개 펼침 포함 (공통)</td>
+							<td class="tbl_data">
+								<a href="./dist/html/learning/ML-02-01.html" target="_blank">ML-02-01</a>
+							</td>
+							<td class="tbl_data">11/21</td>
+							<td class="tbl_data"></td>
+							<td class="tbl_data"></td>
+						</tr>
+						<tr class="tbl_row">
+							<th class="tbl_head"></th>
+							<td class="tbl_data">Cube 상세 > classroom (Comment)<br>코멘트 공통 (별점 등록전후 포함)</td>
+							<td class="tbl_data">
+								<a href="./dist/html/learning/ML-02-02.html" target="_blank">ML-02-02</a>
+								<a href="./dist/html/learning/ML-02-03.html" target="_blank">ML-02-03</a>
+							</td>
+							<td class="tbl_data">11/21</td>
+							<td class="tbl_data">
+								12/06<br>- 코멘트 리스트 마크업 수정<br>
+								12/12<br>- 별점 등록 영역 수정
+							</td>
+							<td class="tbl_data"></td>
+						</tr>
+						<tr class="tbl_row">
+							<th class="tbl_head"></th>
+							<td class="tbl_data"><del>Cube 상세 > 별점 등록 팝업</del></td>
+							<td class="tbl_data">
+								<del><a href="./dist/html/learning/ML-02-p01.html" target="_blank">ML-02-p01</a></del>
+							</td>
+							<td class="tbl_data">11/21</td>
+							<td class="tbl_data"></td>
+							<td class="tbl_data">삭제</td>
+						</tr>
+						<tr class="tbl_row">
+							<th class="tbl_head"></th>
+							<td class="tbl_data">Cube 상세 > 차수가 있는 classroom(Overview)</td>
+							<td class="tbl_data">
+								<a href="./dist/html/learning/ML-02-04.html" target="_blank">ML-02-04</a>
+							</td>
+							<td class="tbl_data">11/21</td>
+							<td class="tbl_data"></td>
+							<td class="tbl_data"></td>
+						</tr>
+						<tr class="tbl_row">
+							<th class="tbl_head"></th>
+							<td class="tbl_data">Cube 상세 > e-Learning (Overview)</td>
+							<td class="tbl_data">
+								<a href="./dist/html/learning/ML-02-05.html" target="_blank">ML-02-05</a>
+							</td>
+							<td class="tbl_data">11/21</td>
+							<td class="tbl_data"></td>
+							<td class="tbl_data"></td>
+						</tr>
+						<tr class="tbl_row">
+							<th class="tbl_head"></th>
+							<td class="tbl_data">Cube 상세 > 차수가 있는 e-Learning (Overview)</td>
+							<td class="tbl_data">
+								<a href="./dist/html/learning/ML-02-06.html" target="_blank">ML-02-06</a>
+							</td>
+							<td class="tbl_data">11/21</td>
+							<td class="tbl_data"></td>
+							<td class="tbl_data"></td>
+						</tr>
+						<tr class="tbl_row">
+							<th class="tbl_head"></th>
+							<td class="tbl_data">Cube 상세 > Video - Embedded (Overview)</td>
+							<td class="tbl_data">
+								<a href="./dist/html/learning/ML-02-07.html" target="_blank">ML-02-07</a>
+							</td>
+							<td class="tbl_data">11/21</td>
+							<td class="tbl_data"></td>
+							<td class="tbl_data"></td>
+						</tr>
+						<tr class="tbl_row">
+							<th class="tbl_head"></th>
+							<td class="tbl_data">Cube 상세 > Video – 외부 URL (Overview)</td>
+							<td class="tbl_data">
+								<a href="./dist/html/learning/ML-02-08.html" target="_blank">ML-02-08</a>
+							</td>
+							<td class="tbl_data">11/21</td>
+							<td class="tbl_data"></td>
+							<td class="tbl_data"></td>
+						</tr>
+						<tr class="tbl_row">
+							<th class="tbl_head"></th>
+							<td class="tbl_data">Cube 상세 > Audio - Embedded (Overview)</td>
+							<td class="tbl_data">
+								<a href="./dist/html/learning/ML-02-09.html" target="_blank">ML-02-09</a>
+							</td>
+							<td class="tbl_data">11/21</td>
+							<td class="tbl_data"></td>
+							<td class="tbl_data"></td>
+						</tr>
+						<tr class="tbl_row">
+							<th class="tbl_head"></th>
+							<td class="tbl_data">Cube 상세 > Audio – 외부 URL (Overview)</td>
+							<td class="tbl_data">
+								<a href="./dist/html/learning/ML-02-10.html" target="_blank">ML-02-10</a>
+							</td>
+							<td class="tbl_data">11/21</td>
+							<td class="tbl_data"></td>
+							<td class="tbl_data"></td>
+						</tr>
+						<tr class="tbl_row">
+							<th class="tbl_head"></th>
+							<td class="tbl_data">Cube 상세 > Webpage (Overview)</td>
+							<td class="tbl_data">
+								<a href="./dist/html/learning/ML-02-11.html" target="_blank">ML-02-11</a>
+							</td>
+							<td class="tbl_data">11/21</td>
+							<td class="tbl_data"></td>
+							<td class="tbl_data"></td>
+						</tr>
+						<tr class="tbl_row">
+							<th class="tbl_head"></th>
+							<td class="tbl_data">Cube 상세 > Document (Overview)</td>
+							<td class="tbl_data">
+								<a href="./dist/html/learning/ML-02-12.html" target="_blank">ML-02-12</a>
+							</td>
+							<td class="tbl_data">11/21</td>
+							<td class="tbl_data"></td>
+							<td class="tbl_data"></td>
+						</tr>
+						<tr class="tbl_row">
+							<th class="tbl_head"></th>
+							<td class="tbl_data">Cube 상세 > Experiential (Overview)</td>
+							<td class="tbl_data">
+								<a href="./dist/html/learning/ML-02-13.html" target="_blank">ML-02-13</a>
+							</td>
+							<td class="tbl_data">11/21</td>
+							<td class="tbl_data"></td>
+							<td class="tbl_data"></td>
+						</tr>
+						<tr class="tbl_row">
+							<th class="tbl_head"></th>
+							<td class="tbl_data"><del>Cube 상세 > Test (Overview)</del></td>
+							<td class="tbl_data">
+								<del><a href="./dist/html/learning/ML-02-14.html" target="_blank">ML-02-14</a></del>
+							</td>
+							<td class="tbl_data">11/21</td>
+							<td class="tbl_data"></td>
+							<td class="tbl_data">삭제</td>
+						</tr>
+						<tr class="tbl_row">
+							<th class="tbl_head"></th>
+							<td class="tbl_data">Cube 상세 > 차수 정보 자세히 보기 팝업</td>
+							<td class="tbl_data">
+								<a href="./dist/html/learning/ML-02-p02.html" target="_blank">ML-02-p02</a>
+							</td>
+							<td class="tbl_data">11/22</td>
+							<td class="tbl_data"></td>
+							<td class="tbl_data"></td>
+						</tr>
+						<tr class="tbl_row">
+							<th class="tbl_head"></th>
+							<td class="tbl_data">Cube 상세 > 차수 정보 선택 팝업</td>
+							<td class="tbl_data">
+								<a href="./dist/html/learning/ML-02-p03.html" target="_blank">ML-02-p03</a>
+							</td>
+							<td class="tbl_data">11/22</td>
+							<td class="tbl_data"></td>
+							<td class="tbl_data"></td>
+						</tr>
+						<tr class="tbl_row">
+							<th class="tbl_head"></th>
+							<td class="tbl_data">Cube 상세 > 참고자료 Download 팝업</td>
+							<td class="tbl_data">
+								<a href="./dist/html/learning/ML-02-p04.html" target="_blank">ML-02-p04</a>
+							</td>
+							<td class="tbl_data">11/22</td>
+							<td class="tbl_data">12/12<br>- 팝업 기능 수정</td>
+							<td class="tbl_data"></td>
+						</tr>
+						<tr class="tbl_row">
+							<th class="tbl_head"></th>
+							<td class="tbl_data">Cube 상세 > Report 팝업</td>
+							<td class="tbl_data">
+								<a href="./dist/html/learning/ML-02-p05.html" target="_blank">ML-02-p05</a> / 
+								<a href="./dist/html/learning/ML-02-p05-case.html" target="_blank">ML-02-p05-case</a>
+							</td>
+							<td class="tbl_data">11/22</td>
+							<td class="tbl_data">
+								12/17<br>- 문구 수정
+							</td>
+							<td class="tbl_data"></td>
+						</tr>
+						<tr class="tbl_row">
+							<th class="tbl_head"></th>
+							<td class="tbl_data">Course 상세 > List</td>
+							<td class="tbl_data">
+								<a href="./dist/html/learning/ML-03-01.html" target="_blank">ML-03-01</a>
+							</td>
+							<td class="tbl_data">11/22</td>
+							<td class="tbl_data">12/12 <br>- 카드 마크업 수정<br>- 하단 플로팅 버튼 추가</td>
+							<td class="tbl_data"></td>
+						</tr>
+						<tr class="tbl_row">
+							<th class="tbl_head"></th>
+							<td class="tbl_data">Course 상세 > Overview</td>
+							<td class="tbl_data">
+								<a href="./dist/html/learning/ML-03-02.html" target="_blank">ML-03-02</a>
+							</td>
+							<td class="tbl_data">11/22</td>
+							<td class="tbl_data">
+								12/12 <br>- 하단 플로팅 버튼 추가<br>
+								12/17 <br>- 화면 수정
+							</td>
+							<td class="tbl_data"></td>
+						</tr>
+						<tr class="tbl_row">
+							<th class="tbl_head"></th>
+							<td class="tbl_data">Course 상세 > Comment</td>
+							<td class="tbl_data">
+								<a href="./dist/html/learning/ML-03-03.html" target="_blank">ML-03-03</a>
+							</td>
+							<td class="tbl_data">11/22</td>
+							<td class="tbl_data">
+								12/06<br>- 코멘트 리스트 마크업 수정<br>
+								12/12<br>- 별점 등록 영역 수정<br>- 하단 플로팅 버튼 추가
+							</td>
+							<td class="tbl_data"></td>
+						</tr>
+
+						<!-- blink -->
+						<tr class="tbl_row">
+							<td class="tbl_data tbl_empty" colspan="6"></td>
+						</tr>
+						<!--// blink -->
+
+						<tr class="tbl_row">
+							<th class="tbl_head">My Page</th>
+							<td class="tbl_data">My Page</td>
+							<td class="tbl_data">
+								<a href="./dist/html/mypage/MY-01-01.html" target="_blank">MY-01-01</a>
+							</td>
+							<td class="tbl_data">11/20</td>
+							<td class="tbl_data">
+								12/12<br>- Sign out 삭제
+							</td>
+							<td class="tbl_data"></td>
+						</tr>
+						<tr class="tbl_row">
+							<th class="tbl_head"></th>
+							<td class="tbl_data">학습시간 상세보기 팝업</td>
+							<td class="tbl_data">
+								<a href="./dist/html/mypage/MY-01-01-P01.html" target="_blank">MY-01-01-P01</a>
+							</td>
+							<td class="tbl_data">11/20</td>
+							<td class="tbl_data">
+								12/04<br>- 날짜 표기 방식 수정 <br>
+								12/12<br>- College 별 학습 시간 순서 변경
+							</td>
+							<td class="tbl_data"></td>
+						</tr>
+						<tr class="tbl_row">
+							<th class="tbl_head"></th>
+							<td class="tbl_data">학습시간, 완료학습, 획득 Stamp 없는 경우</td>
+							<td class="tbl_data">
+								<a href="./dist/html/mypage/MY-01-02.html" target="_blank">MY-01-02</a>
+							</td>
+							<td class="tbl_data">11/20</td>
+							<td class="tbl_data">
+								12/12<br>- Sign out 삭제
+							</td>
+							<td class="tbl_data"></td>
+						</tr>
+
+						<!-- blink -->
+						<tr class="tbl_row">
+							<td class="tbl_data tbl_empty" colspan="6"></td>
+						</tr>
+						<!--// blink -->
+
+						<tr class="tbl_row">
+							<th class="tbl_head">Community</th>
+							<td class="tbl_data">Community learning 상세 > 가입하지 않은 경우 (overview)</td>
+							<td class="tbl_data">
+								<a href="./dist/html/community/CM-01-01.html" target="_blank">CM-01-01</a>
+							</td>
+							<td class="tbl_data">12/06</td>
+							<td class="tbl_data"></td>
+							<td class="tbl_data"></td>
+						</tr>
+						<tr class="tbl_row">
+							<th class="tbl_head"></th>
+							<td class="tbl_data">Community learning 상세 > 가입한 종료이전 일 경우 > Community_리스트 있음</td>
+							<td class="tbl_data">
+								<a href="./dist/html/community/CM-01-02-01.html" target="_blank">CM-01-02-01</a>
+							</td>
+							<td class="tbl_data">12/06</td>
+							<td class="tbl_data"></td>
+							<td class="tbl_data"></td>
+						</tr>
+						<tr class="tbl_row">
+							<th class="tbl_head"></th>
+							<td class="tbl_data">Community learning 상세 > 가입한 종료이전 일 경우 > Community_리스트 없음</td>
+							<td class="tbl_data">
+								<a href="./dist/html/community/CM-01-02-02.html" target="_blank">CM-01-02-02</a>
+							</td>
+							<td class="tbl_data">12/06</td>
+							<td class="tbl_data"></td>
+							<td class="tbl_data"></td>
+						</tr>
+						<tr class="tbl_row">
+							<th class="tbl_head"></th>
+							<td class="tbl_data">Community learning 상세 > 가입한 종료이전 일 경우 > My Post_리스트 있음</td>
+							<td class="tbl_data">
+								<a href="./dist/html/community/CM-01-02-03.html" target="_blank">CM-01-02-03</a>
+							</td>
+							<td class="tbl_data">12/06</td>
+							<td class="tbl_data"></td>
+							<td class="tbl_data"></td>
+						</tr>
+						<tr class="tbl_row">
+							<th class="tbl_head"></th>
+							<td class="tbl_data">Community learning 상세 > 가입한 종료이전 일 경우 > My Post_리스트 없음</td>
+							<td class="tbl_data">
+								<a href="./dist/html/community/CM-01-02-04.html" target="_blank">CM-01-02-04</a>
+							</td>
+							<td class="tbl_data">12/06</td>
+							<td class="tbl_data"></td>
+							<td class="tbl_data"></td>
+						</tr>
+						<tr class="tbl_row">
+							<th class="tbl_head"></th>
+							<td class="tbl_data">Community learning 상세 > 가입한 종료이전 일 경우 > Overview</td>
+							<td class="tbl_data">
+								<a href="./dist/html/community/CM-01-02.html" target="_blank">CM-01-02</a>
+							</td>
+							<td class="tbl_data">12/06</td>
+							<td class="tbl_data"></td>
+							<td class="tbl_data"></td>
+						</tr>
+						<tr class="tbl_row">
+							<th class="tbl_head"></th>
+							<td class="tbl_data">Community learning 상세 > 가입한 종료되었을 경우</td>
+							<td class="tbl_data">
+								<a href="./dist/html/community/CM-01-03.html" target="_blank">CM-01-03</a>
+							</td>
+							<td class="tbl_data">12/06</td>
+							<td class="tbl_data"></td>
+							<td class="tbl_data"></td>
+						</tr>
+						<tr class="tbl_row">
+							<th class="tbl_head"></th>
+							<td class="tbl_data">Community learning 상세 > 게시글 상세</td>
+							<td class="tbl_data">
+								<a href="./dist/html/community/CM-01-04.html" target="_blank">CM-01-04</a>
+							</td>
+							<td class="tbl_data">12/06</td>
+							<td class="tbl_data"></td>
+							<td class="tbl_data"></td>
+						</tr>
+						<tr class="tbl_row">
+							<th class="tbl_head"></th>
+							<td class="tbl_data">Community learning 상세 > 게시글 상세 > 코멘트 없음</td>
+							<td class="tbl_data">
+								<a href="./dist/html/community/CM-01-04_case.html" target="_blank">CM-01-04_case</a>
+							</td>
+							<td class="tbl_data">12/06</td>
+							<td class="tbl_data"></td>
+							<td class="tbl_data"></td>
+						</tr>
+						<tr class="tbl_row">
+							<th class="tbl_head"></th>
+							<td class="tbl_data">Community List > List > 내역 있음</td>
+							<td class="tbl_data">
+								<a href="./dist/html/community/CM-02-01-01.html" target="_blank">CM-02-01-01</a>
+							</td>
+							<td class="tbl_data">12/06</td>
+							<td class="tbl_data"></td>
+							<td class="tbl_data"></td>
+						</tr>
+						<tr class="tbl_row">
+							<th class="tbl_head"></th>
+							<td class="tbl_data">Community List > List > 내역 없음</td>
+							<td class="tbl_data">
+								<a href="./dist/html/community/CM-02-01-02.html" target="_blank">CM-02-01-02</a>
+							</td>
+							<td class="tbl_data">12/06</td>
+							<td class="tbl_data"></td>
+							<td class="tbl_data"></td>
+						</tr>
+						<tr class="tbl_row">
+							<th class="tbl_head"></th>
+							<td class="tbl_data">Community List > Card 최신글 3개 있을 시</td>
+							<td class="tbl_data">
+								<a href="./dist/html/community/CM-02-01-C01.html" target="_blank">CM-02-01-C01</a>
+							</td>
+							<td class="tbl_data">12/06</td>
+							<td class="tbl_data"></td>
+							<td class="tbl_data"></td>
+						</tr>
+						<tr class="tbl_row">
+							<th class="tbl_head"></th>
+							<td class="tbl_data">Community List > Card 최신글 없을 시</td>
+							<td class="tbl_data">
+								<a href="./dist/html/community/CM-02-01-C02.html" target="_blank">CM-02-01-C02</a>
+							</td>
+							<td class="tbl_data">12/06</td>
+							<td class="tbl_data"></td>
+							<td class="tbl_data"></td>
+						</tr>
+						<tr class="tbl_row">
+							<th class="tbl_head"></th>
+							<td class="tbl_data">My Feed > List > 내역 있음</td>
+							<td class="tbl_data">
+								<a href="./dist/html/community/CM-02-02-01.html" target="_blank">CM-02-02-01</a>
+							</td>
+							<td class="tbl_data">12/06</td>
+							<td class="tbl_data"></td>
+							<td class="tbl_data"></td>
+						</tr>
+						<tr class="tbl_row">
+							<th class="tbl_head"></th>
+							<td class="tbl_data">My Feed > List > 내역 없음</td>
+							<td class="tbl_data">
+								<a href="./dist/html/community/CM-02-02-02.html" target="_blank">CM-02-02-02</a>
+							</td>
+							<td class="tbl_data">12/06</td>
+							<td class="tbl_data"></td>
+							<td class="tbl_data"></td>
+						</tr>
+						<tr class="tbl_row">
+							<th class="tbl_head"></th>
+							<td class="tbl_data">My Feed > Card > Cube or Course > 대댓글 등록 시</td>
+							<td class="tbl_data">
+								<a href="./dist/html/community/CM-02-02-C01.html" target="_blank">CM-02-02-C01</a>
+							</td>
+							<td class="tbl_data">12/06</td>
+							<td class="tbl_data"></td>
+							<td class="tbl_data"></td>
+						</tr>
+						<tr class="tbl_row">
+							<th class="tbl_head"></th>
+							<td class="tbl_data">My Feed > Card > Community > 게시글 내 응답글 등록 시</td>
+							<td class="tbl_data">
+								<a href="./dist/html/community/CM-02-02-C02.html" target="_blank">CM-02-02-C02</a>
+							</td>
+							<td class="tbl_data">12/06</td>
+							<td class="tbl_data"></td>
+							<td class="tbl_data"></td>
+						</tr>
+						<tr class="tbl_row">
+							<th class="tbl_head"></th>
+							<td class="tbl_data">My Feed > Card > Community > 게시글 내 댓글 등록 시</td>
+							<td class="tbl_data">
+								<a href="./dist/html/community/CM-02-02-C03.html" target="_blank">CM-02-02-C03</a>
+							</td>
+							<td class="tbl_data">12/06</td>
+							<td class="tbl_data"></td>
+							<td class="tbl_data"></td>
+						</tr>
+						<tr class="tbl_row">
+							<th class="tbl_head"></th>
+							<td class="tbl_data">My Feed > Card > Community > 대댓글 등록 시</td>
+							<td class="tbl_data">
+								<a href="./dist/html/community/CM-02-02-C04.html" target="_blank">CM-02-02-C04</a>
+							</td>
+							<td class="tbl_data">12/06</td>
+							<td class="tbl_data"></td>
+							<td class="tbl_data"></td>
+						</tr>
+
+						<!-- blink -->
+						<tr class="tbl_row">
+							<td class="tbl_data tbl_empty" colspan="6"></td>
+						</tr>
+						<!--// blink -->
+
+						<tr class="tbl_row">
+							<th class="tbl_head">Recommend</th>
+							<td class="tbl_data">Default</td>
+							<td class="tbl_data">
+								<a href="./dist/html/recommend/RC-01-01.html" target="_blank">RC-01-01</a>
+							</td>
+							<td class="tbl_data">11/25</td>
+							<td class="tbl_data">
+								12/12<br>- 카드 마크업 수정
+							</td>
+							<td class="tbl_data"></td>
+						</tr>
+						<tr class="tbl_row">
+							<th class="tbl_head"></th>
+							<td class="tbl_data">카드 없을 경우</td>
+							<td class="tbl_data">
+								<a href="./dist/html/recommend/RC-01-02.html" target="_blank">RC-01-02</a>
+							</td>
+							<td class="tbl_data">11/25</td>
+							<td class="tbl_data">12/12<br>- 카드 마크업 수정</td>
+							<td class="tbl_data"></td>
+						</tr>
+						<tr class="tbl_row">
+							<th class="tbl_head"></th>
+							<td class="tbl_data">관심채널 보기 팝업</td>
+							<td class="tbl_data">
+								<a href="./dist/html/recommend/RC-01-p01.html" target="_blank">RC-01-p01</a>
+							</td>
+							<td class="tbl_data">11/25</td>
+							<td class="tbl_data"></td>
+							<td class="tbl_data"></td>
+						</tr>
+						<tr class="tbl_row">
+							<th class="tbl_head"></th>
+							<td class="tbl_data">추천 리스트 all</td>
+							<td class="tbl_data">
+								<a href="./dist/html/recommend/RC-02-01.html" target="_blank">RC-02-01</a>
+							</td>
+							<td class="tbl_data">11/25</td>
+							<td class="tbl_data">12/12<br>- 카드 마크업 수정</td>
+							<td class="tbl_data"></td>
+						</tr>
+						<tr class="tbl_row">
+							<th class="tbl_head"></th>
+							<td class="tbl_data">채널변경팝업</td>
+							<td class="tbl_data">
+								<a href="./dist/html/recommend/RC-02-p01.html" target="_blank">RC-02-p01</a>
+							</td>
+							<td class="tbl_data">11/25</td>
+							<td class="tbl_data"></td>
+							<td class="tbl_data"></td>
+						</tr>
+						<tr class="tbl_row">
+							<th class="tbl_head"></th>
+							<td class="tbl_data">List sorting팝업</td>
+							<td class="tbl_data">
+								<a href="./dist/html/recommend/RC-02-p02.html" target="_blank">RC-02-p02</a>
+							</td>
+							<td class="tbl_data">11/25</td>
+							<td class="tbl_data"></td>
+							<td class="tbl_data"></td>
+						</tr>
+						<tr class="tbl_row">
+							<th class="tbl_head"></th>
+							<td class="tbl_data">추천 리스트 all > 없는 경우</td>
+							<td class="tbl_data">
+								<a href="./dist/html/recommend/RC-02-02.html" target="_blank">RC-02-02</a>
+							</td>
+							<td class="tbl_data">11/25</td>
+							<td class="tbl_data"></td>
+							<td class="tbl_data"></td>
+						</tr>
+
+						<!-- blink -->
+						<tr class="tbl_row">
+							<td class="tbl_data tbl_empty" colspan="6"></td>
+						</tr>
+						<!--// blink -->
+
+						<tr class="tbl_row">
+							<th class="tbl_head">Search</th>
+							<td class="tbl_data">검색어 입력 후 진입 한 경우</td>
+							<td class="tbl_data">
+								<a href="./dist/html/search/SE-01-01.html" target="_blank">SE-01-01</a>
+							</td>
+							<td class="tbl_data">11/27</td>
+							<td class="tbl_data">
+								12/04<br>- 관련도순 -> 정확도순 텍스트 변경<br>
+								12/12 <br>-카드 마크업 수정
+							</td>
+							<td class="tbl_data"></td>
+						</tr>
+						<tr class="tbl_row">
+							<th class="tbl_head"></th>
+							<td class="tbl_data">검색 메뉴로 진입 한 경우</td>
+							<td class="tbl_data">
+								<a href="./dist/html/search/SE-02-01.html" target="_blank">SE-02-01</a>
+							</td>
+							<td class="tbl_data">11/27</td>
+							<td class="tbl_data">12/04<br>- 관련도순 -> 정확도순 텍스트 변경</td>
+							<td class="tbl_data"></td>
+						</tr>
+						<tr class="tbl_row">
+							<th class="tbl_head"></th>
+							<td class="tbl_data">검색 결과 없는 경우</td>
+							<td class="tbl_data">
+								<a href="./dist/html/search/SE-01-02.html" target="_blank">SE-01-02</a>
+							</td>
+							<td class="tbl_data">11/27</td>
+							<td class="tbl_data">
+								12/04<br>- 관련도순 -> 정확도순 텍스트 변경<br>
+								12/16<br>- 아이콘 변경에 의한 클래스 수정
+							</td>
+							<td class="tbl_data"></td>
+						</tr>
+						<tr class="tbl_row">
+							<th class="tbl_head"></th>
+							<td class="tbl_data">List Filter > 기본, 선택 후</td>
+							<td class="tbl_data">
+								<a href="./dist/html/search/SE-01-01-P01.html" target="_blank">SE-01-01-P01</a>
+							</td>
+							<td class="tbl_data">11/27</td>
+							<td class="tbl_data">
+								12/12<br>- Channel filter 순서 변경
+							</td>
+							<td class="tbl_data"></td>
+						</tr>
+						<tr class="tbl_row">
+							<th class="tbl_head"></th>
+							<td class="tbl_data">상세 검색 결과 있는 경우</td>
+							<td class="tbl_data">
+								<a href="./dist/html/search/SE-01-03.html" target="_blank">SE-01-03</a>
+							</td>
+							<td class="tbl_data">11/27</td>
+							<td class="tbl_data">
+								12/04<br>- 관련도순 -> 정확도순 텍스트 변경<br>
+								12/12 <br>-카드 마크업 수정</td>
+							<td class="tbl_data"></td>
+						</tr>
+						<tr class="tbl_row">
+							<th class="tbl_head"></th>
+							<td class="tbl_data">상세 검색 결과 없는 경우</td>
+							<td class="tbl_data">
+								<a href="./dist/html/search/SE-01-04.html" target="_blank">SE-01-04</a>
+							</td>
+							<td class="tbl_data">11/27</td>
+							<td class="tbl_data">
+								12/04<br>- 관련도순 -> 정확도순 텍스트 변경<br>
+								12/16<br>- 아이콘 변경에 의한 클래스 수정
+							</td>
+							<td class="tbl_data"></td>
+						</tr>
+						<tr class="tbl_row">
+							<th class="tbl_head"></th>
+							<td class="tbl_data">상세 검색 결과 없는 경우 - 수강신청 가능 학습과정 없는 경우</td>
+							<td class="tbl_data">
+								<a href="./dist/html/search/SE-01-05.html" target="_blank">SE-01-05</a>
+							</td>
+							<td class="tbl_data">11/27</td>
+							<td class="tbl_data">
+								12/04<br>- 관련도순 -> 정확도순 텍스트 변경<br>
+								12/16<br>- 아이콘 변경에 의한 클래스 수정
+							</td>
+							<td class="tbl_data"></td>
+						</tr>
+						<tr class="tbl_row">
+							<th class="tbl_head"></th>
+							<td class="tbl_data">List 정렬조건 선택 팝업</td>
+							<td class="tbl_data">
+								<a href="./dist/html/search/SE-01-01-P02.html" target="_blank">SE-01-01-P02</a>
+							</td>
+							<td class="tbl_data">11/27</td>
+							<td class="tbl_data">12/04<br>- 관련도순 -> 정확도순 텍스트 변경</td>
+							<td class="tbl_data"></td>
+						</tr>
+
+						<tr class="tbl_row">
+							<td class="tbl_data tbl_empty" colspan="6"></td>
+						</tr>
+
+						<tr class="tbl_row">
+							<th class="tbl_head">Support</th>
+							<td class="tbl_data">Notice > List > 내역 있음</td>
+							<td class="tbl_data">
+								<a href="./dist/html/support/SU-01-01-01.html" target="_blank">SU-01-01-01</a>
+							</td>
+							<td class="tbl_data">11/29</td>
+							<td class="tbl_data"></td>
+							<td class="tbl_data"></td>
+						</tr>
+						<tr class="tbl_row">
+							<th class="tbl_head"></th>
+							<td class="tbl_data">Notice > List > 내역 없음</td>
+							<td class="tbl_data">
+								<a href="./dist/html/support/SU-01-01-02.html" target="_blank">SU-01-01-02</a>
+							</td>
+							<td class="tbl_data">11/29</td>
+							<td class="tbl_data"></td>
+							<td class="tbl_data"></td>
+						</tr>
+						<tr class="tbl_row">
+							<th class="tbl_head"></th>
+							<td class="tbl_data">Notice > Detail</td>
+							<td class="tbl_data">
+								<a href="./dist/html/support/SU-01-02.html" target="_blank">SU-01-02</a>
+							</td>
+							<td class="tbl_data">11/29</td>
+							<td class="tbl_data">
+								12/06<br>- 코멘트 리스트 마크업 수정
+							</td>
+							<td class="tbl_data"></td>
+						</tr>
+						
+					</tbody>
+				</table>
+			</div>
+		</div>
+	</div>
+</body>
+</html>

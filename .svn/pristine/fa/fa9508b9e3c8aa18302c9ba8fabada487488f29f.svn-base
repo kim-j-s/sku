@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, maximum-scale=1.0, minimum-scale=1.0" />
+    <title>skuniversity</title>
+    <link rel="stylesheet" href="../../css/swiper.min.css">
+    <link rel="stylesheet" href="../../css/style.css">
+    <script src="../../js/jquery-1.12.4.js"></script>
+    <script src="../../js/swiper.min.js"></script>
+    <script src="../../js/Chart.min.js"></script>
+    <script src="../../js/ui.js"></script>
+</head>
+
+<body>
+    <style>
+        h2.tt {
+            padding: 0 15px;
+            color: red;
+            margin: 30px 0 15px;
+            font-weight: 700;
+        }
+    </style>
+    <!-- .content -->
+    <section class="content">
+
+        <div class="cardBox">
+
+            <h2 class="tt">버튼1개</h2>
+
+            <div class="BtmBtn">
+                <div class="btnGroup">
+                    <button type="button" class="btnOrange">Enrollment</button>
+                </div>
+            </div>
+
+            <h2 class="tt">버튼1개+상태값_01</h2>
+
+            <div class="BtmBtn">
+                <div class="stateTxt">Waiting for approval</div>
+                <div class="btnGroup">
+                    <button type="button" class="btnOrange">Enrollment</button>
+                </div>
+            </div>
+
+            <h2 class="tt">버튼1개+상태값_02</h2>
+
+            <div class="BtmBtn">
+                <div class="stateTxt">Waiting for approval</div>
+                <div class="btnGroup">
+                    <button type="button" class="btnBlack">Cancel</button>
+                </div>
+            </div>
+
+            <h2 class="tt">버튼2개+상태값</h2>
+
+            <div class="BtmBtn">
+                <div class="stateTxt">Waiting for approval</div>
+                <div class="btnGroup">
+                    <button type="button" class="btnBlack">Cancel</button>
+                    <button type="button" class="btnOrange">Change Series</button>
+                </div>
+            </div>
+
+            <h2 class="tt">상태값</h2>
+
+            <div class="BtmBtn">
+                <div class="stateTxt">Waiting for approval</div>
+            </div>
+
+
+        </div>
+
+    </section>
+    <!-- // .content -->
+</body>
+
+</html>

@@ -1,0 +1,59 @@
+@@include("head.html")
+<body>
+@@include('listheader.html',{
+	"title" : "My Page"
+})
+<!-- .content -->
+<section class="content">
+	<div class="porfile">
+		<div class="year">
+			<select name="" id="" class="selectbox">
+				<option value="">2022</option>
+				<option value="">2021</option>
+				<option value="" selected="selected">2020</option>
+			</select>
+		</div>
+		<div class="thumb">
+			<img src="../../img/profile_110.jpg" alt="">
+		</div>
+		<div class="name">
+			<strong>김유니</strong> <a href="#" class="btnLink"><span>Sign out</span><i class="ico link"></i></a>
+		</div>
+		<div class="subDetail">
+			<span>SK C&amp;C</span>
+			<span>플랫폼 사업 1팀</span>
+		</div>
+	</div>
+
+	<div class="learnTotal">
+		<div class="inner">
+			<dl class="ltTit">
+				<dt>총 학습시간</dt>
+				<dd><span>학습대기중</span></dd>
+			</dl>
+			<div class="recView">
+				<a href="#" class="btnLink"><span>김유니님에게 추천하는 학습 과정 보기</span></a>
+			</div>
+		</div>
+	</div>
+
+	<div class="linkListWrap">
+		<ul class="linkList">
+			<li>
+				<a href="#">완료한 학습</a>
+			</li>
+			<li>
+				<a href="#">획득 Stamp</a>
+			</li>
+			<li>
+				<label for="switch">PUSH 알림 허용</label>
+				<div class="switch">
+					<input type="checkbox" name="" id="switch" class="switchCheckbox" checked="checked">
+				</div>
+			</li>
+		</ul>
+	</div>
+</section>
+<!-- // .content -->
+</body>
+</html>

@@ -1,0 +1,74 @@
+
+
+// script yjm
+
+function courseCard(){	
+	$('.cardToggle').click(function(){
+		if ($(this).closest('.cardWrap').hasClass('open')){
+			$(this).closest('.card').siblings().slideUp(300)
+			.closest('.cardWrap').removeClass('open');
+		} else {
+			$(this).closest('.card').siblings().slideDown(300).css('display','block')
+			.closest('.cardWrap').addClass('open');
+		}
+		return false;
+	})
+}
+
+function accordion(){
+	$('.accordion').each(function(){
+		$(this).children('.open').find('.sub').show();
+		$(this).find('.anch').click(function(){
+			if ($(this).closest('li').hasClass('open')) {
+				$(this).closest('.viewBox').next('.sub').slideUp(200)
+				.closest('li').removeClass('open');
+				return false;
+			} else {
+				$(this).closest('.viewBox').next('.sub').slideDown(200)
+				.closest('li').addClass('open')
+				.siblings('li').removeClass('open').find('.sub').slideUp(200);
+				return false;
+			}
+		})
+	})
+}
+
+function cmntMoreView(){
+	$('.cmntArea .reply').hide()	.filter('.on').show()
+	.siblings('.box').find('.moreReply').addClass('opened');
+	$('.cmntArea .moreReply').click(function(){
+		if ($(this).hasClass('opened')) {
+			$(this).removeClass('opened').closest('li').find('.reply').hide().removeClass('on');	
+		} else {
+			$(this).addClass('opened').closest('li').find('.reply').show().addClass('on');
+		}
+	})
+}
+
+function starRate(){
+	$('.starRate.edit > i').click(function(){
+		$(this).addClass('on').siblings().removeClass('on');
+		$(this).prevAll().addClass('on');
+	})
+}
+
+
+$(function(){
+
+	//console.log('test yjm');
+	courseCard();
+	accordion();
+	cmntMoreView();
+	starRate();
+
+	$('.flowText .moreRead').click(function(){
+		$(this).hide().closest('.flowText').addClass('opened');
+	})
+
+
+
+	
+
+
+	// mobile script
+});

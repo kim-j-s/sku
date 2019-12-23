@@ -1,0 +1,786 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, maximum-scale=1.0, minimum-scale=1.0" />
+    <title>skuniversity</title>
+    <link rel="stylesheet" href="../../css/swiper.min.css">
+    <link rel="stylesheet" href="../../css/style.css">
+    <script src="../../js/jquery-1.12.4.js"></script>
+    <script src="../../js/swiper.min.js"></script>
+    <script src="../../js/Chart.min.js"></script>
+    <script src="../../js/ui.js"></script>
+</head>
+
+<body>
+    <style type="text/css">
+        /* guide 레이아웃 스타일 */
+        .gWrap .head {
+            width: 100%;
+            padding: 15px;
+            background-color: #fff;
+        }
+
+        .gWrap .head h1 {
+            color: #121212;
+            font-weight: 700;
+            font-size: 15px;
+            line-height: 1;
+        }
+
+        .gCont {
+            padding: 0 0 20px;
+        }
+
+        .gCont>section {
+            padding: 10px 15px;
+        }
+
+        .gCont .gTit:before {
+            content: '*';
+            margin-right: 10px;
+            color: #ac0c3c;
+        }
+
+        .gCont .gInfo {
+            margin: 0 0 10px;
+            color: #333;
+            font-size: 12px;
+            line-height: 1.5;
+            font-weight: 700
+        }
+
+        .gCont .gInfo:before {
+            content: "●";
+            display: inline-block;
+            margin-right: 6px;
+            color: #6280b2;
+            font-size: 10px;
+        }
+
+        .gCont .ver .gInfo>a {
+            text-decoration: underline;
+        }
+
+        .gCont .preview {
+            width: 100%;
+            margin-bottom: 30px;
+            /* overflow: hidden */
+        }
+
+        .gCont .preview i.ico {
+            vertical-align: top;
+        }
+
+        .gWide {
+            margin: 0 -15px;
+        }
+
+        h2.test {
+            background-color: #6280b2;
+            color: #fff;
+            padding: 5px 15px;
+            margin: 15px -15px;
+            font-weight: 700;
+            font-size: 13px;
+            border: 1px solid #5c749c
+        }
+    </style>
+    <div class="gWrap">
+
+        <div class="head">
+            <h1>Skuniversity Mobile Publishing Guide</h1>
+        </div>
+
+        <div class="gCont">
+
+            <!-- Version -->
+            <section class="ver">
+                <h2 class="test">JAVASCRIPT Version (해당 파일은 수정 금지)</h2>
+                <p class="gInfo">/js/Chart.min.js <a href="https://www.chartjs.org" target="_blank" class="link">(Chart.js v2.9.3)</a></p>
+                <p class="gInfo">/js/jquery-1.12.4.js <a href="https://jquery.com/" target="_blank" class="link">(Jquery- 1.12.4)</a></p>
+                <p class="gInfo">/js/jquery.bxslider.js <a href="http://opensource.org/licenses/MIT" target="_blank" class="link">(bxSlider v4.2.5)</a></p>
+                <p class="gInfo">/js/swiper.min.js <a href="https://github.com/nolimits4web/swiper" target="_blank" class="link">(Swiper 5.2.0)</a></p>
+                <h2 class="test">CSS Version (해당 파일은 수정 금지)</h2>
+                <p class="gInfo">/css/swiper.min.css <a href="https://github.com/nolimits4web/swiper" target="_blank" class="link">(Swiper 5.2.0)</a></p>
+            </section>
+            <!-- // Version -->
+
+            <!-- 파이 -->
+            <section>
+                <h2 class="test">파이</h2>
+                <div class="preview" style="overflow:visible">
+                    <p class="gInfo">data-value 값을 조절 0~360값</p>
+                    <div class="ui pie w56" data-value="150">
+                        <span class="left"></span>
+                        <span class="right"></span>
+                    </div>
+                    <div class="ui pie w200" data-value="30">
+                        <span class="left"></span>
+                        <span class="right"></span>
+                    </div>
+
+                </div>
+            </section>
+
+            <!-- 탭메뉴 -->
+            <section>
+                <h2 class="test">탭메뉴</h2>
+                <div class="gWide">
+                    <div class="tabBox">
+                        <div class="menuWrap">
+                            <div class="menu">
+                                <a href="#" class="active">menu1<span class="count">+30</span></a>
+                                <a href="#">menu2<span class="count">+30</span></a>
+                                <a href="#">menu3</a>
+                                <a href="#">menu4</a>
+                                <a href="#">menu5</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- 테이블 -->
+            <section>
+                <h2 class="test">테이블</h2>
+                <p class="gInfo">.txtTable</p>
+                <div class="preview">
+                    <table class="txtTable">
+                        <colgroup>
+                            <col style="width: auto">
+                            <col style="width: auto">
+                        </colgroup>
+                        <tbody>
+                            <tr>
+                                <th><span>Time</span></th>
+                                <td>12h 24m</td>
+                            </tr>
+                            <tr>
+                                <th><span>Registration period</span></th>
+                                <td>20.01.01 ~ 20.02.01</td>
+                            </tr>
+                            <tr>
+                                <th><span>Cancellation period</span></th>
+                                <td>20.01.01 ~ 20.02.01</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <p class="gInfo">.borderTable</p>
+                <div>
+                    <table class="borderTable">
+                        <colgroup>
+                            <col style="width: 60px">
+                            <col style="width: auto">
+                            <col style="width: 160px">
+                        </colgroup>
+                        <thead>
+                            <tr>
+                                <th>차수</th>
+                                <th>강사</th>
+                                <th>수강신청기간</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>
+                                    <p>1</p>
+                                </td>
+                                <td>
+                                    <p>김연아리</p>
+                                </td>
+                                <td>
+                                    <p>20.01.01 ~ 20.02.01</p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <p>2</p>
+                                </td>
+                                <td>
+                                    <p>이름이름이름이름이름이름이름이름이름이름이름이름</p>
+                                </td>
+                                <td>
+                                    <p>20.01.01 ~ 20.02.01</p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <p>3</p>
+                                </td>
+                                <td>
+                                    <p>류현진</p>
+                                </td>
+                                <td>
+                                    <p>20.01.01 ~ 20.02.01</p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <p>4</p>
+                                </td>
+                                <td>
+                                    <p>홍길동</p>
+                                </td>
+                                <td>
+                                    <p>20.01.01 ~ 20.02.01</p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <p>5</p>
+                                </td>
+                                <td>
+                                    <p>손흥민</p>
+                                </td>
+                                <td>
+                                    <p>20.01.01 ~ 20.02.01</p>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </section>
+            <!-- 테이블 -->
+
+            <!-- 스크롤 -->
+            <section style="display: none;">
+                <h2 class="test">스크롤 (common.scss 참고)</h2>
+                <p class="gInfo">.scrolling-40vh, scrolling-60vh, scrolling-80vh</p>
+            </section>
+            <!-- 스크롤 -->
+
+            <!-- Icon -->
+            <section>
+                <h2 class="test">아이콘</h2>
+
+                <p class="gInfo">10px</p>
+                <div class="preview">
+                    <i class="ico link"></i>
+                    <i class="ico redDot"></i>
+                    <i class="ico check"></i>
+                </div>
+
+                <p class="gInfo">11px~20px</p>
+                <div class="preview">
+                    <i class="ico plus"></i>
+                    <i class="ico arrow blue"></i>
+                    <i class="ico tip"></i>
+                    <i class="ico time"></i>
+                    <i class="ico map"></i>
+                    <i class="ico stamp"></i>
+                    <i class="ico stamp2"></i>
+                    <i class="ico view"></i>
+                    <i class="ico filter"></i>
+                </div>
+
+                <p class="gInfo">60px</p>
+                <div class="preview">
+                    <i class="ico noCont"></i>
+                    <i class="ico noSch"></i>
+                </div>
+            </section>
+            <!-- Icon -->
+
+            <!-- rating -->
+            <section>
+                <h2 class="test">rating</h2>
+                <p class="gInfo">.starRate</p>
+                <div class="preview">
+                    <!--별 개수 표시는 .s5~s1 클래스명에 따라 달라짐-->
+                    <div class="starRate s3">
+                        <i></i><i></i><i></i><i></i><i></i>
+                    </div>
+                </div>
+                <p class="gInfo">starRate.edit.w70 (기능 있는 큰 별점)</p>
+                <div class="preview">
+                    <div class="starRate edit w70">
+                        <i class="on"></i>
+                        <i class="on"></i>
+                        <i class="on"></i>
+                        <i class="on"></i>
+                        <i></i>
+                    </div>
+                </div>
+            </section>
+            <!-- // rating -->
+
+            <!--checkbox/radio-->
+            <section>
+                <h2 class="test">Checkbox / Radio</h2>
+
+                <p class="gInfo">checkbox</p>
+                <div class="preview">
+                    <span class="inpD">
+						<label>
+							<input type="checkbox">
+							<i class="ico checkBox"></i>
+						</label>
+					</span>
+                    <span class="inpD">
+						<label>
+							<input type="checkbox" checked="checked">
+							<i class="ico checkBox"></i>
+						</label>
+					</span>
+                    <span class="inpD">
+						<label>
+							<input type="checkbox" checked="checked" disabled="disabled">
+							<i class="ico checkBox"></i>
+						</label>
+					</span>
+                </div>
+
+                <p class="gInfo">checkbox (.black)</p>
+                <div class="preview">
+                    <span class="inpD black">
+						<label>
+							<input type="checkbox">
+							<i class="ico checkBox"></i>
+						</label>
+					</span>
+                    <span class="inpD black">
+						<label>
+							<input type="checkbox" checked="">
+							<i class="ico checkBox"></i>
+						</label>
+					</span>
+                </div>
+
+                <p class="gInfo">스위치</p>
+                <div class="preview">
+                    <div class="switch">
+                        <input type="checkbox" name="" id="switch" class="switchCheckbox" checked="checked">
+                    </div>
+                </div>
+
+                <p class="gInfo">radio</p>
+                <div class="preview">
+                    <span class="inpD">
+						<label>
+							<input type="radio" name="radio" checked="">
+							<i class="ico radio"></i>
+							<span class="txt">Newest</span>
+                    </label>
+                    </span>
+                    <span class="inpD">
+						<label>
+							<input type="radio" name="radio">
+							<i class="ico radio"></i>
+							<span class="txt">Oldest</span>
+                    </label>
+                    </span>
+                </div>
+
+                <p class="gInfo">차수 선택 radio (.num)</p>
+                <div class="preview">
+                    <span class="inpD num">
+						<label>
+							<input type="radio" name="radio1">
+							<span class="txt">1</span>
+                    <i class="ico radio"></i>
+                    </label>
+                    </span>
+                    <span class="inpD num">
+						<label>
+							<input type="radio" name="radio1" checked="checked">
+							<span class="txt">2</span>
+                    <i class="ico radio"></i>
+                    </label>
+                    </span>
+                    <span class="inpD num">
+						<label>
+							<input type="radio" name="radio2" checked="checked" disabled="disabled">
+							<span class="txt">3</span>
+                    <i class="ico radio"></i>
+                    </label>
+                    </span>
+                </div>
+
+                <p class="gInfo">채널 버튼 선택</p>
+                <div class="preview">
+                    <div class="">
+                        <button type="button" class="btn channelBtn on">btn1</button>
+                        <button type="button" class="btn channelBtn">btn2</button>
+                    </div>
+                </div>
+            </section>
+            <!--//checkbox-->
+
+            <!-- tooltip -->
+            <section>
+                <h2 class="test">tool tip</h2>
+                <div>
+                    <span style="font-size: 12px; vertical-align: top">.tooltip</span>
+                    <div class="tooltip">
+                        <i class="ico tip"></i>
+                        <div class="tipBox" style="display: none;">
+                            <div class="inner">
+                                <strong>tooltip title text</strong>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magni a optio ratione incidunt similique quaerat aliquid quibusdam illo tempore. Tempora.</p>
+                                <button type="button" class="closeTip"></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- //tooltip -->
+
+            <section>
+                <h2 class="test">text + icon</h2>
+                <div>
+                    <button class="btnFilter"><i class="ico filter"></i>Filter<em>(0)</em></button>
+                    <button type="button" class="moreReply">View replies <em>333</em><i class="ico"></i></button>
+                    <a href="#" class="btnLink"><span><em>김유니</em>님에게 추천하는 학습 과정 보기</span><i class="ico link"></i></a>
+                    <a href="#" class="btnLink"><span>Modify</span><i class="ico arrow blue"></i></a>
+                    <button type="button" class="btnListMore">
+                        <i class="ico plus"></i>
+                        list more (<em>20</em>/<em>59</em>)
+                    </button>
+                </div>
+
+            </section>
+
+            <!-- dropdown -->
+            <section>
+                <h2 class="test">dropdown</h2>
+                <p class="gInfo">.selectbox</p>
+                <div class="preview">
+                    <select name="" id="" class="selectbox">
+                        <option value="">2022</option>
+                        <option value="">2021</option>
+                        <option value="" selected="selected">2020</option>
+                    </select>
+                </div>
+            </section>
+            <!-- // dropdown -->
+
+            <!-- Label -->
+            <section>
+                <h2 class="test">label</h2>
+                <p class="gInfo">.category</p>
+                <div class="preview">
+                    <div class="category purple">AI</div>
+                    <div class="category teal">mgmt</div>
+                    <div class="category blue">leadership</div>
+                    <div class="category red">혁신 design</div>
+                    <div class="category green">global</div>
+                    <div class="category violet">DT</div>
+                    <div class="category orange">SV</div>
+                    <div class="category yellow">행복</div>
+                </div>
+                <p class="gInfo">.keywordWrap</p>
+                <div class="preview">
+                    <div class="keywordWrap">
+                        <span>AI Fundamental</span>
+                        <span>Speech AI</span>
+                        <span>국제정세</span>
+                        <span>지역 전문가</span>
+                        <span>Value</span>
+                        <span>SV 이해</span>
+                    </div>
+                </div>
+            </section>
+            <!-- // Label -->
+
+            <!-- Input -->
+            <section style="display: none;">
+                <h2 class="test">Input</h2>
+
+                <p class="gInfo">.h30</p>
+                <div class="preview" style="overflow:visible;">
+                    <div class="ui h30 input">
+                        <input type="text" placeholder="placeholder" />
+                    </div>
+                    <div class="ui h30 input">
+                        <input type="text" placeholder="쓰기금지" disabled />
+                    </div>
+                    <div class="ui h30 error input">
+                        <input type="text" placeholder="오류" />
+                        <span class="validation">validation check</span>
+                    </div>
+                </div>
+                <p class="gInfo">.h30 .right</p>
+                <div class="preview" style="overflow:visible;">
+                    <div class="ui h30 right input">
+                        <input type="text" placeholder="placeholder" />
+                    </div>
+                    <div class="ui h30 right input">
+                        <input type="text" placeholder="쓰기금지" disabled />
+                    </div>
+                    <div class="ui h30 right error input">
+                        <input type="text" placeholder="오류" />
+                        <span class="validation">validation check</span>
+                    </div>
+                </div>
+
+                <p class="gInfo">.h30 .search</p>
+                <div class="preview" style="overflow:visible;">
+                    <div class="ui h30 search input">
+                        <input type="text" placeholder="placeholder" />
+                        <i aria-hidden="true" class="clear link icon"></i>
+                        <i aria-hidden="true" class="search link icon"></i>
+                    </div>
+                    <div class="ui h30 search input">
+                        <input type="text" placeholder="쓰기금지" disabled />
+                        <i aria-hidden="true" class="clear link icon"></i>
+                        <i aria-hidden="true" class="search link icon"></i>
+                    </div>
+                </div>
+
+                <p class="gInfo">.h38</p>
+                <div class="preview" style="overflow:visible;">
+                    <div class="ui h38 input">
+                        <input type="text" placeholder="placeholder" />
+                    </div>
+                    <div class="ui h38 input">
+                        <input type="text" placeholder="쓰기금지" disabled />
+                    </div>
+                    <div class="ui h38 error input">
+                        <input type="text" placeholder="오류" />
+                        <span class="validation">validation check</span>
+                    </div>
+                </div>
+                <p class="gInfo">.h38 .right</p>
+                <div class="preview" style="overflow:visible;">
+                    <div class="ui h38 right input">
+                        <input type="text" placeholder="placeholder" />
+                    </div>
+                    <div class="ui h38 right input">
+                        <input type="text" placeholder="쓰기금지" disabled />
+                    </div>
+                    <div class="ui h38 right error input">
+                        <input type="text" placeholder="오류" />
+                        <span class="validation">validation check</span>
+                    </div>
+                </div>
+
+
+                <p class="gInfo">.h38 .search</p>
+
+                <div class="preview" style="overflow:visible;">
+                    <div class="ui h38 search input">
+                        <input type="text" placeholder="placeholder" />
+                        <i aria-hidden="true" class="clear link icon"></i>
+                        <i aria-hidden="true" class="search link icon"></i>
+                    </div>
+                    <div class="ui h38 search input">
+                        <input type="text" placeholder="쓰기금지" disabled />
+                        <i aria-hidden="true" class="clear link icon"></i>
+                        <i aria-hidden="true" class="search link icon"></i>
+                    </div>
+                </div>
+
+
+                <p class="gInfo">.h48</p>
+                <div class="preview" style="overflow:visible;">
+                    <div class="ui h48 input">
+                        <input type="text" placeholder="placeholder" />
+                    </div>
+                    <div class="ui h48 input">
+                        <input type="text" placeholder="쓰기금지" disabled />
+                    </div>
+                    <div class="ui h48 error input">
+                        <input type="text" placeholder="오류" />
+                        <span class="validation">validation check</span>
+                    </div>
+                </div>
+                <p class="gInfo">.h48 .right</p>
+                <div class="preview" style="overflow:visible;">
+                    <div class="ui h48 right input">
+                        <input type="text" placeholder="placeholder" />
+                    </div>
+                    <div class="ui h48 right input">
+                        <input type="text" placeholder="쓰기금지" disabled />
+                    </div>
+                    <div class="ui h48 right error input">
+                        <input type="text" placeholder="오류" />
+                        <span class="validation">validation check</span>
+                    </div>
+                </div>
+
+                <p class="gInfo">.h48 .search</p>
+                <div class="preview" style="overflow:visible;">
+                    <div class="ui h48 search input">
+                        <input type="text" placeholder="placeholder" />
+                        <i aria-hidden="true" class="clear link icon"></i>
+                        <i aria-hidden="true" class="search link icon"></i>
+                    </div>
+                    <div class="ui h48 search input">
+                        <input type="text" placeholder="쓰기금지" disabled />
+                        <i aria-hidden="true" class="clear link icon"></i>
+                        <i aria-hidden="true" class="search link icon"></i>
+                    </div>
+                </div>
+
+
+
+                <p class="gInfo">.action (height 48px)</p>
+                <div class="preview">
+                    <div class="ui action input">
+                        <input type="text" placeholder="Search..." />
+                        <i aria-hidden="true" class="clear link icon"></i>
+                        <button class="ui button">승인자찾기</button>
+                    </div>
+
+                    <div class="ui focus write action input">
+                        <input type="text" placeholder="Search..." value="입력중" />
+                        <i aria-hidden="true" class="clear link icon"></i>
+                        <button class="ui button">승인자찾기</button>
+                    </div>
+
+                    <div class="ui disabled action input">
+                        <input type="text" placeholder="Search..." disabled />
+                        <i aria-hidden="true" class="clear link icon"></i>
+                        <button class="ui button">승인자찾기</button>
+                    </div>
+
+                    <div class="ui disabled action write input">
+                        <input type="text" placeholder="Search..." disabled value="입력된값" />
+                        <i aria-hidden="true" class="clear link icon"></i>
+                        <button class="ui button">승인자찾기</button>
+                    </div>
+                </div>
+
+                <p class="gInfo">.input.file (height 48px)</p>
+                <div class="preview">
+                    <div class="ui input file">
+                        <input type="text" readonly />
+                        <i aria-hidden="true" class="clear link icon"></i>
+                        <label for="hidden-new-file" class="ui button">파일찾기</label>
+                        <input type="file" id="hidden-new-file">
+                    </div>
+                </div>
+
+
+                <p class="gInfo">.right-top-count (우측 상단 카운팅) </p>
+
+                <div class="preview" style="padding-top:50px;">
+                    <div class="ui form">
+                        <div class="ui right-top-count input" style="width:500px;">
+                            <!-- .error // -->
+                            <span class="count"><span class="now">0</span>/<span class="max">100</span></span>
+                            <input type="text" placeholder="강좌명을 입력해주세요." />
+                            <span class="validation">You can enter up to 100 characters.</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="preview" style="padding-top:50px;">
+                    <div class="ui form">
+                        <div class="ui right-top-count input" style="width:500px;">
+                            <!-- .error // -->
+                            <span class="count"><span class="now">0</span>/<span class="max">500</span></span>
+                            <textarea placeholder="500자 이내로 입력하세요."></textarea>
+                            <span class="validation">You can enter up to 500 characters.</span>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- // Input -->
+
+            <!-- Calendar -->
+            <section>
+                <h2 class="test">Calendar</h2>
+                <p class="gInfo">.calendar </p>
+                <div class="preview">
+                    <div class="ui calendar">
+                        <div class="ui input right icon">
+                            <label>시작일</label>
+                            <i class="calendar24 icon"><span class="blind">date</span></i>
+                            <input type="text">
+                        </div>
+                    </div>
+                </div>
+
+                <p class="gInfo">.calendar h40</p>
+                <div class="preview">
+                    <div class="ui h40 calendar">
+                        <div class="ui input right icon">
+                            <label>시작일</label>
+                            <i class="calendar24 icon"><span class="blind">date</span></i>
+                            <input type="text">
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- // Calendar -->
+
+            <!-- input type="file" preview -->
+            <section style="display: none;">
+                <h2 class="test">이미지 업로드 미리보기 *기능확인용 (ui.js파일내 ui.fxImageUploadPreview)</h2>
+                <div class="preview">
+                    <img src="" id="blah" />
+                    <input type="file" id="profileIage" />
+                    <label for="profileIage">Image upload</label>
+                </div>
+                <script>
+                    ui.fxImageUploadPreview($("#profileIage"), $('#blah'));
+                </script>
+            </section>
+            <!-- // input type="file" preview -->
+
+            <!-- 아코디언 -->
+            <section>
+                <h2 class="test">아코디언</h2>
+                <p class="gInfo">.accordion</p>
+                <div class="preview">
+                    <ul class="introList accordion">
+                        <li class="open">
+                            <div class="viewBox">
+                                <a href="#" class="anch">
+                                    <strong>Goal</strong>
+                                    <i class="ico arrow"></i>
+                                </a>
+                            </div>
+                            <div class="sub" style="display: none;">UX 디자이너가 되기위한 발걸음</div>
+                        </li>
+                        <li>
+                            <div class="viewBox">
+                                <a href="#" class="anch">
+                                    <strong>Target</strong>
+                                    <i class="ico arrow"></i>
+                                </a>
+                            </div>
+                            <div class="sub" style="display: none;">
+                                SK University 모든회원
+                            </div>
+                        </li>
+                        <li>
+                            <div class="viewBox">
+                                <a href="#" class="anch">
+                                    <strong>Host</strong>
+                                    <i class="ico arrow"></i>
+                                </a>
+                            </div>
+                            <div class="sub" style="display: none;">
+                                SK Communications
+                            </div>
+                        </li>
+                    </ul>
+
+                </div>
+            </section>
+            <!-- //아코디언 -->
+
+            <!-- input type="file" preview -->
+            <section style="display: none;">
+                <h2 class="test">뺏지</h2>
+                <div class="preview">
+                    <div class="acheive-stamp">
+                        <div class="value">3</div>
+                        <div class="label">획득 Stamp</div>
+                    </div>
+                </div>
+            </section>
+
+
+
+            <!-- // input type="file" preview -->
+        </div>
+        <!-- // wrap -->
+</body>
+
+</html>

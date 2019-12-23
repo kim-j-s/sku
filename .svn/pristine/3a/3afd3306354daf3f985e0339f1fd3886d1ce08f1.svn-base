@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, maximum-scale=1.0, minimum-scale=1.0" />
+    <title>skuniversity</title>
+    <link rel="stylesheet" href="../../css/swiper.min.css">
+    <link rel="stylesheet" href="../../css/style.css">
+    <script src="../../js/jquery-1.12.4.js"></script>
+    <script src="../../js/swiper.min.js"></script>
+    <script src="../../js/Chart.min.js"></script>
+    <script src="../../js/ui.js"></script>
+</head>
+
+<body>
+    <!-- .header -->
+    <header>
+        <section class="header">
+            <div class="inner">
+                <h1 class="logo">SK University</h1>
+                <div class="keyWord">오늘은 <span>Language AI</span>를 검색해 보세요.</div>
+                <div class="inputBox sch dpb">
+                    <input type="text" class="inp">
+                    <button type="button" class="btn inpReset">초기화</button>
+                    <button type="button" class="btn schBtn">검색</button>
+                </div>
+            </div>
+            <button type="button" class="gnbOpen">전체 메뉴 열기</button>
+            <nav>
+                <div class="navTop">
+                    <button type="button" class="btn close2">닫기</button>
+                </div>
+                <div class="gnb">
+                    <ul class="gnbList">
+                        <li class="ty1"><a href="#">Home</a></li>
+                        <li class="ty2">
+                            <span>Learning</span>
+                            <ul class="gnbListDept">
+                                <li><a href="#">In Progress <span>(20)</span></a></li>
+                                <li><a href="#">Required <span>(20)</span></a></li>
+                                <li><a href="#">In My list <span>(20)</span></a></li>
+                                <li><a href="#">Enrolled <span>(20)</span></a></li>
+                                <li><a href="#">Completed <span>(20)</span></a></li>
+                                <li><a href="#">Retry <span>(20)</span></a></li>
+                            </ul>
+                        </li>
+                        <li class="ty3"><a href="#">Recommend</a></li>
+                        <li class="ty4"><a href="#">Community</a></li>
+                        <li class="ty5"><a href="#">Support</a></li>
+                        <li class="ty6"><a href="#">Search</a></li>
+                        <li class="ty7"><a href="#">My Page</a></li>
+                    </ul>
+                </div>
+            </nav>
+        </section>
+    </header>
+    <!-- // .header -->
+    <!-- .content -->
+    <section class="content">
+        <div class="recViews">
+            <p class="tit etc">
+                <span class="cName etc">AI Design 인공지능</span>
+                <span class="txt2">에 대한 검색 결과 입니다.</span>
+            </p>
+            <div class="sortChannel">
+                <div class="inner">
+                    <div class="sorting">
+                        <button type="button" class="btnFilter"><i class="ico filter"></i>Filter<em>(0)</em></button>
+                    </div>
+                    <div class="sorting">
+                        <button type="button" class="btn sort ty2"><span>관련도순</span></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <ul class="recList">
+            <li>
+                <div class="recTit">
+                    <div class="switch">
+                        <input type="checkbox" name="" id="switch" class="switchCheckbox" checked="checked">
+                    </div>
+                    <span class="sTxt">수강신청 가능 학습 과정 보기</span>
+                </div>
+                <a href="#" class="card">
+                    <div class="cardInner">
+                        <div class="titleArea">
+                            <span class="icon">Video<i class="ico ico video"></i></span>
+                            <p class="category red">혁신 Design</p>
+                            <strong class="title">Mobile App UI/UX GUI Design Tutorials 모바일 앱 UX UI GUI</strong>
+                        </div>
+                        <div class="infoArea">
+                            <p class="label"><i class="ico time"></i><b>2h 40m</b></p>
+                            <p class="label"><i class="ico stamp"></i><b>Stamp x2 </b></p>
+                        </div>
+                    </div>
+                    <div class="btmArea">
+                        <div class="state"><i class="ico check"></i><em>19.10.10</em> 부터 학습 시작</div>
+                    </div>
+                </a>
+                <a href="#" class="card">
+                    <div class="cardInner">
+                        <div class="titleArea">
+                            <span class="icon">Audio<i class="ico audio"></i></span>
+                            <p class="category teal">Mgmt</p>
+                            <strong class="title">UI/UX design with Adobe XD: Design &amp; Prototype</strong>
+                        </div>
+                        <div class="infoArea">
+                            <p class="label"><i class="ico time"></i><b>2h 40m</b></p>
+                        </div>
+                    </div>
+                    <div class="btmArea">
+                        <div class="state"><i class="ico check"></i><em>19.10.10</em> 부터 학습 시작</div>
+                    </div>
+                </a>
+                <a href="#" class="card">
+                    <div class="cardInner">
+                        <div class="titleArea">
+                            <span class="icon">Webpage<i class="ico webpage"></i></span>
+                            <p class="category purple">AI</p>
+                            <strong class="title">TensorFlow로 배우는 Generative Models 알고리즘으로 배우는 딥러닝</strong>
+                        </div>
+                        <div class="infoArea">
+                            <p class="label"><i class="ico time"></i><b>2h 40m</b></p>
+                        </div>
+                    </div>
+                    <div class="btmArea">
+                        <div class="state"><i class="ico check"></i><em>19.10.10</em> 부터 학습 시작</div>
+                    </div>
+                </a>
+                <a href="#" class="card">
+                    <div class="cardInner">
+                        <div class="titleArea">
+                            <span class="icon">Document<i class="ico document"></i></span>
+                            <p class="category yellow">행복</p>
+                            <strong class="title">sk실트론 직장내 성희롱예방교육 '마음 푹 행복 쑥'</strong>
+                        </div>
+                        <div class="infoArea">
+                            <p class="label"><i class="ico time"></i><b>2h 40m</b></p>
+                            <p class="label"><i class="ico stamp"></i><b>Stamp x2 </b></p>
+                        </div>
+                    </div>
+                    <div class="btmArea">
+                        <div class="state"><i class="ico check"></i><em>19.10.10</em> 부터 학습 시작</div>
+                    </div>
+                </a>
+                <button class="btnListMore" type="button"><i class="ico plus"></i>list more (<em>5</em>/<em>20</em>)</button>
+            </li>
+        </ul>
+    </section>
+    <!-- // .content -->
+    <!-- .pageTop -->
+    <div class="pageTop">
+        <button type="button" class="btn gototop"><span>Top</span></button>
+    </div>
+    <!-- // .pageTop -->
+
+    <!-- .toolBar -->
+    <section class="toolBar">
+        <ul class="toolList">
+            <li class="ty1"><a href="#"><span>Home</span></a></li>
+            <li class="ty2"><a href="#"><span>Learning</span></a></li>
+            <li class="ty3"><a href="#"><span>Community</span></a></li>
+            <li class="ty4"><a href="#"><span>Notice</span></a></li>
+            <li class="ty5"><a href="#"><span>My page</span></a></li>
+        </ul>
+    </section>
+    <!-- // .toolBar -->
+</body>
+
+</html>

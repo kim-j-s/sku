@@ -1,0 +1,202 @@
+@@include("head.html")
+<body>
+<style>
+	h2.tt{padding: 0 15px; color: red; margin: 20px 0 5px; font-weight: 700;}
+</style>
+<!-- .content -->
+<section class="content">
+
+	<div class="cardBox">
+
+		<h2 class="tt">Default  카드 </h2>
+
+		<a href="#" class="card">
+			<div class="cardInner">
+				<div class="titleArea">
+					<span class="icon">Video<i class="ico video"></i></span>
+					<p class="category red">혁신 Design</p>
+					<strong class="title">UI/UX design with Adobe XD: Design & Prototype</strong>
+				</div>
+				<div class="infoArea">
+					<p class="label"><i class="ico time"></i><b>2h 40m</b></p>
+				</div>
+				<div class="btmArea">
+					<div class="starRate s2">
+						<i></i><i></i><i></i><i></i><i></i>
+					</div>
+					<div><em>7,203</em>명 이수</div>
+				</div>
+			</div>
+		</a>
+
+		<h2 class="tt">상태값을 가진  카드 </h2>
+
+		<a href="#" class="card">
+			<div class="cardInner">
+				<div class="titleArea">
+					<span class="icon">Video<i class="ico video"></i></span>
+					<p class="category red">혁신 Design</p>
+					<strong class="title">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</strong>
+				</div>
+				<div class="infoArea">
+					<p class="label"><i class="ico time"></i><b>2h 40m</b></p>
+				</div>
+				<div class="btmArea">
+					<div class="state"><i class="ico check"></i><em>19.10.10</em>부터 학습 시작</div>
+				</div>
+			</div>
+		</a>
+
+		<h2 class="tt">Course 카드</h2>
+
+		<a href="#" class="card">
+			<div class="cardInner">
+				<div class="titleArea">
+					<span class="icon">Course<i class="ico course"></i></span>
+					<p class="category red">혁신 Design</p>
+					<strong class="title">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Expedita quibusdam porro odio, illum tenetur, dolore mollitia corrupti. Amet, provident, saepe.</strong>
+				</div>
+				<div class="infoArea">
+					<p class="label"><i class="ico time"></i><b>2h 40m</b></p>
+					<p class="label"><i class="ico stamp"></i><b>Stamp x2 </b></p>
+				</div>
+			</div>
+			<div class="btmArea">
+				<div class="starRate s2">
+					<i></i><i></i><i></i><i></i><i></i>
+				</div>
+				<div><em>7,203</em>명 이수</div>
+			</div>
+		</a>
+
+		<h2 class="tt">상태값을 가진 Course 카드</h2>
+
+		<a href="#" class="card">
+			<div class="cardInner">
+				<div class="titleArea">
+					<span class="icon">Course<i class="ico course"></i></span>
+					<p class="category red">혁신 Design</p>
+					<strong class="title">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Expedita quibusdam porro odio, illum tenetur, dolore mollitia corrupti. Amet, provident, saepe.</strong>
+				</div>
+				<div class="infoArea">
+					<p class="label"><i class="ico time"></i><b>2h 40m</b></p>
+					<p class="label"><i class="ico stamp"></i><b>Stamp x2 </b></p>
+				</div>
+			</div>
+			<div class="btmArea">
+				<div class="state"><i class="ico check"></i><em>19.10.10</em> 필수 학습 등록</div>
+			</div>
+		</a>
+
+		<h2 class="tt">Classroom 카드</h2>
+
+		<a href="#" class="card">
+			<div class="cardInner">
+				<div class="titleArea">
+					<span class="icon">Classroom<i class="ico classroom"></i></span>
+					<p class="category red">혁신 Design</p>
+					<strong class="title">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Expedita quibusdam porro odio, illum tenetur, dolore mollitia corrupti. Amet, provident, saepe.</strong>
+				</div>
+				<div class="infoArea">
+					<p class="label"><i class="ico time"></i><b>2h 40m</b></p>
+					<p class="label"><i class="ico map"></i><b>G plant</b></p>
+				</div>
+			</div>
+			<div class="btmArea">
+				<div class="starRate s2">
+					<i></i><i></i><i></i><i></i><i></i>
+				</div>
+				<div><em>7,203</em>명 이수</div>
+			</div>
+		</a>
+
+		<h2 class="tt">상태값을 가진 Classroom 카드</h2>
+
+		<a href="#" class="card">
+			<div class="cardInner">
+				<div class="titleArea">
+					<span class="icon">Classroom<i class="ico classroom"></i></span>
+					<p class="category red">혁신 Design</p>
+					<strong class="title">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Expedita quibusdam porro odio, illum tenetur, dolore mollitia corrupti. Amet, provident, saepe.</strong>
+				</div>
+				<div class="infoArea">
+					<p class="label"><i class="ico time"></i><b>2h 40m</b></p>
+					<p class="label"><i class="ico map"></i><b>오프라인 장소 주소노출 이상 말줄임 말줄임 말줄임 말줄임 말줄임 </b></p>
+				</div>
+			</div>
+			<div class="btmArea">
+				<div class="state"><i class="ico check"></i><em>19.10.10</em> 부터 학습 시작</div>
+			</div>
+		</a>
+
+		<h2 class="tt">코스 상세 내 큐브카드</h2>
+
+		<a href="#" class="card">
+			<div class="cardInner">
+				<div class="titleArea">
+					<span class="icon">Webpage<i class="ico webpage"></i></span>
+					<p class="category purple">AI</p>
+					<strong class="title">Swift4로 배우는 iOS11 프로그래밍 인공지능(AI) 아이폰 앱 개발</strong>
+				</div>
+				<div class="infoArea">
+					<div class="tag"><span>#Leading Myself</span></div>
+					<p class="date">20.02.01 ~ 20.12.31</p>
+				</div>
+			</div>
+		</a>
+
+
+		<h2 class="tt">코스 상세 내 코스카드</h2>
+
+		<div class="cardWrap">
+
+			<a href="#" class="card course">
+				<div class="cardInner">
+					<div class="titleArea">
+						<span class="icon">Course<i class="ico course"></i></span>
+						<p class="category teal">Mgmt</p>
+						<strong class="title">Swift4로 배우는 iOS11 프로그래밍 인공지능(AI) 아이폰 앱 개발</strong>
+					</div>
+					<div class="infoArea">
+						<p class="date">20.02.01 ~ 20.12.31</p>
+					</div>
+					<button type="button" class="cardToggle"></button>
+				</div>
+			</a>
+
+			<a href="#" class="card">
+				<div class="cardInner">
+					<div class="titleArea">
+						<span class="icon">Audio<i class="ico audio"></i></span>
+						<p class="category teal">Mgmt</p>
+						<strong class="title">UI/UX design with Adobe XD: Design & Prototype</strong>
+					</div>
+					<div class="infoArea">
+						<div class="tag"><span>#HR Trend & Insight</span></div>
+						<p class="date">20.02.01 ~ 20.12.31</p>
+					</div>
+				</div>
+			</a>
+
+			<a href="#" class="card">
+				<div class="cardInner">
+					<div class="titleArea">
+						<span class="icon">Video<i class="ico video"></i></span>
+						<p class="category purple">AI</p>
+						<strong class="title">실습 위주의 안드로이드 어플리케이션 해킹 기초 강의</strong>
+					</div>
+					<div class="infoArea">
+						<div class="tag"><span>#HR Trend & Insight</span></div>
+						<p class="date">20.02.01 ~ 20.12.31</p>
+					</div>
+				</div>
+			</a>
+		</div>
+
+
+	</div>
+	
+</section>
+<!-- // .content -->
+</body>
+</html>

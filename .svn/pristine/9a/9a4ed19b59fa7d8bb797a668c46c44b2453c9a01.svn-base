@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, maximum-scale=1.0, minimum-scale=1.0" />
+    <title>skuniversity</title>
+    <link rel="stylesheet" href="../../css/swiper.min.css">
+    <link rel="stylesheet" href="../../css/style.css">
+    <script src="../../js/jquery-1.12.4.js"></script>
+    <script src="../../js/swiper.min.js"></script>
+    <script src="../../js/Chart.min.js"></script>
+    <script src="../../js/ui.js"></script>
+</head>
+
+<body>
+    <style>
+        h2.tt {
+            color: red;
+            padding: 20px 0 0;
+            font-weight: 700;
+        }
+    </style>
+    <!-- .content -->
+    <section class="content">
+
+        <div style="padding: 20px 15px 0">
+
+            <div class="cmntEnter">
+                <div class="inner">
+                    <div class="field">
+                        <textarea placeholder="Writing..."></textarea>
+                    </div>
+                    <div class="enter">
+                        <div class="area">
+                            <span class="byte"><em class="left">0</em>/<em class="total">500</em></span>
+                        </div>
+                        <button type="button" class="btnPhoto"></button>
+                        <button type="button" class="btn">Submit</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="emptyBox">
+                <i class="icon ico noCont"></i>
+                <p class="txt">등록된 Comment가 없습니다.</p>
+            </div>
+
+        </div>
+
+    </section>
+    <!-- // .content -->
+
+</body>
+
+</html>

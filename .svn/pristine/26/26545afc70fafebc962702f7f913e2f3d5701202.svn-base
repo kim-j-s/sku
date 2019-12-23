@@ -1,0 +1,10 @@
+@@include("head.html")
+<body>
+@@include('detailheader.html')
+<!-- .content -->
+<section class="content">
+	conte <br>conte <br>conte <br>conte <br>conte <br>conte <br>conte <br>conte <br>conte <br>conte <br>conte <br>conte <br>conte <br>conte <br>conte <br>conte <br>conte <br>conte <br>conte <br>conte <br>conte <br>conte <br>conte <br>conte <br>conte <br>conte
+</section>
+<!-- // .content -->
+</body>
+</html>

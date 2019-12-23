@@ -1,0 +1,8 @@
+
+/* ----------- kjs ----------- */
+header {position:relative; height:55px;}
+header h1 {position:absolute; top:12px; left:15px; z-index:1; width:81px; height:14px; overflow:hidden; text-indent:-9999px; background:url(../img/logo.svg) center center no-repeat; background-size:100%;}
+
+
+
+.gnbOpen {position:absolute; top:10px; left:15px; width:24px; height:35px; overflow:hidden; text-indent:-9999px; background:url(../img/menu_normal.svg) left top no-repeat; background-size:cover;}

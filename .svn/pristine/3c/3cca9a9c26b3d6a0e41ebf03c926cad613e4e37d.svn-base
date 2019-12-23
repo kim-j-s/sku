@@ -1,0 +1,77 @@
+@@include("head.html")
+<body>
+@@include('header.html')
+<!-- .content -->
+<section class="content">
+	<div class="recViews">
+		<p class="tit etc2">
+			<span class="cName">AI Design 인공지능</span>
+			<span class="txt2">에 대한 검색 결과 입니다.</span>
+		</p>
+		<div class="filterItem">
+			<div class="inner">
+				<span class="flName">
+					<span class="txt">AI 공통</span><button type="button" class="btn closeSmall">닫기</button>
+				</span>
+				<span class="flName">
+					<span class="txt">AI Biz Essential</span><button type="button" class="btn closeSmall">닫기</button>
+				</span>
+				<span class="flName">
+					<span class="txt">2019.06.01~2019.07.30</span><button type="button" class="btn closeSmall">닫기</button>
+				</span>
+				<span class="flName">
+					<span class="txt">AI 공통</span><button type="button" class="btn closeSmall">닫기</button>
+				</span>
+			</div>
+		</div>
+		<div class="sortChannel">
+			<div class="inner">
+				<div class="sorting">
+					<button type="button" class="btnFilter"><i class="ico filter"></i>Filter<em>(12)</em></button>
+				</div>
+				<div class="sorting">
+					<button type="button" class="btn sort ty2"><span>정확도순</span></button>
+				</div>
+			</div>
+		</div>
+	</div>
+	<ul class="recList">
+		<li>
+			<div class="recTit">
+				<div class="switch">
+					<input type="checkbox" name="" id="switch" class="switchCheckbox" checked="checked">
+				</div>
+				<span class="sTxt"><label for="switch">수강신청 가능 학습 과정 보기</label></span>
+			</div>
+			<div class="emptyBox noSch">
+				<i class="icon ico noSch"></i>
+				<p class="txt"><strong>수강 신청 가능한 학습 과정이 없습니다.</strong> 다른 조건으로 재검색 해보세요.</p>
+			</div>
+		</li>
+	</ul>
+</section>
+<!-- // .content -->
+
+
+<script>
+$(function(){
+	//선택된 필터 조건 삭제 시 마지막 필터 조건이 사라지면 <div class="filterItem"> 영역을 display none 처리 혹은 remove 시켜야 합니다. [간격 조정에 필요]
+	$('.closeSmall').on('click', function(){
+		$(this).closest('.flName').remove();
+		if ( $('.filterItem').find('.flName').length == 0 )
+		{
+			$('.filterItem').hide();
+		}
+	});
+});
+</script>
+
+@@include('toolbar.html', {
+	"ty1": "",
+	"ty2": "",
+	"ty3": "",
+	"ty4": "",
+	"ty5": ""
+})
+</body>
+</html>

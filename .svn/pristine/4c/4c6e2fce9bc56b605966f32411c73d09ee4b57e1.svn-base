@@ -1,0 +1,97 @@
+@@include("head.html")
+<body>
+@@include('header.html')
+<div class="noticeWrap">
+	<a href="#">UX DESIGN강좌 11월 수강신청 안내</a>
+	<button type="button" class="btn close">닫기</button>
+</div>
+
+<!-- .content -->
+<section class="content">
+	<div class="recCourseWrap">
+		<p class="tit"><strong class="name">김유니</strong>님을 위한 추천 과정입니다.</p>
+		<div class="recCourse">
+			<div class="swiper-wrapper">
+				<div class="swiper-slide">
+					<p class="txt"><a href="#"><strong>Deep learning</strong> 채널의 추천 과정</a></p>
+					<a href="#" class="card">
+						<div class="cardInner">
+							<div class="titleArea">
+								<div class="topRight">
+									<span class="icon">Video<i class="ico ico video"></i></span>
+								</div>
+								<p class="category red">혁신디자인</p>
+								<strong class="title">Mobile App UI/UX GUI Design Tutorials 모바일 앱 UX UI GUI</strong>
+							</div>
+							<div class="infoArea">
+								<p class="label"><i class="ico time"></i><b>2h 40m</b></p>
+							</div>
+							<div class="btmArea">
+								<div class="starRate s4">
+									<i></i><i></i><i></i><i></i><i></i>
+								</div>
+								<div><em>7,203</em>명 이수</div>
+							</div>
+						</div>
+					</a>
+				</div>
+				<div class="swiper-slide">
+					<p class="txt"><a href="#"><strong>Deep learning</strong> 채널의 추천 과정 2</a></p>
+					<a href="#" class="card">
+						<div class="cardInner">
+							<div class="titleArea">
+								<div class="topRight">
+									<span class="icon">Video<i class="ico ico video"></i></span>
+								</div>
+								<p class="category red">혁신디자인</p>
+								<strong class="title">Mobile App UI/UX GUI Design Tutorials 모바일 앱 UX UI GUI</strong>
+							</div>
+							<div class="infoArea">
+								<p class="label"><i class="ico time"></i><b>2h 40m</b></p>
+							</div>
+							<div class="btmArea">
+								<div class="starRate s4">
+									<i></i><i></i><i></i><i></i><i></i>
+								</div>
+								<div><em>7,203</em>명 이수</div>
+							</div>
+						</div>
+					</a>
+				</div>
+			</div>
+			<div class="swiper-pagination swiper-pager"></div>
+		</div>
+	</div>
+	<div class="mainRec">
+		<div class="inner">
+			<a href="#" class="btn channelLink"><span>Channel별 전체 과정</span></a>
+		</div>
+		<ul class="recList">
+			<li>
+				<div class="recTit"><a href="#"><span class="txt">김유니님이 <strong class="cName">수강중인 과정</strong><span class="txtEnd">입니다. (0)</span></span></a></div>
+				<div class="emptyBox">
+					<i class="icon ico noCont"></i>
+					<p class="txt">In Progress에 해당하는 학습 과정이 없습니다.</p>
+					<a href="#" class="btnLink"><span><em>김유니</em>님에게 추천하는 학습 과정 보기</span><i class="ico link"></i></a>
+				</div>
+			</li>
+			<li>
+				<div class="recTit"><a href="#"><span class="txt">김유니님의 <strong class="cName">필수 과정</strong><span class="txtEnd">입니다. (5)</span></span></a></div>
+				<div class="emptyBox">
+					<i class="icon ico noCont"></i>
+					<p class="txt">Required된 학습 과정이 없습니다.</p>
+				</div>
+			</li>
+		</ul>
+	</div>
+</section>
+<!-- // .content -->
+@@include('toolbar.html', {
+	"ty1": " on",
+	"ty2": "",
+	"ty3": "",
+	"ty4": "",
+	"ty5": ""
+})
+</body>
+</html>

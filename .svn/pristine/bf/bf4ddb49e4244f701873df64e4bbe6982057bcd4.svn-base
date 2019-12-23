@@ -1,0 +1,41 @@
+@@include("head.html")
+<body>
+@@include('header.html')
+<!-- .content -->
+<section class="content">
+	<div class="recViews">
+		<p class="tit etc2">
+			<span class="cName">AI Design 인공지능</span>
+			<span class="txt2">에 대한 검색 결과 입니다.</span>
+		</p>
+		<div class="sortChannel">
+			<div class="inner">
+				<div class="sorting">
+					<button type="button" class="btnFilter"><i class="ico filter"></i>Filter<em>(0)</em></button>
+				</div>
+				<div class="sorting">
+					<button type="button" class="btn sort ty2"><span>관련도순</span></button>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<ul class="recList">
+		<li>
+			<div class="emptyBox noSch">
+				<i class="icon ico noSch"></i>
+				<p class="txt"><strong>검색된 결과가 없습니다.</strong> 다른 검색어로 재검색 해보세요.</p>
+			</div>
+		</li>
+	</ul>
+</section>
+<!-- // .content -->
+@@include('toolbar.html', {
+	"ty1": "",
+	"ty2": "",
+	"ty3": "",
+	"ty4": "",
+	"ty5": ""
+})
+</body>
+</html>

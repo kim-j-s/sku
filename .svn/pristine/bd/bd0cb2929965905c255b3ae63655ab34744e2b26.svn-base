@@ -1,0 +1,10 @@
+<!-- .header -->
+<header>
+	이곳은 헤더영역
+</header>
+
+<style>
+header {text-align:center; line-height:100px; background:#ddd;}
+</style>
+
+<!-- // .header -->

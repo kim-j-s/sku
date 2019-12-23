@@ -1,0 +1,260 @@
+@@include("head.html")
+<body>
+<style>
+	.content{padding: 0 15px;}
+	h2.tt{color: red; padding: 20px 0 10px; font-weight: 700;}
+</style>
+<!-- .content -->
+<section class="content">
+
+	<h2 class="tt">댓글 입력/수정중</h2>
+
+	<ul class="cmntArea">
+		<li>
+			<div class="box">
+				<span class="pic"><img src="../../img/temp/profile_80_px.png" alt=""></span>
+				<div class="info">
+					<b class="name">김유니</b>
+					<span class="date">2020.01.06</span>
+				</div>
+				<div class="cmntBtn">
+					<button type="button" class="btn edit active"></button>
+					<button type="button" class="btn del"></button>
+					<button type="button" class="btn rep"></button>
+				</div>
+				<div class="cmntEnter">
+					<div class="inner">
+						<div class="field">
+							<textarea placeholder="Writing...">이거 진짜 안들으면 후회합니다.</textarea>
+						</div>
+						<div class="enter">
+							<div class="area">
+								<span class="byte"><em class="left">0</em>/<em class="total">500</em></span>
+							</div>
+							<button type="button" class="btnPhoto"></button>
+							<button type="button" class="btn">Submit</button>
+						</div>
+					</div>
+				</div>
+				<div class="cmntText flowText">
+					<p class="txtCont ellipsis2">이거 진짜 안들으면 후회합니다.</p>
+				</div>
+				<div class="moreReplyArea"></div>
+			</div>
+		</li>
+	</ul>
+
+	<h2 class="tt">대댓글 입력_case1</h2>
+
+	<ul class="cmntArea">
+		<li>
+			<div class="box">
+				<span class="pic"><img src="../../img/temp/profile_80_px.png" alt=""></span>
+				<div class="info">
+					<b class="name">김유니</b>
+					<span class="date">2020.01.06</span>
+				</div>
+				<div class="cmntBtn">
+					<button type="button" class="btn rep active"></button>
+				</div>
+				<div class="cmntText flowText">
+					<p class="txtCont ellipsis2">이거 진짜 안들으면 후회합니다.</p>
+				</div>
+				<div class="cmntEnter">
+					<div class="inner">
+						<div class="field">
+							<textarea placeholder="Writing...">저도 그렇게 생각합니다.</textarea>
+						</div>
+						<div class="enter">
+							<div class="area">
+								<span class="byte"><em class="left">0</em>/<em class="total">500</em></span>
+							</div>
+							<button type="button" class="btnPhoto"></button>
+							<button type="button" class="btn">Submit</button>
+						</div>
+					</div>
+				</div>
+				<div class="moreReplyArea">
+					<button type="button" class="moreRead">+ View more</button>
+					<button type="button" class="moreReply">View replies <em>3</em><i class="ico"></i></button>
+				</div>
+			</div>
+			<div class="reply">
+				<ul>
+					<li>
+						<div class="box">
+							<span class="pic"><img src="../../img/temp/profile_80_px.png" alt=""></span>
+							<div class="info">
+								<b class="name">김유니</b>
+								<span class="date">2020.01.06</span>								
+							</div>
+							<div class="cmntBtn">
+								<button type="button" class="btn edit active"></button>
+								<button type="button" class="btn del"></button>
+							</div>
+							<!-- 내 대댓글 수정 -->
+							<div class="cmntEnter">
+								<div class="inner">
+									<div class="field">
+										<textarea placeholder="Writing...">좋은 내용 감사합니다.</textarea>
+									</div>
+									<div class="enter">
+										<div class="area">
+											<span class="byte"><em class="left">0</em>/<em class="total">500</em></span>
+										</div>
+										<button type="button" class="btnPhoto"></button>
+										<button type="button" class="btn">Submit</button>
+									</div>
+								</div>
+							</div>
+							<!-- //내 대댓글 수정 -->
+							<div class="cmntText">
+								<p class="txtCont"><b>@김유니</b>난이도 높은 과제나 실습으로 실력을 단기간에 끌어올리고 싶다면 강사님이 운영하는 POCU 교육 사이트에 등록을 해보길 바랍니다. Git과 Slack으로 다른 교육 서비스와 차별화된 온라인 클래스를 경험할 수 있습니다.</p>
+							</div>
+						</div>
+					</li>
+				</ul>
+			</div>
+		</li>
+	</ul>
+
+	<h2 class="tt">대댓글 입력_case2</h2>
+
+	<ul class="cmntArea">
+		<li>
+			<div class="box">
+				<span class="pic"><img src="../../img/temp/profile_80_px.png" alt=""></span>
+				<div class="info">
+					<b class="name">김유니</b>
+					<span class="date">2020.01.06</span>
+				</div>
+				<div class="cmntBtn">
+					<button type="button" class="btn rep active"></button>
+				</div>
+				<div class="cmntText flowText">
+					<p class="txtCont ellipsis2">이거 진짜 안들으면 후회합니다.</p>
+				</div>
+				<span class="img"><img src="../../img/temp/Penguins.jpg" alt=""></span>
+				<div class="cmntEnter">
+					<div class="inner">
+						<div class="field">
+							<textarea placeholder="Writing...">저도 그렇게 생각합니다.</textarea>
+						</div>
+						<div class="enter">
+							<div class="area">
+								<span class="byte"><em class="left">0</em>/<em class="total">500</em></span>
+							</div>
+							<button type="button" class="btnPhoto"></button>
+							<button type="button" class="btn">Submit</button>
+						</div>
+					</div>
+				</div>
+				<div class="moreReplyArea">
+					<button type="button" class="moreRead">+ View more</button>
+					<button type="button" class="moreReply">View replies <em>3</em><i class="ico"></i></button>
+				</div>
+			</div>
+			<div class="reply">
+				<ul>
+					<li>
+						<div class="box">
+							<span class="pic"><img src="../../img/temp/profile_80_px.png" alt=""></span>
+							<div class="info">
+								<b class="name">김유니</b>
+								<span class="date">2020.01.06</span>								
+							</div>
+							<div class="cmntBtn">
+								<button type="button" class="btn edit active"></button>
+								<button type="button" class="btn del"></button>
+							</div>
+							<!-- 내 대댓글 수정 -->
+							<div class="cmntEnter">
+								<div class="inner">
+									<div class="field">
+										<textarea placeholder="Writing...">좋은 내용 감사합니다.</textarea>
+									</div>
+									<div class="enter">
+										<div class="area">
+											<span class="byte"><em class="left">0</em>/<em class="total">500</em></span>
+										</div>
+										<button type="button" class="btnPhoto"></button>
+										<button type="button" class="btn">Submit</button>
+									</div>
+								</div>
+							</div>
+							<!-- //내 대댓글 수정 -->
+							<div class="cmntText">
+								<p class="txtCont"><b>@김유니</b>난이도 높은 과제나 실습으로 실력을 단기간에 끌어올리고 싶다면 강사님이 운영하는 POCU 교육 사이트에 등록을 해보길 바랍니다. Git과 Slack으로 다른 교육 서비스와 차별화된 온라인 클래스를 경험할 수 있습니다.</p>
+							</div>
+						</div>
+					</li>
+				</ul>
+			</div>
+		</li>
+	</ul>
+
+	<h2 class="tt">대댓글 수정</h2>
+
+	<ul class="cmntArea">
+		<li>
+			<div class="box">
+				<span class="pic"><img src="../../img/temp/profile_80_px.png" alt=""></span>
+				<div class="info">
+					<b class="name">차은우</b>
+					<span class="date">2020.01.06</span>
+				</div>
+				<div class="cmntBtn">
+					<button type="button" class="btn rep"></button>
+				</div>
+				<div class="cmntText flowText">
+					<p class="txtCont ellipsis2">이거 진짜 안들으면 후회합니다. 최고의 강사가 귀에 쏙쏙 들어오게 강의하는것 같아요. 두줄 이상 코멘트 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Et soluta tempora voluptas quos vitae veniam, repellat a consequuntur iure velit.</p>
+				</div>
+				<div class="moreReplyArea">
+					<button type="button" class="moreRead">+ View more</button>
+					<button type="button" class="moreReply">Hide replies <em>1</em><i class="ico"></i></button>
+				</div>
+			</div>
+			<div class="reply on">
+				<ul>
+					<li>
+						<div class="box">
+							<span class="pic"><img src="../../img/temp/profile_80_px.png" alt=""></span>
+							<div class="info">
+								<b class="name">김유니</b>
+								<span class="date">2020.01.06</span>								
+							</div>
+							<div class="cmntBtn">
+								<button type="button" class="btn edit active"></button>
+								<button type="button" class="btn del"></button>
+							</div>
+							<!-- 내 대댓글 수정 -->
+							<div class="cmntEnter">
+								<div class="inner">
+									<div class="field">
+										<textarea placeholder="Writing...">좋은 내용 감사합니다.</textarea>
+									</div>
+									<div class="enter">
+										<div class="area">
+											<span class="byte"><em class="left">0</em>/<em class="total">500</em></span>
+										</div>
+										<button type="button" class="btnPhoto"></button>
+										<button type="button" class="btn">Submit</button>
+									</div>
+								</div>
+							</div>
+							<!-- //내 대댓글 수정 -->
+							<div class="cmntText">
+								<p class="txtCont"><b>@김유니</b>난이도 높은 과제나 실습으로 실력을 단기간에 끌어올리고 싶다면 강사님이 운영하는 POCU 교육 사이트에 등록을 해보길 바랍니다. Git과 Slack으로 다른 교육 서비스와 차별화된 온라인 클래스를 경험할 수 있습니다.</p>
+							</div>
+						</div>
+					</li>
+				</ul>
+			</div>
+		</li>
+	</ul>
+
+</section>
+<!-- // .content -->
+
+</body>
+</html>

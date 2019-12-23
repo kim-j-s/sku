@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, maximum-scale=1.0, minimum-scale=1.0" />
+    <title>skuniversity</title>
+    <link rel="stylesheet" href="../../css/swiper.min.css">
+    <link rel="stylesheet" href="../../css/style.css">
+    <script src="../../js/jquery-1.12.4.js"></script>
+    <script src="../../js/swiper.min.js"></script>
+    <script src="../../js/ui.js"></script>
+</head>
+
+<body>
+    <!-- .header -->
+    <header>
+        <section class="listHeader">
+            <a href="#" class="btn pageBack">이전 페이지</a>
+            <div class="keyWord">My Page</div>
+        </section>
+    </header>
+    <!-- // .header -->
+    <!-- .content -->
+    <section class="content">
+        <div style="height:600px; line-height:600px; background:#ddd; text-align:center; color:#000;">content</div>
+    </section>
+    <!-- // .content -->
+</body>
+
+</html>

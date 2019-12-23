@@ -1,0 +1,17 @@
+<!-- .header -->
+<header>
+	<section class="detailHeader">
+		<a href="#" class="btn pageBack">이전 페이지</a>
+		<div class="keyWord">Mobile App UI/UX GUI Design Tutorials 모바일 앱 UX UI GUI 이론을 통한 실전</div>
+		<div class="shortCuts">
+			<button type="button" class="btn scMenuBtn">Short Cut Menu</button>
+			<ul class="shortCutList">
+				<li><button type="button" class="btn scBtn ty1">Add to my list</button></li>
+				<li><button type="button" class="btn scBtn ty2">Remove from My List</button></li>
+				<li><button type="button" class="btn scBtn ty3">Share</button></li>
+				<li><button type="button" class="btn scBtn ty4">Join Survey</button></li>
+			</ul>
+		</div>
+	</section>
+</header>
+<!-- // .header -->

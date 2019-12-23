@@ -1,0 +1,19 @@
+@@include("head.html")
+<body>
+@@include('header.html')
+<!-- .content -->
+<section class="content">
+	
+
+	<div class="con">content</div>
+
+	<style>
+	.con {height:1500px; background:#ddd;}
+	</style>
+
+
+
+</section>
+<!-- // .content -->
+</body>
+</html>

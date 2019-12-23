@@ -1,0 +1,442 @@
+@@include("head.html")
+<body style="overflow: hidden;">
+@@include('listheader.html',{
+	"title" : "Learning"
+})
+<!-- .content -->
+<section class="content">
+</section>
+<!-- // .content -->
+
+<!-- layer -->
+<section class="popWrap full">
+	<div class="popBox">
+		<div class="popTitle">
+			<p>List Filter</p>
+			<a href="#" class="btnClose">닫기</a>
+		</div>
+		<div class="popCont">
+			<ul class="filterList accordion">
+				<li>
+					<div class="viewBox">
+						<a href="#" class="anch">
+							<strong>AI</strong>
+							<i class="ico arrow"></i>
+						</a>
+						<div class="line">
+							<p class="selectedItem">
+								<span>AI Fundamental</span>
+								<span>Language AI</span>
+							</p>
+							<em class="count">2</em>
+						</div>
+					</div>
+					<ul class="sub" style="display: none;">
+						<li>
+							<span class="inpD">
+								<label>
+									<span class="txt">AI Fundamental <em>(33)</em></span>
+									<input type="checkbox">
+									<i class="ico checkBox"></i>
+								</label>
+							</span>
+						</li>
+						<li>
+							<span class="inpD">
+								<label>
+									<span class="txt">AI Biz. Implemetation <em>(33)</em></span>
+									<input type="checkbox">
+									<i class="ico checkBox"></i>
+								</label>
+							</span>
+						</li>
+						<li>
+							<span class="inpD">
+								<label>
+									<span class="txt">AI Tech Essential <em>(33)</em></span>
+									<input type="checkbox">
+									<i class="ico checkBox"></i>
+								</label>
+							</span>
+						</li>
+						<li>
+							<span class="inpD">
+								<label>
+									<span class="txt">Computer Vison AI <em>(33)</em></span>
+									<input type="checkbox">
+									<i class="ico checkBox"></i>
+								</label>
+							</span>
+						</li>
+						<li>
+							<span class="inpD">
+								<label>
+									<span class="txt">Language AI <em>(33)</em></span>
+									<input type="checkbox">
+									<i class="ico checkBox"></i>
+								</label>
+							</span>
+						</li>
+						<li>
+							<span class="inpD">
+								<label>
+									<span class="txt">Speech AI <em>(33)</em></span>
+									<input type="checkbox">
+									<i class="ico checkBox"></i>
+								</label>
+							</span>
+						</li>
+						<li>
+							<span class="inpD">
+								<label>
+									<span class="txt">AI Tech Advanced <em>(33)</em></span>
+									<input type="checkbox">
+									<i class="ico checkBox"></i>
+								</label>
+							</span>
+						</li>
+					</ul>
+				</li>
+				<li>
+					<div class="viewBox">
+						<a href="#" class="anch">
+							<strong>DT</strong>
+							<i class="ico arrow"></i>
+						</a>
+						<div class="line">
+							<p class="selectedItem">
+								<span>AI Fundamental</span>
+								<span>AI Biz. Implemetation</span>
+								<span>AI Tech Essential</span>
+								<span>Computer Vison AI</span>
+								<span>Language AI</span>
+							</p>
+							<em class="count">5</em>
+						</div>
+					</div>
+					<ul class="sub" style="display: none;">
+						<li>
+							<span class="inpD">
+								<label>
+									<span class="txt">AI Fundamental <em>(33)</em></span>
+									<input type="checkbox">
+									<i class="ico checkBox"></i>
+								</label>
+							</span>
+						</li>
+						<li>
+							<span class="inpD">
+								<label>
+									<span class="txt">AI Biz. Implemetation <em>(33)</em></span>
+									<input type="checkbox">
+									<i class="ico checkBox"></i>
+								</label>
+							</span>
+						</li>
+						<li>
+							<span class="inpD">
+								<label>
+									<span class="txt">AI Tech Essential <em>(33)</em></span>
+									<input type="checkbox">
+									<i class="ico checkBox"></i>
+								</label>
+							</span>
+						</li>
+					</ul>
+				</li>
+				<li>
+					<div class="viewBox">
+						<a href="#" class="anch">
+							<strong>Global</strong>
+							<i class="ico arrow"></i>
+						</a>
+						<div class="line" style="display: none;">
+							<p class="selectedItem">
+								<span>AI Fundamental</span>
+								<span>AI Biz. Implemetation</span>
+								<span>AI Tech Essential</span>
+								<span>Computer Vison AI</span>
+								<span>Language AI</span>
+							</p>
+							<em class="count">8</em>
+						</div>
+					</div>
+					<ul class="sub" style="display: none;">
+						<li>
+							<span class="inpD">
+								<label>
+									<span class="txt">AI Fundamental <em>(33)</em></span>
+									<input type="checkbox">
+									<i class="ico checkBox"></i>
+								</label>
+							</span>
+						</li>
+						<li>
+							<span class="inpD">
+								<label>
+									<span class="txt">AI Biz. Implemetation <em>(33)</em></span>
+									<input type="checkbox">
+									<i class="ico checkBox"></i>
+								</label>
+							</span>
+						</li>
+						<li>
+							<span class="inpD">
+								<label>
+									<span class="txt">AI Tech Essential <em>(33)</em></span>
+									<input type="checkbox">
+									<i class="ico checkBox"></i>
+								</label>
+							</span>
+						</li>
+					</ul>
+				</li>
+				<li>
+					<div class="viewBox">
+						<a href="#" class="anch">
+							<strong>Global</strong>
+							<i class="ico arrow"></i>
+						</a>
+						<div class="line" style="display: none;">
+							<p class="selectedItem">
+								<span>AI Fundamental</span>
+								<span>AI Biz. Implemetation</span>
+								<span>AI Tech Essential</span>
+								<span>Computer Vison AI</span>
+								<span>Language AI</span>
+							</p>
+							<em class="count">8</em>
+						</div>
+					</div>
+					<ul class="sub" style="display: none;">
+						<li>
+							<span class="inpD">
+								<label>
+									<span class="txt">AI Fundamental <em>(33)</em></span>
+									<input type="checkbox">
+									<i class="ico checkBox"></i>
+								</label>
+							</span>
+						</li>
+						<li>
+							<span class="inpD">
+								<label>
+									<span class="txt">AI Biz. Implemetation <em>(33)</em></span>
+									<input type="checkbox">
+									<i class="ico checkBox"></i>
+								</label>
+							</span>
+						</li>
+						<li>
+							<span class="inpD">
+								<label>
+									<span class="txt">AI Tech Essential <em>(33)</em></span>
+									<input type="checkbox">
+									<i class="ico checkBox"></i>
+								</label>
+							</span>
+						</li>
+					</ul>
+				</li>
+				<li>
+					<div class="viewBox">
+						<a href="#" class="anch">
+							<strong>Global</strong>
+							<i class="ico arrow"></i>
+						</a>
+						<div class="line" style="display: none;">
+							<p class="selectedItem">
+								<span>AI Fundamental</span>
+								<span>AI Biz. Implemetation</span>
+								<span>AI Tech Essential</span>
+								<span>Computer Vison AI</span>
+								<span>Language AI</span>
+							</p>
+							<em class="count">8</em>
+						</div>
+					</div>
+					<ul class="sub" style="display: none;">
+						<li>
+							<span class="inpD">
+								<label>
+									<span class="txt">AI Fundamental <em>(33)</em></span>
+									<input type="checkbox">
+									<i class="ico checkBox"></i>
+								</label>
+							</span>
+						</li>
+						<li>
+							<span class="inpD">
+								<label>
+									<span class="txt">AI Biz. Implemetation <em>(33)</em></span>
+									<input type="checkbox">
+									<i class="ico checkBox"></i>
+								</label>
+							</span>
+						</li>
+						<li>
+							<span class="inpD">
+								<label>
+									<span class="txt">AI Tech Essential <em>(33)</em></span>
+									<input type="checkbox">
+									<i class="ico checkBox"></i>
+								</label>
+							</span>
+						</li>
+					</ul>
+				</li>
+				<li>
+					<div class="viewBox">
+						<a href="#" class="anch">
+							<strong>Global</strong>
+							<i class="ico arrow"></i>
+						</a>
+						<div class="line" style="display: none;">
+							<p class="selectedItem">
+								<span>AI Fundamental</span>
+								<span>AI Biz. Implemetation</span>
+								<span>AI Tech Essential</span>
+								<span>Computer Vison AI</span>
+								<span>Language AI</span>
+							</p>
+							<em class="count">8</em>
+						</div>
+					</div>
+					<ul class="sub" style="display: none;">
+						<li>
+							<span class="inpD">
+								<label>
+									<span class="txt">AI Fundamental <em>(33)</em></span>
+									<input type="checkbox">
+									<i class="ico checkBox"></i>
+								</label>
+							</span>
+						</li>
+						<li>
+							<span class="inpD">
+								<label>
+									<span class="txt">AI Biz. Implemetation <em>(33)</em></span>
+									<input type="checkbox">
+									<i class="ico checkBox"></i>
+								</label>
+							</span>
+						</li>
+						<li>
+							<span class="inpD">
+								<label>
+									<span class="txt">AI Tech Essential <em>(33)</em></span>
+									<input type="checkbox">
+									<i class="ico checkBox"></i>
+								</label>
+							</span>
+						</li>
+					</ul>
+				</li>
+				<li>
+					<div class="viewBox">
+						<a href="#" class="anch">
+							<strong>Global</strong>
+							<i class="ico arrow"></i>
+						</a>
+						<div class="line" style="display: none;">
+							<p class="selectedItem">
+								<span>AI Fundamental</span>
+								<span>AI Biz. Implemetation</span>
+								<span>AI Tech Essential</span>
+								<span>Computer Vison AI</span>
+								<span>Language AI</span>
+							</p>
+							<em class="count">8</em>
+						</div>
+					</div>
+					<ul class="sub" style="display: none;">
+						<li>
+							<span class="inpD">
+								<label>
+									<span class="txt">AI Fundamental <em>(33)</em></span>
+									<input type="checkbox">
+									<i class="ico checkBox"></i>
+								</label>
+							</span>
+						</li>
+						<li>
+							<span class="inpD">
+								<label>
+									<span class="txt">AI Biz. Implemetation <em>(33)</em></span>
+									<input type="checkbox">
+									<i class="ico checkBox"></i>
+								</label>
+							</span>
+						</li>
+						<li>
+							<span class="inpD">
+								<label>
+									<span class="txt">AI Tech Essential <em>(33)</em></span>
+									<input type="checkbox">
+									<i class="ico checkBox"></i>
+								</label>
+							</span>
+						</li>
+					</ul>
+				</li>
+				<li>
+					<div class="viewBox">
+						<a href="#" class="anch">
+							<strong>Global</strong>
+							<i class="ico arrow"></i>
+						</a>
+						<div class="line" style="display: none;">
+							<p class="selectedItem">
+								<span>AI Fundamental</span>
+								<span>AI Biz. Implemetation</span>
+								<span>AI Tech Essential</span>
+								<span>Computer Vison AI</span>
+								<span>Language AI</span>
+							</p>
+							<em class="count">8</em>
+						</div>
+					</div>
+					<ul class="sub" style="display: none;">
+						<li>
+							<span class="inpD">
+								<label>
+									<span class="txt">AI Fundamental <em>(33)</em></span>
+									<input type="checkbox">
+									<i class="ico checkBox"></i>
+								</label>
+							</span>
+						</li>
+						<li>
+							<span class="inpD">
+								<label>
+									<span class="txt">AI Biz. Implemetation <em>(33)</em></span>
+									<input type="checkbox">
+									<i class="ico checkBox"></i>
+								</label>
+							</span>
+						</li>
+						<li>
+							<span class="inpD">
+								<label>
+									<span class="txt">AI Tech Essential <em>(33)</em></span>
+									<input type="checkbox">
+									<i class="ico checkBox"></i>
+								</label>
+							</span>
+						</li>
+					</ul>
+				</li>
+			</ul>
+		</div>
+		<div class="BtmBtn floating">
+			<div class="btnGroup">
+				<button class="btnBlack">Initialize</button>
+				<button class="btnOrange">Filter</button>
+			</div>
+		</div>
+	</div>
+</section>
+<!-- //layer -->
+
+</body>
+</html>

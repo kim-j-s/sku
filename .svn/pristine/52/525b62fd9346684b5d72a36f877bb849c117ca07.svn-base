@@ -1,0 +1,239 @@
+@@include("head.html")
+<body>
+@@include('listheader.html',{
+	"title" : "Recommend"
+})
+<!-- .content -->
+<section class="content">
+	<a href="#" class="recViewsLink">
+		<div class="recViews">
+			<p class="tit">
+				<span class="txt">김유니님의 관심채널</span>
+				<span class="cnt">(5/99)</span>
+			</p>
+			<div class="channels">
+				<span class="channelName">HR</span>
+				<span class="channelName">Growth Mindset(Leadership Specialist)</span>
+				<span class="channelName">Cloud Developing</span>
+				<span class="channelName">Speech AI</span>
+				<span class="channelName">마케팅</span>
+			</div>
+			<span class="btnLink"><span>전체보기</span><i class="ico arrow blue"></i></span>
+		</div>
+	</a>
+
+	<ul class="recList">
+		<li>
+			<div class="recTit">
+				<a href="#">
+					<strong class="cName">HR</strong> <span class="txt">채널에서 김유니님에게 추천하는 <span class="txtEnd">과정입니다</span></span>
+				</a>
+			</div>
+			<a href="#" class="card">
+				<div class="cardInner">
+					<div class="titleArea">
+						<span class="icon">Classroom<i class="ico ico classroom"></i></span>
+						<p class="category red">혁신 Design</p>
+						<strong class="title">Mobile App UI/UX GUI Design Tutorials 모바일 앱 UX UI GUI</strong>
+					</div>
+					<div class="infoArea">
+						<p class="label"><i class="ico time"></i><b>2h 40m</b></p>
+						<p class="label"><i class="ico map"></i><b>G plant</b></p>
+					</div>
+				</div>
+				<div class="btmArea">
+					<div class="starRate s4">
+						<i></i><i></i><i></i><i></i><i></i>
+					</div>
+					<div><em>7,203</em>명 이수</div>
+				</div>
+			</a>
+			<a href="#" class="card">
+				<div class="cardInner">
+					<div class="titleArea">
+						<span class="icon">Video<i class="ico video"></i></span>
+						<p class="category teal">Mgmt</p>
+						<strong class="title">Swift4로 배우는 iOS11 프로그래밍 인공지능(AI) 아이폰 앱 개발</strong>
+					</div>
+					<div class="infoArea">
+						<p class="label"><i class="ico time"></i><b>2h 40m</b></p>
+					</div>
+				</div>
+				<div class="btmArea">
+					<div class="starRate s4">
+						<i></i><i></i><i></i><i></i><i></i>
+					</div>
+					<div><em>7,203</em>명 이수</div>
+				</div>
+			</a>
+			<a href="#" class="card">
+				<div class="cardInner">
+					<div class="titleArea">
+						<span class="icon">Classroom<i class="ico classroom"></i></span>
+						<p class="category purple">AI</p>
+						<strong class="title">UI/UX design with Adobe XD: Design &amp; Prototype</strong>
+					</div>
+					<div class="infoArea">
+						<p class="label"><i class="ico time"></i><b>2h 40m</b></p>
+						<p class="label"><i class="ico map"></i><b>G plant</b></p>
+					</div>
+				</div>
+				<div class="btmArea">
+					<div class="starRate s4">
+						<i></i><i></i><i></i><i></i><i></i>
+					</div>
+					<div><em>7,203</em>명 이수</div>
+				</div>
+			</a>
+			<a href="#" class="card">
+				<div class="cardInner">
+					<div class="titleArea">
+						<span class="icon">Webpage<i class="ico webpage"></i></span>
+						<p class="category blue">Leadership</p>
+						<strong class="title">실습 위주의 안드로이드 어플리케이션 해킹 기초 강의</strong>
+					</div>
+					<div class="infoArea">
+						<p class="label"><i class="ico time"></i><b>2h 40m</b></p>
+					</div>
+				</div>
+				<div class="btmArea">
+					<div class="starRate s4">
+						<i></i><i></i><i></i><i></i><i></i>
+					</div>
+					<div><em>7,203</em>명 이수</div>
+				</div>
+			</a>
+			<a href="#" class="card">
+				<div class="cardInner">
+					<div class="titleArea">
+						<span class="icon">Classroom<i class="ico classroom"></i></span>
+						<p class="category violet">DT</p>
+						<strong class="title">TensorFlow로 배우는 Generative Models 알고리즘 실습하기</strong>
+					</div>
+					<div class="infoArea">
+						<p class="label"><i class="ico time"></i><b>2h 40m</b></p>
+						<p class="label"><i class="ico map"></i><b>G plant</b></p>
+					</div>
+				</div>
+				<div class="btmArea">
+					<div class="starRate s4">
+						<i></i><i></i><i></i><i></i><i></i>
+					</div>
+					<div><em>7,203</em>명 이수</div>
+				</div>
+			</a>
+			<button class="btnListMore" type="button"><i class="ico plus"></i>list more (<em>5</em>/<em>20</em>)</button>	
+		</li>
+		<li>
+			<div class="recTit">
+				<a href="#">
+					<strong class="cName">Growth Mindset(Leadership Specialist)</strong> <span class="txt">채널에서 김유니님에게 추천하는 <span class="txtEnd">과정입니다</span></span>
+				</a>
+			</div>
+			<a href="#" class="card">
+				<div class="cardInner">
+					<div class="titleArea">
+						<span class="icon">Classroom<i class="ico classroom"></i></span>
+						<p class="category category red">혁신 Design</p>
+						<strong class="title">Mobile App UI/UX GUI Design Tutorials 모바일 앱 UX UI GUI</strong>
+					</div>
+					<div class="infoArea">
+						<p class="label"><i class="ico time"></i><b>2h 40m</b></p>
+						<p class="label"><i class="ico map"></i><b>G plant</b></p>
+					</div>
+				</div>
+				<div class="btmArea">
+					<div class="starRate s4">
+						<i></i><i></i><i></i><i></i><i></i>
+					</div>
+					<div><em>7,203</em>명 이수</div>
+				</div>
+			</a>
+			<a href="#" class="card">
+				<div class="cardInner">
+					<div class="titleArea">
+						<span class="icon">Video<i class="ico video"></i></span>
+						<p class="category teal">Mgmt</p>
+						<strong class="title">Swift4로 배우는 iOS11 프로그래밍 인공지능(AI) 아이폰 앱 개발</strong>
+					</div>
+					<div class="infoArea">
+						<p class="label"><i class="ico time"></i><b>2h 40m</b></p>
+					</div>
+				</div>
+				<div class="btmArea">
+					<div class="starRate s4">
+						<i></i><i></i><i></i><i></i><i></i>
+					</div>
+					<div><em>7,203</em>명 이수</div>
+				</div>
+			</a>
+			<a href="#" class="card">
+				<div class="cardInner">
+					<div class="titleArea">
+						<span class="icon">Classroom<i class="ico classroom"></i></span>
+						<p class="category purple">AI</p>
+						<strong class="title">UI/UX design with Adobe XD: Design &amp; Prototype</strong>
+					</div>
+					<div class="infoArea">
+						<p class="label"><i class="ico time"></i><b>2h 40m</b></p>
+						<p class="label"><i class="ico map"></i><b>G plant</b></p>
+					</div>
+				</div>
+				<div class="btmArea">
+					<div class="starRate s4">
+						<i></i><i></i><i></i><i></i><i></i>
+					</div>
+					<div><em>7,203</em>명 이수</div>
+				</div>
+			</a>
+			<a href="#" class="card">
+				<div class="cardInner">
+					<div class="titleArea">
+						<span class="icon">Webpage<i class="ico webpage"></i></span>
+						<p class="category blue">Leadership</p>
+						<strong class="title">실습 위주의 안드로이드 어플리케이션 해킹 기초 강의</strong>
+					</div>
+					<div class="infoArea">
+						<p class="label"><i class="ico time"></i><b>2h 40m</b></p>
+					</div>
+				</div>
+				<div class="btmArea">
+					<div class="starRate s4">
+						<i></i><i></i><i></i><i></i><i></i>
+					</div>
+					<div><em>7,203</em>명 이수</div>
+				</div>
+			</a>
+			<a href="#" class="card">
+				<div class="cardInner">
+					<div class="titleArea">
+						<span class="icon">Classroom<i class="ico classroom"></i></span>
+						<p class="category violet">DT</p>
+						<strong class="title">TensorFlow로 배우는 Generative Models 알고리즘 실습하기</strong>
+					</div>
+					<div class="infoArea">
+						<p class="label"><i class="ico time"></i><b>2h 40m</b></p>
+						<p class="label"><i class="ico map"></i><b>G plant</b></p>
+					</div>
+				</div>
+				<div class="btmArea">
+					<div class="starRate s4">
+						<i></i><i></i><i></i><i></i><i></i>
+					</div>
+					<div><em>7,203</em>명 이수</div>
+				</div>
+			</a>
+			<button class="btnListMore" type="button"><i class="ico plus"></i>list more (<em>5</em>/<em>20</em>)</button>	
+		</li>
+	</ul>
+</section>
+<!-- // .content -->
+@@include('toolbar.html', {
+	"ty1": "",
+	"ty2": "",
+	"ty3": "",
+	"ty4": "",
+	"ty5": ""
+})
+</body>
+</html>

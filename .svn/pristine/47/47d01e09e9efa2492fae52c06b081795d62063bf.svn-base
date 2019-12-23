@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, maximum-scale=1.0, minimum-scale=1.0" />
+    <title>SUNI</title>
+    <link rel="stylesheet" href="../../css/swiper.min.css">
+    <link rel="stylesheet" href="../../css/style.css">
+    <script src="../../js/jquery-1.12.4.js"></script>
+    <script src="../../js/swiper.min.js"></script>
+    <script src="../../js/Chart.min.js"></script>
+    <script src="../../js/ui.js"></script>
+</head>
+
+<body style="overflow: hidden;">
+    <!-- .header -->
+    <header>
+        <section class="listHeader">
+            <a href="#" class="btn pageBack">이전 페이지</a>
+            <div class="keyWord">College</div>
+        </section>
+    </header>
+    <!-- // .header -->
+    <!-- .content -->
+    <section class="content">
+    </section>
+    <!-- // .content -->
+
+    <!-- layer -->
+    <section class="popWrap full">
+        <div class="popBox">
+            <div class="popTitle">
+                <p>Channel Filter</p>
+                <a href="#" class="btnClose">닫기</a>
+            </div>
+            <div class="popCont">
+                <ul class="downloadList">
+                    <li>
+                        <span class="inpD">
+						<label>
+							<span class="txt">AI Fundamental (232)</span>
+                        <input type="checkbox">
+                        <i class="ico checkBox"></i>
+                        </label>
+                        </span>
+                    </li>
+                    <li>
+                        <span class="inpD">
+						<label>
+							<span class="txt">AI Biz. Implementation (88)</span>
+                        <input type="checkbox" checked="checked">
+                        <i class="ico checkBox"></i>
+                        </label>
+                        </span>
+                    </li>
+                    <li>
+                        <span class="inpD">
+						<label>
+							<span class="txt">Speech AI (23)</span>
+                        <input type="checkbox">
+                        <i class="ico checkBox"></i>
+                        </label>
+                        </span>
+                    </li>
+                    <li>
+                        <span class="inpD">
+						<label>
+							<span class="txt">AI Tech Advanced (4)</span>
+                        <input type="checkbox">
+                        <i class="ico checkBox"></i>
+                        </label>
+                        </span>
+                    </li>
+                    <li>
+                        <span class="inpD">
+						<label>
+							<span class="txt">AI Tech Essential (33)</span>
+                        <input type="checkbox">
+                        <i class="ico checkBox"></i>
+                        </label>
+                        </span>
+                    </li>
+                    <li>
+                        <span class="inpD">
+						<label>
+							<span class="txt">Computer Vision AI (35)</span>
+                        <input type="checkbox">
+                        <i class="ico checkBox"></i>
+                        </label>
+                        </span>
+                    </li>
+                    <li>
+                        <span class="inpD">
+						<label>
+							<span class="txt">Language AI (42)</span>
+                        <input type="checkbox">
+                        <i class="ico checkBox"></i>
+                        </label>
+                        </span>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="BtmBtn floating">
+                <div class="btnGroup">
+                    <button type="button" class="btnBlack">Initialize</button>
+                    <button type="button" class="btnOrange">Filter</button>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- //layer -->
+
+</body>
+
+</html>

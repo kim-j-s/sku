@@ -1,0 +1,41 @@
+@@include("head.html")
+<body>
+@@include('header.html')
+<!-- .content -->
+<section class="content">
+	<div class="recViews">
+		<p class="tit etc2">
+			<span class="cName">검색어</span>
+			<span class="txt2">를 입력해주세요</span>
+		</p>
+		<div class="sortChannel">
+			<div class="inner">
+				<div class="sorting">
+					<button type="button" class="btnFilter"><i class="ico filter"></i>Filter<em>(0)</em></button>
+				</div>
+				<div class="sorting">
+					<button type="button" class="btn sort ty2"><span>정확도순</span></button>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<ul class="recList">
+		<li>
+			<div class="emptyBox sch">
+				<i class="icon ico sch"></i>
+				<p class="txt"><strong>Learning Search</strong> 다양한 분야의 학습 과정을 검색하실 수 있습니다.</p>
+			</div>
+		</li>
+	</ul>
+</section>
+<!-- // .content -->
+@@include('toolbar.html', {
+	"ty1": "",
+	"ty2": "",
+	"ty3": "",
+	"ty4": "",
+	"ty5": ""
+})
+</body>
+</html>

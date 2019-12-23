@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, maximum-scale=1.0, minimum-scale=1.0" />
+    <title>skuniversity</title>
+    <link rel="stylesheet" href="../../css/swiper.min.css">
+    <link rel="stylesheet" href="../../css/style.css">
+    <script src="../../js/jquery-1.12.4.js"></script>
+    <script src="../../js/swiper.min.js"></script>
+    <script src="../../js/ui.js"></script>
+</head>
+
+<body>
+    <!-- .header -->
+    <header>
+        <section class="header">
+            <div class="inner">
+                <h1 class="logo">SK University</h1>
+                <div class="keyWord">오늘은 <span>Language AI</span>를 검색해 보세요.</div>
+                <div class="inputBox sch dpb">
+                    <input type="text" class="inp">
+                    <button type="button" class="btn inpReset">초기화</button>
+                    <button type="button" class="btn schBtn">검색</button>
+                </div>
+            </div>
+            <button type="button" class="gnbOpen">전체 메뉴 열기</button>
+            <nav>
+                <div class="navTop">
+                    <button type="button" class="btn close2">닫기</button>
+                </div>
+                <div class="gnb">
+                    <ul class="gnbList">
+                        <li class="ty1"><a href="#">Home</a></li>
+                        <li class="ty2">
+                            <span>Learning</span>
+                            <ul class="gnbListDept">
+                                <li><a href="#">In Progress <span>(20)</span></a></li>
+                                <li><a href="#">Required <span>(20)</span></a></li>
+                                <li><a href="#">In My list <span>(20)</span></a></li>
+                                <li><a href="#">Enrolled <span>(20)</span></a></li>
+                                <li><a href="#">Completed <span>(20)</span></a></li>
+                                <li><a href="#">Retry <span>(20)</span></a></li>
+                            </ul>
+                        </li>
+                        <li class="ty3"><a href="#">Recommend</a></li>
+                        <li class="ty4"><a href="#">Community</a></li>
+                        <li class="ty5"><a href="#">Support</a></li>
+                        <li class="ty6"><a href="#">Search</a></li>
+                        <li class="ty7"><a href="#">My Page</a></li>
+                    </ul>
+                </div>
+            </nav>
+        </section>
+    </header>
+    <!-- // .header -->
+    <div class="noticeWrap">
+        <a href="#">UX DESIGN강좌 11월 수강신청 안내</a>
+        <button class="btn close">닫기</button>
+    </div>
+
+    <!-- .content -->
+    <section class="content">
+        <div class="recCourseWrap">
+            <p class="tit"><strong class="name">김유니</strong>님을 위한 추천 과정입니다.</p>
+            <div class="recCourse">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <p class="txt"><a href="#"><strong>Deep learning</strong> 채널의 추천 과정</a></p>
+                        <a href="#" class="card">
+                            <div class="cardInner">
+                                <div class="titleArea">
+                                    <span class="icon">Video<i class="ico ico video"></i></span>
+                                    <p class="category red">혁신 Design</p>
+                                    <strong class="title">Mobile App UI/UX GUI Design Tutorials 모바일 앱 UX UI GUI</strong>
+                                </div>
+                                <div class="infoArea">
+                                    <p class="label"><i class="ico time"></i><b>2h 40m</b></p>
+                                </div>
+                                <div class="btmArea">
+                                    <div class="starRate s4">
+                                        <i></i><i></i><i></i><i></i><i></i>
+                                    </div>
+                                    <div><em>7,203</em>명 이수</div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="swiper-slide">
+                        <p class="txt"><a href="#"><strong>Deep learning</strong> 채널의 추천 과정 2</a></p>
+                        <a href="#" class="card">
+                            <div class="cardInner">
+                                <div class="titleArea">
+                                    <span class="icon">Video<i class="ico ico video"></i></span>
+                                    <p class="category red">혁신 Design</p>
+                                    <strong class="title">Mobile App UI/UX GUI Design Tutorials 모바일 앱 UX UI GUI</strong>
+                                </div>
+                                <div class="infoArea">
+                                    <p class="label"><i class="ico time"></i><b>2h 40m</b></p>
+                                </div>
+                                <div class="btmArea">
+                                    <div class="starRate s4">
+                                        <i></i><i></i><i></i><i></i><i></i>
+                                    </div>
+                                    <div><em>7,203</em>명 이수</div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="swiper-pagination swiper-pager"></div>
+            </div>
+        </div>
+
+        <div class="mainRec">
+            <ul class="recList">
+                <li>
+                    <div class="recTit"><a href="#">김유니님이 <strong>수강중인 과정</strong>입니다. (8)</a></div>
+                    <a href="#" class="card">
+                        <div class="cardInner">
+                            <div class="titleArea">
+                                <span class="icon">Video<i class="ico ico video"></i></span>
+                                <p class="category red">혁신 Design</p>
+                                <strong class="title">Mobile App UI/UX GUI Design Tutorials 모바일 앱 UX UI GUI</strong>
+                            </div>
+                            <div class="infoArea">
+                                <p class="label"><i class="ico time"></i><b>2h 40m</b></p>
+                            </div>
+                            <div class="btmArea">
+                                <div class="state"><i class="ico check"></i><em>19.10.10</em> 학습 시작</div>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="#" class="card">
+                        <div class="cardInner">
+                            <div class="titleArea">
+                                <span class="icon">Audio<i class="ico audio"></i></span>
+                                <p class="category teal">Mgmt</p>
+                                <strong class="title">UI/UX design with Adobe XD: Design &amp; Prototype</strong>
+                            </div>
+                            <div class="infoArea">
+                                <p class="label"><i class="ico time"></i><b>2h 40m</b></p>
+                            </div>
+                        </div>
+                        <div class="btmArea">
+                            <div class="state"><i class="ico check"></i><em>19.10.10</em> 학습 시작</div>
+                        </div>
+                    </a>
+                    <a href="#" class="card">
+                        <div class="cardInner">
+                            <div class="titleArea">
+                                <span class="icon">Webpage<i class="ico webpage"></i></span>
+                                <p class="category purple">AI</p>
+                                <strong class="title">TensorFlow로 배우는 Generative Models 알고리즘으로 배우는 딥러닝</strong>
+                            </div>
+                            <div class="infoArea">
+                                <p class="label"><i class="ico time"></i><b>2h 40m</b></p>
+                            </div>
+                        </div>
+                        <div class="btmArea">
+                            <div class="state"><i class="ico check"></i><em>19.10.10</em> 학습 시작</div>
+                        </div>
+                    </a>
+                    <a href="#" class="card">
+                        <div class="cardInner">
+                            <div class="titleArea">
+                                <span class="icon">Document<i class="ico document"></i></span>
+                                <p class="category yellow">행복</p>
+                                <strong class="title">UI/UX design with Adobe XD: Design & Prototype</strong>
+                            </div>
+                            <div class="infoArea">
+                                <p class="label"><i class="ico time"></i><b>2h 40m</b></p>
+                            </div>
+                        </div>
+                        <div class="btmArea">
+                            <div class="state"><i class="ico check"></i><em>19.10.10</em> 학습 시작</div>
+                        </div>
+                    </a>
+                    <button class="btnListMore" type="button"><i class="ico plus"></i>view all(<em>8</em>/<em>8</em>)</button>
+                </li>
+                <li>
+                    <div class="recTit"><a href="#">김유니님의 <strong>필수 과정</strong>입니다. (5)</a></div>
+                    <a href="#" class="card">
+                        <div class="cardInner">
+                            <div class="titleArea">
+                                <span class="icon">e-learning<i class="ico learning"></i></span>
+                                <p class="category category violet">DT</p>
+                                <strong class="title">실습 위주의 안드로이드 어플리케이션 해킹 기초 강의</strong>
+                            </div>
+                            <div class="infoArea">
+                                <p class="label"><i class="ico time"></i><b>2h 40m</b></p>
+                            </div>
+                        </div>
+                        <div class="btmArea">
+                            <div class="state"><i class="ico check"></i><em>19.10.10</em> 필수 학습 등록</div>
+                        </div>
+                    </a>
+                    <a href="#" class="card">
+                        <div class="cardInner">
+                            <div class="titleArea">
+                                <span class="icon">Community<i class="ico community"></i></span>
+                                <p class="category green">Global</p>
+                                <strong class="title">Mobile App UI/UX GUI Design Tutorials 모바일 앱 UX UI GUI</strong>
+                            </div>
+                            <div class="infoArea">
+                                <p class="label"><i class="ico time"></i><b>2h 40m</b></p>
+                            </div>
+                        </div>
+                        <div class="btmArea">
+                            <div class="state"><i class="ico check"></i><em>19.10.10</em> 필수 학습 등록</div>
+                        </div>
+                    </a>
+                    <a href="#" class="card">
+                        <div class="cardInner">
+                            <div class="titleArea">
+                                <span class="icon">Webpage<i class="ico webpage"></i></span>
+                                <p class="category purple">AI</p>
+                                <strong class="title">Systemverilog Verification Learning More TB Constructs</strong>
+                            </div>
+                            <div class="infoArea">
+                                <p class="label"><i class="ico time"></i><b>2h 40m</b></p>
+                            </div>
+                        </div>
+                        <div class="btmArea">
+                            <div class="state"><i class="ico check"></i><em>19.10.10</em> 학습 시작</div>
+                        </div>
+                    </a>
+                    <a href="#" class="card">
+                        <div class="cardInner">
+                            <div class="titleArea">
+                                <span class="icon">Classroom<i class="ico classroom"></i></span>
+                                <p class="category teal">Mgmt</p>
+                                <strong class="title">sk실트론 직장내 성희롱예방교육 '마음 푹 행복 쑥'</strong>
+                            </div>
+                            <div class="infoArea">
+                                <p class="label"><i class="ico time"></i><b>2h 40m</b></p>
+                                <p class="label"><i class="ico map"></i><b>G plant</b></p>
+                            </div>
+                        </div>
+                        <div class="btmArea">
+                            <div class="state"><i class="ico check"></i><em>19.10.10</em> 학습 시작</div>
+                        </div>
+                    </a>
+                    <button class="btnListMore" type="button"><i class="ico plus"></i>list more(<em>2</em>/<em>5</em>)</button>
+                </li>
+            </ul>
+        </div>
+    </section>
+    <!-- // .content -->
+    <!-- .pageTop -->
+    <div class="pageTop">
+        <button type="button" class="btn gototop"><span>Top</span></button>
+    </div>
+    <!-- // .pageTop -->
+
+    <!-- .toolBar -->
+    <section class="toolBar">
+        <ul class="toolList">
+            <li class="ty1 on"><a href="#"><span>Home</span></a></li>
+            <li class="ty2"><a href="#"><span>Learning</span></a></li>
+            <li class="ty3"><a href="#"><span>Community</span></a></li>
+            <li class="ty4"><a href="#"><span>Notice</span></a></li>
+            <li class="ty5"><a href="#"><span>My page</span></a></li>
+        </ul>
+    </section>
+    <!-- // .toolBar -->
+</body>
+
+</html>

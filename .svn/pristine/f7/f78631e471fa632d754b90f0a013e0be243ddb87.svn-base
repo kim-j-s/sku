@@ -1,0 +1,6 @@
+<nav>
+	<button class="gnbOpen">전체 메뉴 열기</button>
+	<div class="gnb">
+		이거 전체목록
+	</div>
+</nav>

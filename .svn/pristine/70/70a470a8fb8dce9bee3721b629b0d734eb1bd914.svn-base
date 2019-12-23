@@ -1,0 +1,250 @@
+@@include("head.html")
+<body>
+@@include('detailheader.html')
+<!-- .content -->
+<section class="content">
+
+	<div class="boardDetail">
+		<div class="topText">
+			<span class="cate">Adobe XD UI UX Design Community</span>
+			<p class="titleWrap">
+				<strong class="title">[판교] 2020년 제4차 산업혁명의 본질과 기업혁신을 위한 디지털 비즈니스 실행방안 설명회 (무료, 11월 14일)가 개최됩니다.</strong>
+			</p>
+			<div class="postInfo">
+				<span class="name">홍길동</span>
+				<span class="date">2020.01.15</span>
+				<span class="view"><i class="ico view"></i>3,230</span>
+			</div>
+		</div>
+		<div class="contText">
+			<p>과거에는 경제적 가치 창출만으로도 고객의 지지를 받고 사회로부터 존재 가치를 인정받을 수 있었습니다. 그러나 이제는 경제적 가치뿐 아니라 고객과 사회가 요구하는 여러 가치를 충족시 켜야만 기업의 지속 성장과 생존이 가능합니다.</p>
+			<img src="../../img/temp/img_660_x_371.png" alt="">
+			<p>‘DBL(Double Bottom Line) 추구’란 경영 활동 전반에서 경제적 가치와 사회적 가치 창출을 동시에 추구하는 것을 의미합니다. SK는 DBL 추구를 통해 사회적 가치를 담아낼 수 있는 형태로 비즈니스 모델(Business Model, BM)의 혁신을 진행하고 있습니다.</p>
+		</div>
+	</div>	
+
+	<!-- comment -->
+	<div class="boardComment">
+
+		<div class="cmntEnter">
+			<div class="inner">
+				<div class="field">
+					<textarea placeholder="Writing..."></textarea>
+				</div>
+				<div class="enter">
+					<div class="area">
+						<span class="byte"><em class="left">0</em>/<em class="total">500</em></span>
+					</div>
+					<button type="button" class="btnPhoto"></button>
+					<button type="button" class="btn">Submit</button>
+				</div>
+			</div>
+		</div>
+
+		<div class="sortArea">
+			<span class="inpD">
+				<label>
+					<input type="radio" name="radio" checked="">
+					<i class="ico radio"></i>
+					<span class="txt">Newest</span>
+				</label>
+			</span>
+			<span class="inpD">
+				<label>
+					<input type="radio" name="radio">
+					<i class="ico radio"></i>
+					<span class="txt">Oldest</span>
+				</label>
+			</span>
+		</div>
+		
+		<ul class="cmntArea">
+
+			<li>
+				<div class="box">
+					<span class="pic"><img src="../../img/temp/profile_80_px.png" alt=""></span>
+					<div class="info">
+						<b class="name">김유니</b>
+						<span class="date">2020.01.06</span>
+					</div>
+					<div class="cmntBtn">
+						<button type="button" class="btn edit"></button>
+						<button type="button" class="btn del"></button>
+						<button type="button" class="btn rep"></button>
+					</div>
+					<div class="cmntText flowText">
+						<p class="txtCont ellipsis2">한줄이거 진짜 안들으면 후회합니다.</p>
+					</div>
+					<div class="moreReplyArea">
+						<button type="button" class="moreReply">View replies <em>3</em><i class="ico"></i></button>
+					</div>
+				</div>
+				<ul class="reply">
+					<li>
+						<div class="box">
+							<span class="pic"><img src="../../img/temp/profile_80_px.png" alt=""></span>
+							<div class="info">
+								<b class="name">박열정</b>
+								<span class="date">2020.01.06</span>
+							</div>			
+							<div class="cmntText">
+								<p class="txtCont"><b>@김유니</b>난이도 높은 과제나 실습으로 실력을 단기간에 끌어올리고 싶다면 강사님이 운영하는 POCU 교육 사이트에 등록을 해보길 바랍니다. Git과 Slack으로 다른 교육 서비스와 차별화된 온라인 클래스를 경험할 수 있습니다.</p>
+							</div>
+						</div>
+					</li>
+					<li class="deleted">
+						<div class="box">
+							<span class="pic"></span>
+							<div class="info">삭제된 댓글입니다.</div>
+						</div>
+					</li>
+					<li>
+						<div class="box">
+							<span class="pic"><img src="../../img/temp/profile_80_px.png" alt=""></span>
+							<div class="info">
+								<b class="name">최행복</b>
+								<span class="date">2020.01.06</span>
+							</div>
+							<div class="cmntText">
+								<p class="txtCont"><b>@김유니</b>감사합니다.</p>
+							</div>
+						</div>
+					</li>
+				</ul>
+			</li>
+
+			<li>
+				<div class="box">
+					<span class="pic"><img src="../../img/temp/profile_80_px.png" alt=""></span>
+					<div class="info">
+						<b class="name">차은우</b>
+						<span class="date">2020.01.06</span>
+					</div>
+					<div class="cmntBtn">
+						<button type="button" class="btn rep"></button>
+					</div>
+					<div class="cmntText flowText">
+						<p class="txtCont ellipsis2">이거 진짜 안들으면 후회합니다. 최고의 강사가 귀에 쏙쏙 들어오게 강의하는것 같아요. 2줄 이상 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quo id eveniet dolorem nam a repellat earum fuga vero et deleniti.</p>
+					</div>
+					<div class="moreReplyArea">
+						<button type="button" class="moreRead">+ View more</button>
+						<button type="button" class="moreReply">View replies <em>3</em><i class="ico"></i></button>
+					</div>
+				</div>
+				<ul class="reply">
+					<li>
+						<div class="box">
+							<span class="pic"><img src="../../img/temp/profile_80_px.png" alt=""></span>
+							<div class="info">
+								<b class="name">차민정</b>
+								<span class="date">2020.01.06</span>
+							</div>			
+							<div class="cmntText">
+								<p class="txtCont"><b>@차은우</b>난이도 높은 과제나 실습으로 실력을 단기간에 끌어올리고 싶다면 강사님이 운영하는 POCU 교육 사이트에 등록을 해보길 바랍니다. Git과 Slack으로 다른 교육 서비스와 차별화된 온라인 클래스를 경험할 수 있습니다.</p>
+							</div>
+						</div>
+					</li>
+					<li>
+						<div class="box">
+							<span class="pic"><img src="../../img/temp/profile_80_px.png" alt=""></span>
+							<div class="info">
+								<b class="name">김유니</b>
+								<span class="date">2020.01.06</span>
+							</div>
+							<div class="cmntBtn">
+								<button type="button" class="btn edit"></button>
+								<button type="button" class="btn del"></button>
+							</div>
+							<div class="cmntText">
+								<p class="txtCont"><b>@차은우</b>좋은 내용 감사합니다.</p>
+							</div>
+						</div>
+					</li>
+					<li>
+						<div class="box">
+							<span class="pic"><img src="../../img/temp/profile_80_px.png" alt=""></span>
+							<div class="info">
+								<b class="name">최행복</b>
+								<span class="date">2020.01.06</span>
+							</div>
+							<div class="cmntText">
+								<p class="txtCont"><b>@차은우</b>새로운 콘텐츠로 기초를 다시 익히고 다시 배우고 최신 패키지 및 도구를 배울 수있는 좋은 기회입니다</p>
+							</div>
+						</div>
+					</li>
+				</ul>
+			</li>
+
+			<li>
+				<div class="box">
+					<span class="pic"><img src="../../img/temp/profile_80_px.png" alt=""></span>
+					<div class="info">
+						<b class="name">김유니</b>
+						<span class="date">2020.01.06</span>
+					</div>
+					<div class="cmntBtn">
+						<button type="button" class="btn edit"></button>
+						<button type="button" class="btn del"></button>
+						<button type="button" class="btn rep"></button>
+					</div>
+					<div class="cmntText flowText">
+						<p class="txtCont ellipsis2">두줄 이상 코멘트 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Et soluta tempora voluptas quos vitae veniam, repellat a consequuntur iure velit.</p>
+					</div>
+					<span class="img"><img src="../../img/temp/Penguins.jpg" alt=""></span>
+					<div class="moreReplyArea">
+						<button type="button" class="moreRead">+ View more</button>
+						<button type="button" class="moreReply">View replies <em>3</em><i class="ico"></i></button>
+					</div>
+				</div>
+				<ul class="reply">
+					<li>
+						<div class="box">
+							<span class="pic"><img src="../../img/temp/profile_80_px.png" alt=""></span>
+							<div class="info">
+								<b class="name">박열정</b>
+								<span class="date">2020.01.06</span>
+							</div>
+							<div class="cmntText">
+								<p class="txtCont"><b>@김유니</b>난이도 높은 과제나 실습으로 실력을 단기간에 끌어올리고 싶다면 강사님이 운영하는 POCU 교육 사이트에 등록을 해보길 바랍니다. Git과 Slack으로 다른 교육 서비스와 차별화된 온라인 클래스를 경험할 수 있습니다.</p>
+							</div>
+						</div>
+					</li>
+					<li class="deleted">
+						<div class="box">
+							<span class="pic"></span>
+							<div class="info">삭제된 댓글입니다.</div>
+						</div>
+					</li>
+					<li>
+						<div class="box">
+							<span class="pic"><img src="../../img/temp/profile_80_px.png" alt=""></span>
+							<div class="info">
+								<b class="name">최행복</b>
+								<span class="date">2020.01.06</span>
+							</div>
+							<div class="cmntText">
+								<p class="txtCont"><b>@김유니</b>감사합니다.</p>
+							</div>
+						</div>
+					</li>
+				</ul>
+			</li>
+
+			<!-- 삭제된 댓글 -->
+			<li class="deleted">
+				<div class="box">
+					<span class="pic"></span>
+					<div class="info">삭제된 댓글입니다.</div>
+				</div>
+			</li>
+		</ul>
+		
+		<button type="button" class="btnListMore" type="button"><i class="ico plus"></i>list more (<em>20</em>/<em>59</em>)</button>
+	</div>
+	<!-- //comment -->
+	
+</section>
+<!-- // .content -->
+
+</body>
+</html>

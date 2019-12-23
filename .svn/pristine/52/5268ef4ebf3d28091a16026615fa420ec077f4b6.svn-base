@@ -1,0 +1,127 @@
+@charset "UTF-8";
+/* font */
+@font-face { font-family: 'notosanskr'; font-style: normal; font-weight: 400; src: url("../font/NotoSansKR-Regular.eot"); src: url("../font/NotoSansKR-Regular.woff2") format("woff2"), url("../font/NotoSansKR-Regular.woff") format("woff"); }
+
+@font-face { font-family: 'notosanskr'; font-style: normal; font-weight: 700; src: url("../font/NotoSansKR-Bold.eot"); src: url("../font/NotoSansKR-Bold.woff2") format("woff2"), url("../font/NotoSansKR-Bold.woff") format("woff"); }
+
+/* reset */
+html, body, form, div, p, h1, h2, h3, h4, h5, h6, dl, dt, dd, ul, ol, li, fieldset, th, td, button { margin: 0; padding: 0; border: 0; font: inherit; -webkit-box-sizing:border-box; box-sizing:border-box;}
+
+html, body { height: 100%; font-size: 16px !important; }
+
+body { -webkit-text-size-adjust: none; font-family: 'notosanskr','Apple SD Gothic Neo','AppleGothic','Apple Gothic','-apple-system',sans-serif; font-weight: 400; color: #323232; word-break: keep-all; }
+
+input, textarea, select, button { font: inherit; vertical-align: middle; padding: 0; margin: 0; color: #222; font-family: 'notosanskr','Apple SD Gothic Neo','AppleGothic','Apple Gothic','-apple-system',sans-serif; -webkit-box-sizing:border-box; box-sizing:border-box;}
+
+input[type="button"], input[type="text"], input[type="image"], input[type="submit"], input[type="password"], textarea { outline: none; -webkit-appearance: none; }
+
+input[type="button"]:hover, input[type="submit"]:hover { cursor: pointer; }
+
+button:focus, a:focus { outline: none; }
+
+textarea { resize: none; }
+
+table { width: 100%; border-collapse: collapse; border-spacing: 0; }
+
+ul, ol, li { list-style-type: none; -webkit-box-sizing: border-box; box-sizing: border-box;}
+
+img, fieldset, iframe { border: none; }
+
+address, cite, code, dfn, em, var, th, strong { font-style: normal; font-weight: 400; }
+
+a, a:active, a:hover { text-decoration: none; color: inherit; font-weight: 400; }
+
+a:hover { cursor: pointer !important; }
+
+article, aside, dialog, figure, footer, header, hgroup, nav, section { display: block; -webkit-box-sizing:border-box; box-sizing:border-box;}
+
+caption, legend { height: 0; width: 0; line-height: 0; font-size: 0; overflow: hidden; visibility: hidden; display: none; -webkit-padding-start: 0; -webkit-padding-end: 0; }
+
+button { background: transparent; cursor: pointer; }
+
+iframe { border: 0; }
+
+input::-ms-clear { display: none; }
+
+::-webkit-input-placeholder { color: #999 !important; opacity: 1 !important; font-weight: 400; font-family: "notosanskr","Apple SD Gothic Neo","AppleGothic","Apple Gothic","-apple-system",sans-serif; }
+
+::-moz-placeholder { color: #999 !important; opacity: 1 !important; font-weight: 400; font-family: "notosanskr","Apple SD Gothic Neo","AppleGothic","Apple Gothic","-apple-system",sans-serif; }
+
+:-ms-input-placeholder { color: #999 !important; opacity: 1 !important; font-weight: 400; font-family: "notosanskr","Apple SD Gothic Neo","AppleGothic","Apple Gothic","-apple-system",sans-serif; }
+
+::-ms-input-placeholder { color: #999 !important; opacity: 1 !important; font-weight: 400; font-family: "notosanskr","Apple SD Gothic Neo","AppleGothic","Apple Gothic","-apple-system",sans-serif; }
+
+::placeholder { color: #999 !important; opacity: 1 !important; font-weight: 400; font-family: "notosanskr","Apple SD Gothic Neo","AppleGothic","Apple Gothic","-apple-system",sans-serif; }
+
+:-ms-input-placeholder { color: #999 !important; opacity: 1 !important; font-weight: 400; font-family: "notosanskr","Apple SD Gothic Neo","AppleGothic","Apple Gothic","-apple-system",sans-serif; }
+
+img { border: none; }
+
+select { background: transparent; }
+
+.ellipsis { display: block; overflow: hidden; -o-text-overflow: ellipsis; text-overflow: ellipsis; white-space: nowrap; }
+
+.blind { position: absolute; overflow: hidden; clip: rect(0 0 0 0); margin: -1px; width: 1px; height: 1px; }
+
+
+
+
+/* common */
+.dpi { display:inline !important;}
+.dpb { display:block !important;}
+.dpib { display:inline-block !important;}
+.dpn { display:none !important;}
+
+/* common element */
+/* iput */
+.inputBox {position:relative; display:inline-block;}
+.inputBox.full {width:100% !important;}
+.inputBox .inp {display:block; width:100%; height:35px; padding:0 15px; border:1px solid #d5d5d5; font-size:14px; -webkit-transition:0.3s; -o-transition:0.3s; transition:0.3s; background:transparent;}
+.inputBox .inp:disabled {}
+.inputBox .inp:focus {}
+
+.inputBox.sch {position:static;}
+.inputBox.sch .inp {border:1px solid #f4f4f4; border-radius:3px;}
+.inputBox.sch .inp:focus, .inputBox.sch .inp.on {}
+.inputBox.sch .inp {background:transparent;}
+.inputBox.sch .inp:focus {background:#f4f4f4;}
+.inputBox.sch .schBtn {position:absolute; top:5px; right:10px;}
+.inputBox.sch.on {z-index:2;}
+.inputBox.sch.on .inp {background:#f4f4f4;}
+
+
+/* button */
+.btn {display:inline-block; font-size:0;}
+.btn.schBtn {width:25px; height:25px; background:url(../img/icon_gnb_search_50_px.svg) left top no-repeat; background-size:100%;}
+.btn.close {position:relative; width:24px; height:24px; padding:5px; overflow:hidden;}
+.btn.close:before {content:''; position:absolute; top:11px; left:3px; width:18px; border-bottom:2px solid #000; -webkit-transform: rotate(45deg); -ms-transform: rotate(45deg); -o-transform: rotate(45deg); transform: rotate(45deg);}
+.btn.close:after {content:''; position:absolute; top:11px; right:3px; width:18px; border-bottom:2px solid #000; -webkit-transform: rotate(135deg); -ms-transform: rotate(135deg); -o-transform: rotate(135deg); transform: rotate(135deg);}
+
+/* ----------- kjs ----------- */
+header {position:relative; height:55px;}
+
+header h1 {position:absolute; top:0; left:0;  width:100%; height:100%; z-index:-1; overflow:hidden; text-indent:-9999px; background:#f4f4f4;}
+header h1:before {content:''; position:absolute; top:12px; left:15px; width:81px; height:14px; background:url(../img/logo.svg) center center no-repeat; background-size:100%;}
+header h1.on:before {opacity:0; -webkit-transition:1s; -o-transition:1s; transition:1s;}
+
+header .keyWord {position:absolute; top:0; left:0; width:100%; height:100%; z-index:-2; padding:9px 40px 8px 15px; overflow:hidden; -o-text-overflow:ellipsis; text-overflow:ellipsis; white-space:nowrap; font-size:12px; color:#666; line-height:18px; background:#f4f4f4;}
+header .keyWord > span {color:#e1002a;}
+header .keyWord.on {z-index:-1;}
+
+/* header Type Main */
+.header {position:fixed; top:0; left:0; width:100%; padding:10px 15px 10px 53px; background:#fff;}
+.header > .inner {position:relative;}
+
+/* gnb */
+.gnbOpen {position:absolute; top:10px; left:15px; width:24px; height:35px; overflow:hidden; text-indent:-9999px; background:url(../img/menu_normal.svg) left top no-repeat; background-size:cover;}
+.gnb {display:none;}
+
+
+/* 공지사항 */
+.noticeWrap {position:relative; padding:16px 56px 16px 15px; border-top:1px solid #c8d0e0; overflow:hidden;}
+.noticeWrap.on {height:0; padding:0 40px 0 15px; border:none; -webkit-transition:.5s; -o-transition:.5s; transition:.5s;}
+.noticeWrap > a {position:relative; display:block; padding-left:27px; line-height:16px; font-size:12px; color:#666; overflow: hidden; -o-text-overflow: ellipsis; text-overflow: ellipsis; white-space: nowrap;}
+.noticeWrap > a:before {content:''; position:absolute; top:0; left:0; width:16px; height:16px; background:url(../img/notice.svg) center center no-repeat; background-size:100%;}
+.noticeWrap > .btn.close {position:absolute; top:13px; right:16px;}
+
+/* ----------- yjm ----------- */

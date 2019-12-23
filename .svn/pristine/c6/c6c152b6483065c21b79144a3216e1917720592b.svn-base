@@ -1,0 +1,8 @@
+// script kjs
+$(function(){
+
+	console.log('test');
+
+	// mobile script
+});
+

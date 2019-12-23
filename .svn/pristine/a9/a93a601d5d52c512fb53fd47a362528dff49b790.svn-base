@@ -1,0 +1,162 @@
+@@include("head.html")
+<body>
+@@include('listheader.html',{
+	"title" : "Learning"
+})
+<!-- .content -->
+<section class="content">
+	
+	<div class="tabBox">
+		<div class="menuWrap">
+			<div class="menu">
+				<a href="#">In progress<span class="count">+30</span></a>
+				<a href="#" class="active">In My list<span class="count">+30</span></a>
+				<a href="#">Enrolled<span class="count">+30</span></a>
+				<a href="#">Required<span class="count">+99</span></a>
+				<a href="#">Completed<span class="count">+99</span></a>
+				<a href="#">Earned Stamp<span class="count">+99</span></a>
+				<a href="#">Retry<span class="count">+99</span></a>
+			</div>
+		</div>
+	</div>
+
+	<div class="topGuide">
+		<span class="txt">총 <b>30개</b>의 리스트가 있습니다.</span>
+		<button class="btnFilter"><i class="ico filter"></i>Filter<em>(0)</em></button>
+	</div>
+
+	<div class="cardBox">
+
+		<a href="#" class="card">
+			<div class="cardInner">
+				<div class="titleArea">
+					<span class="icon">Audio<i class="ico audio"></i></span>
+					<p class="category purple">AI</p>
+					<strong class="title">UI/UX design with Adobe XD: Design & Prototype</strong>
+				</div>
+				<div class="infoArea">
+					<p class="label"><i class="ico time"></i><b>2h 40m</b></p>
+				</div>
+			</div>
+			<div class="btmArea">
+				<div class="starRate s1">
+					<i></i><i></i><i></i><i></i><i></i>
+				</div>
+				<div><em>7,203</em>명 이수</div>
+			</div>
+		</a>
+
+		<a href="#" class="card">
+			<div class="cardInner">
+				<div class="titleArea">
+					<span class="icon">Webpage<i class="ico webpage"></i></span>
+					<p class="category yellow">행복</p>
+					<strong class="title">Mobile App UI/UX GUI Design Tutorials 모바일 앱 UX UI GUI</strong>
+				</div>
+				<div class="infoArea">
+					<p class="label"><i class="ico time"></i><b>2h 40m</b></p>
+					<p class="label"><i class="ico map"></i><b>오프라인 장소 주소노출 말줄임 말줄임 말줄임 </b></p>
+				</div>
+			</div>
+			<div class="btmArea">
+				<div class="starRate s2">
+					<i></i><i></i><i></i><i></i><i></i>
+				</div>
+				<div><em>7,203</em>명 이수</div>
+			</div>
+		</a>
+
+		<a href="#" class="card">
+			<div class="cardInner">
+				<div class="titleArea">
+					<span class="icon">Experiential<i class="ico experiential"></i></span>
+					<p class="category green">Global</p>
+					<strong class="title">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Expedita quibusdam porro odio, illum tenetur, dolore mollitia corrupti. Amet, provident, saepe.</strong>
+				</div>
+				<div class="infoArea">
+					<p class="label"><i class="ico time"></i><b>2h 40m</b></p>
+					<p class="label"><i class="ico map"></i><b>오프라인 장소 주소노출 말줄임 말줄임 말줄임 </b></p>
+				</div>
+			</div>
+			<div class="btmArea">
+				<div class="starRate s3">
+					<i></i><i></i><i></i><i></i><i></i>
+				</div>
+				<div><em>7,203</em>명 이수</div>
+			</div>
+		</a>
+
+		<a href="#" class="card">
+			<div class="cardInner">
+				<div class="titleArea">
+					<span class="icon">e-learning<i class="ico learning"></i></span>
+					<p class="category red">혁신 Design</p>
+					<strong class="title">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Expedita quibusdam porro odio, illum tenetur, dolore mollitia corrupti. Amet, provident, saepe.</strong>
+				</div>
+				<div class="infoArea">
+					<p class="label"><i class="ico time"></i><b>2h 40m</b></p>
+				</div>
+			</div>
+			<div class="btmArea">
+				<div class="starRate s4">
+					<i></i><i></i><i></i><i></i><i></i>
+				</div>
+				<div><em>7,203</em>명 이수</div>
+			</div>
+		</a>
+
+		<a href="#" class="card">
+			<div class="cardInner">
+				<div class="titleArea">
+					<span class="icon">Document<i class="ico document"></i></span>
+					<p class="category orange">SV</p>
+					<strong class="title">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Expedita quibusdam porro odio, illum tenetur, dolore mollitia corrupti. Amet, provident, saepe.</strong>
+				</div>
+				<div class="infoArea">
+					<p class="label"><i class="ico time"></i><b>2h 40m</b></p>
+					<p class="label"><i class="ico map"></i><b>오프라인 장소 주소노출 말줄임 말줄임 말줄임 </b></p>
+				</div>
+			</div>
+			<div class="btmArea">
+				<div class="starRate s5">
+					<i></i><i></i><i></i><i></i><i></i>
+				</div>
+				<div><em>7,203</em>명 이수</div>
+			</div>
+		</a>
+
+		<a href="#" class="card">
+			<div class="cardInner">
+				<div class="titleArea">
+					<span class="icon">Video<i class="ico video"></i></span>
+					<p class="category violet">DT</p>
+					<strong class="title">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Expedita quibusdam porro odio, illum tenetur, dolore mollitia corrupti. Amet, provident, saepe.</strong>
+				</div>
+				<div class="infoArea">
+					<p class="label"><i class="ico time"></i><b>2h 40m</b></p>
+					<p class="label"><i class="ico map"></i><b>오프라인 장소 주소노출 말줄임 말줄임 말줄임 </b></p>
+				</div>
+			</div>
+			<div class="btmArea">
+				<div class="starRate">
+					<i></i><i></i><i></i><i></i><i></i>
+				</div>
+				<div><em>7,203</em>명 이수</div>
+			</div>
+		</a>
+	</div>
+
+	<button class="btnListMore" type="button"><i class="ico plus"></i>list more(<em>2</em>/<em>5</em>)</button>
+	
+</section>
+<!-- // .content -->
+
+@@include('toolbar.html', {
+	"ty1": "",
+	"ty2": " on",
+	"ty3": "",
+	"ty4": "",
+	"ty5": ""
+})
+</body>
+</html>

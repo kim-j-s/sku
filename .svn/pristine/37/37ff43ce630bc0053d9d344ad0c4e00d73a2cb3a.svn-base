@@ -1,0 +1,12 @@
+@@include("head.html")
+<body>
+@@include('listheader.html',{
+	"title" : "My Page"
+})
+<!-- .content -->
+<section class="content">
+	conte <br>conte <br>conte <br>conte <br>conte <br>conte <br>conte <br>conte <br>conte <br>conte <br>conte <br>conte <br>conte <br>conte <br>conte <br>conte <br>conte <br>conte <br>conte <br>conte <br>conte <br>conte <br>conte <br>conte <br>conte <br>conte
+</section>
+<!-- // .content -->
+</body>
+</html>

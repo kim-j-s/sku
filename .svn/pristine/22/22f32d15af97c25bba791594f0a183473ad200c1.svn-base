@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, maximum-scale=1.0, minimum-scale=1.0" />
+    <title>skuniversity</title>
+    <link rel="stylesheet" href="../../css/swiper.min.css">
+    <link rel="stylesheet" href="../../css/style.css">
+    <script src="../../js/jquery-1.12.4.js"></script>
+    <script src="../../js/swiper.min.js"></script>
+    <script src="../../js/ui.js"></script>
+</head>
+
+<body>
+    <!-- .header -->
+    <header>
+        <section class="listHeader">
+            <a href="#" class="btn pageBack">이전 페이지</a>
+            <div class="keyWord">My Page</div>
+        </section>
+    </header>
+    <!-- // .header -->
+    <!-- .content -->
+    <section class="content">
+        <div class="porfile">
+            <div class="year">
+                <select name="" id="" class="selectbox">
+                    <option value="">2022</option>
+                    <option value="">2021</option>
+                    <option value="" selected="selected">2020</option>
+                </select>
+            </div>
+            <div class="thumb">
+                <img src="../../img/profile_110.jpg" alt="">
+            </div>
+            <div class="name">
+                <strong>김유니</strong> <a href="#" class="btnLink"><span>Sign out</span><i class="ico link"></i></a>
+            </div>
+            <div class="subDetail">
+                <span>SK C&amp;C</span>
+                <span>플랫폼 사업 1팀</span>
+            </div>
+        </div>
+
+        <div class="learnTotal">
+            <div class="inner">
+                <a href="#">
+                    <dl class="ltTit">
+                        <dt><span>총 학습시간</span></dt>
+                        <dd><strong class="t">120</strong>h <strong class="t">00</strong>m</dd>
+                    </dl>
+                </a>
+                <div class="chartWrap">
+                    <!-- data-value="360" 최대값 -->
+                    <canvas id="chart" data-value="150"></canvas>
+                    <!--// data-value="360" 최대값 -->
+                </div>
+                <div class="learnListWrap">
+                    <ul class="learnList">
+                        <li class="ty1"><span class="tit">SK University</span><span class="time">40h 30m</span></li>
+                        <li class="ty2"><span class="tit">My Company</span><span class="time">75h 30m</span></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="linkListWrap">
+            <ul class="linkList">
+                <li>
+                    <a href="#">완료한 학습 <strong>20개</strong></a>
+                </li>
+                <li>
+                    <a href="#">획득 Stamp <strong>x8</strong></a>
+                </li>
+                <li>
+                    <label for="switch">PUSH 알림 허용</label>
+                    <div class="switch">
+                        <input type="checkbox" name="" id="switch" class="switchCheckbox" checked="checked">
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </section>
+
+    <style>
+        .learnListWrap {
+            margin-top: 15px;
+            text-align: center;
+        }
+
+        .learnList {
+            display: inline-block;
+        }
+
+        .learnList>li {
+            position: relative;
+            padding-left: 8px;
+            font-size: 14px;
+            color: #666;
+        }
+
+        .learnList>li:before {
+            content: '';
+            position: absolute;
+            top: 50%;
+            left: 0;
+            margin-top: -1px;
+            width: 3px;
+            border-radius: 50%;
+        }
+
+        .learnList>li.ty1:before {
+            border-bottom: 3px solid #ff664d;
+        }
+
+        .learnList>li.ty2:before {
+            border-bottom: 3px solid #545d8b;
+        }
+
+        .learnList>li+li {
+            margin-top: 4px;
+        }
+
+        .learnList>li>span {
+            display: inline-block;
+        }
+
+        .learnList>li .tit {
+            width: 107px;
+            text-align: left;
+        }
+
+        .learnList>li .time {
+            color: #4c4c4c;
+            text-align: right;
+        }
+    </style>
+    <script src="https://www.chartjs.org/dist/2.9.3/Chart.min.js"></script>
+
+
+    <script>
+        $(function() {
+            // chart
+            if ($('#chart').length > 0) {
+                var chartVal = $('#chart').data('value');
+                var chartPerA = Math.floor((chartVal / 360) * 100);
+                var chartPerB = 100 - chartPerA;
+                chart(chartPerA, chartPerB);
+            }
+        });
+
+        function chart(a, b) {
+            var config = {
+                type: 'doughnut',
+                data: {
+                    datasets: [{
+                        data: [a, b],
+                        backgroundColor: [
+                            'rgba(255, 102, 77, 1)',
+                            'rgba(84, 93, 139, 1)',
+                        ],
+                        borderWidth: 0
+                    }]
+                },
+                options: {
+                    cutoutPercentage: 0,
+                    responsive: false,
+                    aspectRatio: 1,
+                    legend: {
+                        display: false
+                    },
+                    tooltips: {
+                        enabled: false
+                    },
+                    layout: {
+                        padding: 0,
+                    },
+                }
+            };
+
+            var ctx = document.getElementById('chart').getContext('2d');
+            var myChart = new Chart(ctx, config);
+        }
+    </script>
+
+
+
+    <!-- // .content -->
+</body>
+
+</html>

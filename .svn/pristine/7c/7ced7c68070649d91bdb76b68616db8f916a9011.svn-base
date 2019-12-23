@@ -1,0 +1,39 @@
+<nav>
+	<div class="navTop">
+		<button type="button" class="btn close2">닫기</button>
+	</div>
+	<div class="gnb">
+		<ul class="gnbList">
+			<li class="ty1"><a href="#">Home</a></li>
+			<li class="ty2">
+				<span>Learning</span>
+				<ul class="gnbListDept">
+					<li><a href="#">In Progress <span>(20)</span></a></li>
+					<li><a href="#">Required <span>(20)</span></a></li>
+					<li><a href="#">In My list <span>(20)</span></a></li>
+					<li><a href="#">Enrolled <span>(20)</span></a></li>
+					<li><a href="#">Completed <span>(20)</span></a></li>
+					<li><a href="#">Retry <span>(20)</span></a></li>
+				</ul>
+			</li>
+			<li class="ty8">
+				<span>Category</span>
+				<ul class="gnbListDept">
+					<li><a href="#">AI <span>(20)</span></a></li>
+					<li><a href="#">DT <span>(20)</span></a></li>
+					<li><a href="#">행복 <span>(20)</span></a></li>
+					<li><a href="#">SV <span>(20)</span></a></li>
+					<li><a href="#">혁신디자인 <span>(20)</span></a></li>
+					<li><a href="#">Global <span>(20)</span></a></li>
+					<li><a href="#">Leadership <span>(20)</span></a></li>
+					<li><a href="#">Management <span>(20)</span></a></li>
+				</ul>
+			</li>
+			<li class="ty3"><a href="#">Recommend</a></li>
+			<li class="ty4"><a href="#">Community</a></li>
+			<li class="ty5"><a href="#">Support</a></li>
+			<li class="ty6"><a href="#">Search</a></li>
+			<li class="ty7"><a href="#">My Page</a></li>
+		</ul>
+	</div>
+</nav>

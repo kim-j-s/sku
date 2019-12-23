@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, maximum-scale=1.0, minimum-scale=1.0" />
+    <title>skuniversity</title>
+    <link rel="stylesheet" href="../../css/swiper.min.css">
+    <link rel="stylesheet" href="../../css/style.css">
+    <script src="../../js/jquery-1.12.4.js"></script>
+    <script src="../../js/swiper.min.js"></script>
+    <script src="../../js/ui.js"></script>
+</head>
+
+<body>
+    <style>
+        h2.tt {
+            padding: 0 15px;
+            color: red;
+            margin: 20px 0 5px;
+            font-weight: 700;
+        }
+    </style>
+    <!-- .content -->
+    <section class="content">
+
+        <div class="cardBox">
+
+            <h2 class="tt">코스 상세 내 코스카드</h2>
+
+            <div class="cardWrap">
+
+                <a href="#" class="card course">
+                    <div class="cardInner">
+                        <div class="titleArea">
+                            <span class="icon">Course<i class="ico course"></i></span>
+                            <p class="category teal">혁신 Design</p>
+                            <strong class="title">Swift4로 배우는 iOS11 프로그래밍 인공지능(AI) 아이폰 앱 개발</strong>
+                        </div>
+                        <div class="infoArea">
+                            <p class="date">20.02.01 ~ 20.12.31</p>
+                        </div>
+                        <button type="button" class="cardToggle"></button>
+                    </div>
+                </a>
+
+                <a href="#" class="card">
+                    <div class="cardInner">
+                        <div class="titleArea">
+                            <span class="icon">Audio<i class="ico audio"></i></span>
+                            <p class="category green">혁신 Design</p>
+                            <strong class="title">UI/UX design with Adobe XD: Design & Prototype</strong>
+                        </div>
+                        <div class="infoArea">
+                            <div class="tag"><span>#HR Trend & Insight</span></div>
+                            <p class="date">20.02.01 ~ 20.12.31</p>
+                        </div>
+                    </div>
+                </a>
+
+                <a href="#" class="card">
+                    <div class="cardInner">
+                        <div class="titleArea">
+                            <span class="icon">Video<i class="ico video"></i></span>
+                            <p class="category blue">혁신 Design</p>
+                            <strong class="title">실습 위주의 안드로이드 어플리케이션 해킹 기초 강의</strong>
+                        </div>
+                        <div class="infoArea">
+                            <div class="tag"><span>#HR Trend & Insight</span></div>
+                            <p class="date">20.02.01 ~ 20.12.31</p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+
+            <h2 class="tt">코스 상세 내 큐브카드</h2>
+
+            <a href="#" class="card">
+                <div class="cardInner">
+                    <div class="titleArea">
+                        <span class="icon">Webpage<i class="ico webpage"></i></span>
+                        <p class="category yellow">혁신 Design</p>
+                        <strong class="title">TensorFlow로 배우는 Generative Models 알고리즘 말줄임 말줄임 말줄임 말줄임 </strong>
+                    </div>
+                    <div class="infoArea">
+                        <div class="tag"><span>#Leading Myself</span></div>
+                        <p class="date">20.02.01 ~ 20.12.31</p>
+                    </div>
+                </div>
+            </a>
+        </div>
+
+    </section>
+    <!-- // .content -->
+</body>
+
+</html>

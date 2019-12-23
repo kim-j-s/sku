@@ -1,0 +1,18 @@
+// script kjs
+$(function(){
+
+	console.log('test');
+
+	// mobile script
+});
+
+
+
+
+// script yjm
+$(function(){
+
+	console.log('test yjm');
+
+	// mobile script
+});

@@ -1,0 +1,109 @@
+@@include("head.html")
+<body>
+@@include('listheader.html',{
+	"title" : "My Page"
+})
+<!-- .content -->
+<section class="content">
+	<div class="porfile">
+		<div class="year">
+			<select name="" id="" class="selectbox">
+				<option value="">2022</option>
+				<option value="">2021</option>
+				<option value="" selected="selected">2020</option>
+			</select>
+		</div>
+		<div class="thumb">
+			<img src="../../img/profile_110.jpg" alt="">
+		</div>
+		<div class="name">
+			<strong>김유니</strong> <a href="#" class="btnLink"><span>Sign out</span><i class="ico link"></i></a>
+		</div>
+		<div class="subDetail">
+			<span>SK C&amp;C</span>
+			<span>플랫폼 사업 1팀</span>
+		</div>
+	</div>
+
+	<div class="learnTotal">
+		<dl class="ltTit">
+			<dt>총 학습시간</dt>
+			<dd>120h 00m</dd>
+		</dl>
+
+		<div class="chartWrap">
+			<div class="ui pie w56" data-value="200">
+				<span class="pieLeft">
+					<span class="pieLeftBg"></span>
+				</span>
+				<span class="pieRight">
+					<span class="pieRightBg"></span>
+				</span>
+			</div>
+		</div>
+	</div>
+
+	<!-- 전체 팝업 용 -->
+	<div class="learnTime">
+		<div class="tit">College 별 학습 시간</div>
+		<ul class="ltList">
+			<li class="ty1">
+				<dl class="ltClass">
+					<dt>AI</dt>
+					<dd>10h 30m</dd>
+				</dl>
+			</li>
+			<li class="ty2">
+				<dl class="ltClass">
+					<dt>혁신 Design</dt>
+					<dd>10h 30m</dd>
+				</dl>
+			</li>
+			<li class="ty3">
+				<dl class="ltClass">
+					<dt>Mgmt</dt>
+					<dd>10h 30m</dd>
+				</dl>
+			</li>
+			<li class="ty4">
+				<dl class="ltClass">
+					<dt>Leadership</dt>
+					<dd>10h 30m</dd>
+				</dl>
+			</li>
+			<li class="ty5">
+				<dl class="ltClass">
+					<dt>DT</dt>
+					<dd>10h 30m</dd>
+				</dl>
+			</li>
+			<li class="ty6">
+				<dl class="ltClass">
+					<dt>Global</dt>
+					<dd>10h 30m</dd>
+				</dl>
+			</li>
+			<li class="ty7">
+				<dl class="ltClass">
+					<dt>행복</dt>
+					<dd>10h 30m</dd>
+				</dl>
+			</li>
+			<li class="ty8">
+				<dl class="ltClass">
+					<dt>SV</dt>
+					<dd>10h 30m</dd>
+				</dl>
+			</li>
+		</ul>
+	</div>
+	<!--// 전체 팝업 용 -->
+
+
+</section>
+
+
+
+<!-- // .content -->
+</body>
+</html>

@@ -1,0 +1,3 @@
+<nav class="gnb">
+	<button class="gnbOpen"><span>메뉴 열기</span></button>
+</nav>

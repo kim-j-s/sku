@@ -1,0 +1,170 @@
+@@include("head.html")
+<body style="overflow: hidden;">
+@@include('listheader.html',{
+	"title" : "Learning"
+})
+<!-- .content -->
+<section class="content">
+</section>
+<!-- // .content -->
+
+<!-- layer -->
+<section class="popWrap full">
+	<div class="popBox">
+		<div class="popTitle">
+			<p>Class Series Detail</p>
+			<a href="#" class="btnClose">닫기</a>
+		</div>
+		<div class="popCont">
+
+			<div class="topDesc"><p>Please check it</p></div>
+
+			<div class="classTableWrap">
+				<div class="tableHead line">
+					<p class="num">차수</p>
+					<p class="name">강사</p>
+					<p class="date">수강신청기간</p>
+				</div>
+
+				<ul class="classInfo accordion">
+					<li>
+						<div class="viewBox line">
+							<p class="num">1</p>
+							<p class="name">김연아</p>
+							<p class="date">2020.01.01 ~ 2020.02.01</p>
+							<a href="#" class="anch"></a>
+						</div>
+						<div class="sub" style="display: none;">
+							<table class="txtTable">
+								<colgroup>
+									<col style="width: 120px">
+									<col style="width: auto">
+								</colgroup>
+								<tbody>
+									<tr>
+										<th><span>장소</span></th>
+										<td>SK Telecom 본사 11층 대회의실</td>
+									</tr>
+									<tr>
+										<th><span>수강신청인원</span></th>
+										<td>50/50</td>
+									</tr>
+									<tr>
+										<th><span>시작일</span></th>
+										<td>2020.01.01</td>
+									</tr>
+									<tr>
+										<th><span>종료일</span></th>
+										<td>2020.03.01</td>
+									</tr>
+									<tr>
+										<th><span>담당자</span></th>
+										<td>이몽룡 (SK planet) <br><a class="linkBlue" href="mailto:testid@sktelecom.com">testid@sktelecom.com</a></td>
+									</tr>
+									<tr>
+										<th><span>취소 패널티</span></th>
+										<td>강좌 취소 시 다음 차수 완료에도 불이익이 갈수 있음</td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</li>
+					<li>
+						<div class="viewBox line">
+							<p class="num">2</p>
+							<p class="name">박지성</p>
+							<p class="date">2020.01.01 ~ 2020.02.01</p>
+							<a href="#" class="anch"></a>
+						</div>
+						<div class="sub" style="display: none;">
+							<table class="txtTable">
+								<colgroup>
+									<col style="width: 120px">
+									<col style="width: auto">
+								</colgroup>
+								<tbody>
+									<tr>
+										<th><span>장소</span></th>
+										<td>SK Telecom 본사 11층 대회의실</td>
+									</tr>
+									<tr>
+										<th><span>수강신청인원</span></th>
+										<td>50/50</td>
+									</tr>
+									<tr>
+										<th><span>시작일</span></th>
+										<td>2020.01.01</td>
+									</tr>
+									<tr>
+										<th><span>종료일</span></th>
+										<td>2020.03.01</td>
+									</tr>
+									<tr>
+										<th><span>담당자</span></th>
+										<td>이몽룡 (SK planet) <br><a class="linkBlue" href="mailto:testid@sktelecom.com">testid@sktelecom.com</a></td>
+									</tr>
+									<tr>
+										<th><span>취소 패널티</span></th>
+										<td>강좌 취소 시 다음 차수 완료에도 불이익이 갈수 있음</td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</li>
+					<li>
+						<div class="viewBox line">
+							<p class="num">3</p>
+							<p class="name">손흥민</p>
+							<p class="date">2020.01.01 ~ 2020.02.01</p>
+							<a href="#" class="anch"></a>
+						</div>
+						<div class="sub" style="display: none;">
+							<table class="txtTable">
+								<colgroup>
+									<col style="width: 120px">
+									<col style="width: auto">
+								</colgroup>
+								<tbody>
+									<tr>
+										<th><span>장소</span></th>
+										<td>SK Telecom 본사 11층 대회의실</td>
+									</tr>
+									<tr>
+										<th><span>수강신청인원</span></th>
+										<td>50/50</td>
+									</tr>
+									<tr>
+										<th><span>시작일</span></th>
+										<td>2020.01.01</td>
+									</tr>
+									<tr>
+										<th><span>종료일</span></th>
+										<td>2020.03.01</td>
+									</tr>
+									<tr>
+										<th><span>담당자</span></th>
+										<td>이몽룡 (SK planet) <br><a class="linkBlue" href="mailto:testid@sktelecom.com">testid@sktelecom.com</a></td>
+									</tr>
+									<tr>
+										<th><span>취소 패널티</span></th>
+										<td>강좌 취소 시 다음 차수 완료에도 불이익이 갈수 있음</td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</li>
+				</ul>
+			</div>
+		</div>
+
+		<div class="BtmBtn floating">
+			<div class="btnGroup">
+				<button class="btnOrange">OK</button>
+			</div>
+		</div>
+	</div>
+</section>
+<!-- //layer -->
+
+</body>
+</html>

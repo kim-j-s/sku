@@ -1,0 +1,39 @@
+@@include("head.html")
+<body style="overflow: hidden;">
+
+<!-- layer -->
+<section class="popWrap full">
+	<div class="popBox">
+		<div class="popTitle">
+			<p>관심채널 보기</p>
+			<a href="#" class="btnClose">닫기</a>
+		</div>
+		<div class="popCont">
+			<div class="channels">
+				<button type="button" class="btn channelBtn">HR</button>
+				<button type="button" class="btn channelBtn on">Cloud Developing</button>
+				<button type="button" class="btn channelBtn on">Speech AI</button>
+				<button type="button" class="btn channelBtn">Growth Mindset(Leadership Specialist)</button>
+				<button type="button" class="btn channelBtn on">마케팅</button>
+				<button type="button" class="btn channelBtn">행복 추구 실천</button>
+				<button type="button" class="btn channelBtn on">DT Basics</button>
+				<button type="button" class="btn channelBtn">Biz. Trend &amp; Insight </button>
+				<button type="button" class="btn channelBtn on">재무</button>
+				<button type="button" class="btn channelBtn">디자인 방법론</button>
+				<button type="button" class="btn channelBtn on">전략적 Biz. 디자인</button>
+				<button type="button" class="btn channelBtn">Mindfulness</button>
+				<button type="button" class="btn channelBtn on">전략</button>
+				<button type="button" class="btn channelBtn">행복의 이해</button>
+				<button type="button" class="btn channelBtn on">Global Leader's Table</button>
+			</div>
+		</div>
+		<div class="BtmBtn floating">
+			<div class="btnGroup">
+				<button class="btnOrange">OK</button>
+			</div>
+		</div>
+	</div>
+</section>
+<!-- //layer -->
+</body>
+</html>

@@ -1,0 +1,95 @@
+@@include("head.html")
+<body>
+@@include('listheader.html',{
+	"title" : "Support"
+})
+<!-- .content -->
+<section class="content">
+	
+	<div class="tabBox">
+		<div class="menuWrap">
+			<div class="menu">
+				<a href="#" class="active">Notice<span class="count">+30</span></a>
+			</div>
+		</div>
+	</div>
+
+	<ul class="boardList">
+		<li>
+			<a href="#">
+				<div class="inner">
+					<div class="title">
+						<i class="ico redDot"></i>사용되지 않는 (구)단체 아이디 정리에 대한 안내 드립니다.</div>
+					<div class="postInfo">
+						<span class="date">20.01.15</span>
+						<span class="view"><i class="ico view"></i>333</span>
+						<span class="new">NEW</span>
+					</div>
+				</div>
+				<p class="reply"><em>12</em>댓글</p>
+			</a>
+		</li>
+		<li>
+			<a href="#">
+				<div class="inner">
+					<strong class="title">청소년 유해매체물 이용을 위한 본인확인 인증방법(성인인증) 에 대해 안내드립니다. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Modi, ratione.</strong>
+					<div class="postInfo">
+						<span class="date">20.01.15</span>
+						<span class="view"><i class="ico view"></i>333</span>
+						<span class="new">NEW</span>
+					</div>
+				</div>
+				<p class="reply"><em>12</em>댓글</p>
+			</a>
+		</li>
+		<li>
+			<a href="#">
+				<div class="inner">
+					<strong class="title">금융감독원 사칭 (네이버 사칭 포함) 악성코드 피해 주의 안내 및 청소년유해매체물 이용을 어쩌구저쩌구</strong>
+					<div class="postInfo">
+						<span class="date">20.01.15</span>
+						<span class="view"><i class="ico view"></i>333</span>
+					</div>
+				</div>
+				<p class="reply"><em>3</em>댓글</p>
+			</a>
+		</li>
+		<li>
+			<a href="#">
+				<div class="inner">
+					<strong class="title">채용관련 보이스피싱 등 금융사고 등에 주의 부탁드립니다.</strong>
+					<div class="postInfo">
+						<span class="date">20.01.15</span>
+						<span class="view"><i class="ico view"></i>333</span>
+					</div>
+				</div>
+				<p class="reply"><em>12</em>댓글</p>
+			</a>
+		</li>
+		<li>
+			<a href="#">
+				<div class="inner">
+					<strong class="title">고객센터 전화상담 시간 변경 안내</strong>
+					<div class="postInfo">
+						<span class="date">20.01.15</span>
+						<span class="view"><i class="ico view"></i>333</span>
+					</div>
+				</div>
+				<p class="reply"><em>999</em>댓글</p>
+			</a>
+		</li>
+	</ul>
+	
+	<button class="btnListMore" type="button"><i class="ico plus"></i>list more (<em>20</em>/<em>38</em>)</button>	
+</section>
+<!-- // .content -->
+
+@@include('toolbar.html', {
+	"ty1": "",
+	"ty2": "",
+	"ty3": "",
+	"ty4": " on",
+	"ty5": ""
+})
+</body>
+</html>

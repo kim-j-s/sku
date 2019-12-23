@@ -1,0 +1,98 @@
+@@include("head.html")
+<body style="overflow: hidden;">
+<!-- .content -->
+<section class="content">
+</section>
+<!-- // .content -->
+
+<div class="exEle">
+	<a href="#" class="callpop1" data-callpopup="pop1">&lt; 내용이 짧은 레이어 팝업 호출 &gt;</a>
+</div>
+
+<div class="exEle">
+	<a href="#" class="callpop2" data-callpopup="pop2">&lt; 내용이 긴 레이어 팝업 호출 &gt;</a>
+</div>
+
+<!-- layer 내용이 짧은 경우 -->
+<section class="popWrap center" data-popup="pop1" style="display:none;">
+	<div class="popBox">
+		<div class="popCont">
+			<strong class="title">PC 접속 안내</strong>
+			<div class="scrollArea">
+				<p class="txt">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod minus et magni earum dolorum eos maxime! Deleniti veritatis ad animi enim numquam totam atque eos</p>
+			</div>
+		</div>
+		<div class="popBtm">
+			<button type="button">확인</button>
+		</div>
+	</div>
+</section>
+<!-- //layer -->
+
+<!-- layer 내용이 긴 경우 -->
+<section class="popWrap center" data-popup="pop2" style="display:none;">
+	<div class="popBox">
+		<div class="popCont">
+			<strong class="title">PC 접속 안내</strong>
+			<div class="scrollArea">
+				<p class="txt">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod minus et magni earum dolorum eos maxime! Deleniti veritatis ad animi enim numquam totam atque eos aspernatur itaque, molestias quod eius hic magnam minus, nulla mollitia. Animi ex dolores perferendis molestias consequuntur fugiat qui deserunt illum sint optio enim, aperiam veritatis, esse eaque et! Recusandae facere alias ducimus non maxime, nemo culpa, laboriosam nesciunt repellat numquam cum magni ex tempore magnam reprehenderit, laborum itaque quia quod incidunt pariatur iure natus eveniet provident porro. Omnis mollitia placeat a impedit eligendi. Mollitia odit minus illum explicabo accusamus recusandae consequuntur soluta sint eveniet vel.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eligendi atque omnis velit quia, deserunt praesentium! Eligendi odio illo repellendus voluptas laudantium, enim odit, reiciendis dignissimos alias rerum recusandae nihil facilis? ipsum dolor sit amet, consectetur adipisicing elit. Eaque laborum suscipit molestiae voluptatibus quod dicta illo pariatur eius eum, expedita!</p>
+			</div>
+		</div>
+		<div class="popBtm">
+			<button type="button">확인</button>
+		</div>
+	</div>
+</section>
+<!-- //layer -->
+
+
+<style>
+.exEle {text-align:center; margin-top:10px;}
+</style>
+
+<script>
+$(function(){
+
+	/*
+	레이어 팝업의 컨텐츠 내용 길이에 따른 위치 조정을 위한 기능입니다.
+	- 컨텐츠 길이가 짧을 경우 4줄 이하 기준 : 상단 기준 위치에 고정
+	- 컨텐츠 길이가 긴 경우 4줄 이상 기준 : 컨텐츠 가운데 위치로 이동
+
+	만약 글자에 따른 조건을 처리가 가능하시면 예시 기능은 사용하지 않으셔도 무관합니다.
+	하단의 스크립트는 공통 배포되는 js 파일에는 포함되어 있지 않습니다.
+
+	해당페이지에서 사용되는 호출방식 그리고 호출 스크립트는 모두 예시를 위한 것입니다.
+
+	직접 처리가 가능하신 경우 : 
+	- 컨텐츠 길이가 짧을 경우 4줄 이하 기준 : <section class="popWrap center">
+	- 컨텐츠 길이가 긴 경우 4줄 이상 기준 : <section class="popWrap center on">
+	*/
+
+	$('.callpop1').on('click', function(){
+		var call = $(this).data('callpopup');
+		layerPopup(call);
+	});
+
+	$('.callpop2').on('click', function(){
+		var call = $(this).data('callpopup');
+		layerPopup(call);
+	});
+});
+
+function layerPopup(call) {
+	$('[data-popup="'+ call +'"]').show();
+	var scrollAreaHeightOrigin = $('[data-popup="'+ call +'"]').find('.scrollArea').outerHeight();
+	$('[data-popup="'+ call +'"]').addClass('on');
+	var scrollAreaHeight = $('[data-popup="'+ call +'"]').addClass('on').find('.scrollArea').outerHeight();
+	$('[data-popup="'+ call +'"]').removeClass('on');
+
+	if (scrollAreaHeight > scrollAreaHeightOrigin)
+	{
+		$('[data-popup="'+ call +'"]').addClass('on');
+	}
+
+}
+</script>
+
+</body>
+</html>

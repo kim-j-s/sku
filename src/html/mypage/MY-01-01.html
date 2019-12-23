@@ -1,0 +1,70 @@
+@@include("head.html")
+<body>
+@@include('listheader.html',{
+	"title" : "My Page"
+})
+<!-- .content -->
+<section class="content">
+	<div class="porfile">
+		<div class="year">
+			<select name="" id="" class="selectbox">
+				<option value="">2022</option>
+				<option value="">2021</option>
+				<option value="" selected="selected">2020</option>
+			</select>
+		</div>
+		<div class="thumb">
+			<img src="../../img/profile_110.jpg" alt="">
+		</div>
+		<div class="name">
+			<strong>김유니</strong>
+		</div>
+		<div class="subDetail">
+			<span>SK C&amp;C</span>
+			<span>플랫폼 사업 1팀</span>
+		</div>
+	</div>
+
+	<div class="learnTotal">
+		<div class="inner">
+			<dl class="ltTit">
+				<dt><a href="#">총 학습시간</a></dt>
+				<dd><strong class="maxTh">50</strong>h <strong class="maxTm">30</strong>m</dd>
+			</dl>
+			<div class="chartWrap">
+				<canvas id="chart"></canvas>
+			</div>
+			<div class="learnListWrap">
+				<ul class="learnList">
+					<li class="ty1">
+						<span class="tit">SUNI</span>
+						<span class="time">
+							<span class="ltTh">40</span>h <span class="ltTm">30</span>m
+						</span>
+					</li>
+					<li class="ty2"><span class="tit">My Company</span><span class="time">10h 00m</span></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+
+	<div class="linkListWrap">
+		<ul class="linkList">
+			<li>
+				<a href="#">완료한 학습 <strong>20개</strong></a>
+			</li>
+			<li>
+				<a href="#">획득 Stamp <strong>x8</strong></a>
+			</li>
+			<li>
+				<label for="switch">PUSH 알림 허용</label>
+				<div class="switch">
+					<input type="checkbox" name="" id="switch" class="switchCheckbox" checked="checked">
+				</div>
+			</li>
+		</ul>
+	</div>
+</section>
+<!-- // .content -->
+</body>
+</html>

@@ -1,0 +1,23 @@
+@@include("head.html")
+<body>
+@@include('header.html')
+<div class="noticeWrap">
+	<a href="#">UX DESIGN강좌 11월 수강신청 안내</a>
+	<button class="btn close">닫기</button>
+</div>
+
+<!-- .content -->
+<section class="content">
+	<div style="height:600px; line-height:600px; background:#ddd; text-align:center; color:#000;">content</div>
+</section>
+<!-- // .content -->
+
+@@include('toolbar.html', {
+	"ty1": " on",
+	"ty2": " new",
+	"ty3": " on new",
+	"ty4": "",
+	"ty5": ""
+})
+</body>
+</html>

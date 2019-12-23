@@ -1,0 +1,32 @@
+@@include("head.html")
+<body>
+<style>
+	h2.tt{padding: 0 15px; color: red; margin: 20px 0 5px; font-weight: 700;}
+</style>
+<!-- .content -->
+<section class="content">
+
+	<div class="cardBoardList">
+
+		<h2 class="tt">최신글 없을 시</h2>
+
+		<div class="card">
+			<div class="cardInner">
+				<a href="#" class="titleArea">
+					<p class="category red">혁신디자인</p>
+					<strong class="title">Mobile App UI/UX GUI Community</strong>
+				</a>
+				<div class="infoArea">
+					<p class="label"><i class="ico time"></i><b>2h 40m</b></p>
+					<p class="label"><i class="ico member"></i><b>2000명 참여중</b></p>
+				</div>
+			</div>		
+			<div class="noCont">최근 일주일 내 등록된 최신글이 없습니다.</div>
+		</div>
+	</div>
+
+</section>
+<!-- // .content -->
+
+</body>
+</html>

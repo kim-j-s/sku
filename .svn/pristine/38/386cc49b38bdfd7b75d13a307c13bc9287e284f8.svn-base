@@ -1,0 +1,170 @@
+@@include("head.html")
+<body>
+@@include('detailheader.html')
+<!-- .content -->
+<section class="content">
+
+	<div class="topView">
+		<p class="ribbon"><span>Required</span></p>
+		<div class="inner">
+			<p class="category teal">Mgmt</p>
+			<strong class="title">Mobile App UI/UX GUI Design Tutorials 모바일 앱 UX UI GUI 이론을 통한 실전</strong>
+			<div class="infoArea">
+				<span class="icon"><i class="ico test"></i>Test</span>
+				<span>Glopedia</span>
+			</div>
+			<p class="date">2020.02.01 ~ 2020.12.31</p>
+		</div>
+	</div>
+
+	<div class="descWrap">
+		<div class="timeTable">
+			<table class="txtTable">
+				<colgroup>
+					<col style="width: auto">
+					<col style="width: auto">
+				</colgroup>
+				<tbody>
+					<tr>
+						<th><span>Time</span></th>
+						<td>12h 24m</td>
+					</tr>
+					<tr>
+						<th>
+							<span>Level</span>
+							<div class="tooltip">
+								<i class="ico tip"></i>
+								<div class="tipBox" style="display: none;">
+									<div class="inner">
+										<strong>난이도 안내</strong>
+										<p>학습난이도는 아래와 같이 4단계로 제공됩니다.</p>
+										<p class="step">
+											<b>1.Base</b>
+											<b>2.Intermediate</b>
+											<b>3.Advanced</b>
+											<b>4.Expert</b>
+										</p>
+										<button type="button" class="closeTip"></button>
+									</div>
+								</div>
+							</div>
+						</th>
+						<td>Intermediate</td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+		<div class="chargeInfo">
+			<p>
+				<span>강사 - </span>
+				<span><em>김지호</em><em>AI / Data Architect</em></span>
+			</p>
+			<p>
+				<span>담당자 - </span>
+				<span>
+					<em>홍길동</em><em>SK 커뮤니케이션즈</em><br>
+					<a href="mailto:abcdefghijk@skcommunications.com">abcdefghijk@skcommunications.com</a>
+				</span>
+			</p>
+		</div>
+	</div>
+	
+	<div class="tabBox">
+		<div class="menuWrap">
+			<div class="menu">
+				<a href="#" class="active">Overview</a>
+				<a href="#">Comment<span class="count">+30</span></a>
+			</div>
+		</div>
+	</div>
+
+	<div class="tabCont">
+
+		<div class="presentText box">
+			<div class="flowText">
+				<p class="txtCont">UI/UX의 세계로 들어가도 어디서부터 시작해야 할지 모르겠나요? 이 과정을 통해 당신은 당신의 CV에 UX 디자이너를 추가하고 당신의 새로운 기술에 대한 보수를 UI/UX의 세계로 들어가도 어디서부터 시작해야 할지 모르겠나요?  이 과정을 통해 당신은 당신의 CV에 UX 디자이너를 추가하고 당신의 새로운 기술에 대한 보수를 UI/UX의 세계로 들어가도 어디서부터 시작해야 할지 모르겠나요?  이 과정을 통해 당신은 당신의 CV에 UX 디자이너를 추가하고 당신의 새로운 기술에 대한 보수를 UI/UX의 세계로 들어가도 어디서부터 시작해야 할지 모르겠나요? 이 과정을 통해 당신은 당신의 CV에 UX 디자이너를 추가하고 당신의 새로운 기술에 대한 보수를</p>
+				<p class="link">
+					<strong class="titleDot">URL정보</strong>
+					<a href="#">https://SKuniversity.com/front/courseinfo/campus.action/campus.action/campus.action</a>
+				</p>
+			</div>
+			<button type="button" class="moreRead">more</button>
+		</div>
+
+		<ul class="introList accordion">
+			<li class="open">
+				<div class="viewBox">
+					<a href="#" class="anch">
+						<strong>Host</strong>
+						<i class="ico arrow"></i>
+					</a>
+				</div>
+				<div class="sub" style="display: none;">
+					SK Communications
+				</div>
+			</li>
+			<li>
+				<div class="viewBox">
+					<a href="#" class="anch">
+						<strong>Requirements</strong>
+						<i class="ico arrow"></i>
+					</a>
+				</div>
+				<div class="sub" style="display: none;">
+					총 강의 3시간 중 전제적인 분위기가 다운되지 않고 성실히 임해주시면 됩니다.
+				</div>
+			</li>
+			<li>
+				<div class="viewBox">
+					<a href="#" class="anch">
+						<strong>Goal</strong>
+						<i class="ico arrow"></i>
+					</a>
+				</div>
+				<div class="sub" style="display: none;">UX 디자이너가 되기위한 발걸음</div>
+			</li>
+			<li>
+				<div class="viewBox">
+					<a href="#" class="anch">
+						<strong>Target</strong>
+						<i class="ico arrow"></i>
+					</a>
+				</div>
+				<div class="sub" style="display: none;">
+					SK University 모든회원
+				</div>
+			</li>
+			<li>
+				<div class="viewBox">
+					<a href="#" class="anch">
+						<strong>Other Guides</strong>
+						<i class="ico arrow"></i>
+					</a>
+				</div>
+				<div class="sub" style="display: none;">
+					주말 학습장소는 주차공간이 협소하니 대중교통을 이용해 주시기 바랍니다. 주말 학습장소는 주차공간이 협소 하니 대중교통을 이용해 주시기 바랍니다. 주말 학습장소는 주차공간이 협소하니 대중교통을 이용해 주시기 바랍니다. 주말 학습장소는 주차공간이 협소하니 대중교통을 이용해 주시기 바랍니다.
+				</div>
+			</li>
+		</ul>
+
+		<div class="keywordWrap">
+			<span>AI Fundamental</span>
+			<span>Speech AI</span>
+			<span>국제정세</span>
+			<span>지역 전문가</span>
+			<span>Value</span>
+			<span>SV 이해</span>
+		</div>
+	</div>
+
+	<div class="BtmBtn floating">
+		<div class="btnGroup">
+			<button type="button" class="btnOrange">Test</button>
+		</div>
+	</div>
+
+</section>
+<!-- // .content -->
+
+</body>
+</html>

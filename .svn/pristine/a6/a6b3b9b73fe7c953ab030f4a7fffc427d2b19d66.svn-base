@@ -1,0 +1,115 @@
+@@include("head.html")
+<body>
+<style>
+	h2.tt{color: red; padding: 20px 0 0; font-weight: 700; font-size: 15px;}
+</style>
+<!-- .content -->
+<section class="content">
+
+	<div style="padding: 0 15px 20px">
+
+	<h2 class="tt">코멘트 입력창 (my-learning / support)</h2>
+	<div class="cmntEnter">
+		<div class="inner">
+			<div class="field">
+				<textarea placeholder="Writing..."></textarea>
+			</div>
+			<div class="enter">
+				<div class="area">
+					<span class="byte"><em class="left">0</em>/<em class="total">500</em></span>
+				</div>
+				<button type="button" class="btn">Submit</button>
+			</div>
+		</div>
+	</div>
+
+	<h2 class="tt">코멘트 입력창 (community)</h2>
+	<div class="cmntEnter">
+		<div class="inner">
+			<div class="field">
+				<textarea placeholder="Writing..."></textarea>
+			</div>
+			<div class="enter">
+				<div class="area">
+					<span class="byte"><em class="left">0</em>/<em class="total">500</em></span>
+				</div>
+				<button type="button" class="btnPhoto"></button>
+				<button type="button" class="btn">Submit</button>
+			</div>
+		</div>
+	</div>
+
+	<h2 class="tt">입력중 / 수정중</h2>
+	<div class="cmntEnter">
+		<div class="inner">
+			<div class="field">
+				<textarea placeholder="Writing..." autofocus="autofocus">입력중입니다.</textarea>
+			</div>
+			<div class="enter">
+				<div class="area">
+					<span class="byte"><em class="left">0</em>/<em class="total">500</em></span>
+				</div>
+				<button type="button" class="btnPhoto"></button>
+				<button type="button" class="btn">Submit</button>
+			</div>
+		</div>
+	</div>
+
+	<h2 class="tt">500자 초과</h2>
+	<div class="cmntEnter txtOver">
+		<div class="inner">
+			<div class="field">
+				<textarea placeholder="Writing..." autofocus="autofocus">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sed placeat assumenda aut deleniti, quo voluptates culpa voluptate itaque nobis sunt quaerat expedita harum necessitatibus id vero, enim dolorum veritatis quam molestiae! Quasi odio ipsam nam totam tenetur quam, veritatis laudantium facilis, perferendis optio ratione sit sapiente sunt ab delectus, consectetur quas labore sed nemo expedita quo! Cum, dignissimos, neque. Reiciendis, magnam! Fuga quidem sint et veritatis, consectetur elit. Esse, at!</textarea>
+			</div>
+			<div class="enter">
+				<div class="area">
+					<span class="byte"><em class="left">0</em>/<em class="total">500</em></span>
+				</div>
+				<button type="button" class="btnPhoto"></button>
+				<button type="button" class="btn">Submit</button>
+			</div>
+		</div>
+	</div>
+
+	<h2 class="tt">댓글 텍스트 + 이미지 첨부</h2>
+	<div class="cmntEnter">
+		<div class="inner">
+			<div class="field">
+				<textarea placeholder="Writing...">댓글에 이미지를 첨부합니다.</textarea>
+				<div class="addPic">
+					<img src="../../img/temp/Penguins.jpg" alt="">
+					<button type="button" class="btnImgDel"></button>
+				</div>
+			</div>
+			<div class="enter">
+				<div class="area">
+					<span class="byte"><em class="left">0</em>/<em class="total">500</em></span>
+				</div>
+				<button type="button" class="btnPhoto"></button>
+				<button type="button" class="btn">Submit</button>
+			</div>
+		</div>
+	</div>
+
+	<h2 class="tt">사람태그 후</h2>
+	<div class="cmntEnter">
+		<div class="inner">
+			<div class="field">
+				<textarea placeholder="Writing...">@성춘이 안녕하세요</textarea>
+			</div>
+			<div class="enter">
+				<div class="area">
+					<span class="byte"><em class="left">0</em>/<em class="total">500</em></span>
+				</div>
+				<button type="button" class="btnPhoto"></button>
+				<button type="button" class="btn">Submit</button>
+			</div>
+		</div>
+
+	</div>
+
+</section>
+<!-- // .content -->
+
+</body>
+</html>

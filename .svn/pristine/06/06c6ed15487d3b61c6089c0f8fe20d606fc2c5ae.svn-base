@@ -1,0 +1,101 @@
+@@include("head.html")
+<body>
+@@include('detailheader.html')
+<!-- .content -->
+<section class="content">
+
+	<div class="topView">
+		<p class="ribbon"><span>Required</span></p>
+		<div class="inner">
+			<p class="category red">혁신디자인</p>
+			<strong class="title">Adobe XD UI UX Design Community</strong>
+			<div class="infoArea">
+				<span class="icon"><i class="ico community"></i>Community</span>
+				<span>Deep Change와 Design</span>
+			</div>
+			<p class="date">2020.02.01 ~ 2020.12.31</p>
+		</div>
+	</div>
+
+	<div class="descWrap">
+		<div class="timeTable">
+			<table class="txtTable">
+				<colgroup>
+					<col style="width: auto">
+					<col style="width: auto">
+				</colgroup>
+				<tbody>
+					<tr>
+						<th><span>Time</span></th>
+						<td>12h 24m</td>
+					</tr>
+					<tr>
+						<th>
+							<span>Level</span>
+							<div class="tooltip">
+								<i class="ico tip"></i>
+								<div class="tipBox" style="display: none;">
+									<div class="inner">
+										<strong>난이도 안내</strong>
+										<p>학습난이도는 아래와 같이 4단계로 제공됩니다.</p>
+										<p class="step">
+											<b>1.Basic</b>
+											<b>2.Intermediate</b>
+											<b>3.Advanced</b>
+											<b>4.Expert</b>
+										</p>
+										<button type="button" class="closeTip"></button>
+									</div>
+								</div>
+							</div>
+						</th>
+						<td>Intermediate</td>
+					</tr>
+					<tr>
+						<th><span>Member</span></th>
+						<td>200명</td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+		<div class="chargeInfo">
+			<p>
+				<span>강사 - </span>
+				<span><em>김지호</em><em>AI / Data Architect</em></span>
+			</p>
+			<p>
+				<span>담당자 - </span>
+				<span>
+					<em>홍길동</em><em>SK 커뮤니케이션즈</em><br>
+					<a href="mailto:abcdefghijk@skcommunications.com">abcdefghijk@skcommunications.com</a>
+				</span>
+			</p>
+		</div>
+	</div>
+	
+	<div class="tabBox">
+		<div class="menuWrap">
+			<div class="menu">
+				<a href="#" class="active">Community</a>
+				<a href="#">My Posts</a>
+				<a href="#">Overview</a>
+			</div>
+		</div>
+	</div>
+
+	<div class="tabCont noPad">
+		<div class="emptyBox">
+				<i class="icon ico noCont"></i>
+				<p class="txt">Community 내 작성된 글이 없습니다</p>
+		</div>
+	</div>
+
+	<div class="BtmBtn floating">
+		<div class="stateTxt">Joined</div>
+	</div>
+
+</section>
+<!-- // .content -->
+
+</body>
+</html>

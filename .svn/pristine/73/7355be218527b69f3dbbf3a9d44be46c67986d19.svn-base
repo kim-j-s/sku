@@ -1,0 +1,60 @@
+@@include("head.html")
+<body style="overflow: hidden;">
+
+<!-- layer -->
+<section class="popWrap full">
+	<div class="popBox">
+		<div class="popTitle">
+			<p>List sorting</p>
+			<a href="#" class="btnClose">닫기</a>
+		</div>
+		<div class="popCont">
+			<ul class="optList">
+				<li>
+					<span class="inpD">
+						<label>
+							<input type="radio" name="radio" checked>
+							<i class="ico radio"></i>
+							<span class="txt">관련도순</span>
+						</label>
+					</span>
+				</li>
+				<li>
+					<span class="inpD">
+						<label>
+							<input type="radio" name="radio">
+							<i class="ico radio"></i>
+							<span class="txt">최신순</span>
+						</label>
+					</span>
+				</li>
+				<li>
+					<span class="inpD">
+						<label>
+							<input type="radio" name="radio">
+							<i class="ico radio"></i>
+							<span class="txt">이수순</span>
+						</label>
+					</span>
+				</li>
+				<li>
+					<span class="inpD">
+						<label>
+							<input type="radio" name="radio">
+							<i class="ico radio"></i>
+							<span class="txt">별점순</span>
+						</label>
+					</span>
+				</li>
+			</ul>
+		</div>
+		<div class="BtmBtn floating">
+			<div class="btnGroup">
+				<button class="btnOrange">Apply</button>
+			</div>
+		</div>
+	</div>
+</section>
+<!-- //layer -->
+</body>
+</html>

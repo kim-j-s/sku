@@ -1,0 +1,21 @@
+<section class="header">
+	<div class="inner">
+		<h1 class="logo">SK University</h1>
+		<div class="keyWord">검색하실 키워드를 입력해주세요.</div>
+		<div class="inputBox sch dpb">
+			<input type="text" class="inp">
+			<button class="btn schBtn">검색</button>
+		</div>
+	</div>
+	@@include("gnb.html")
+</section>
+
+<style>
+
+</style>
+
+<script>
+$(function(){
+
+});
+</script>

@@ -1,0 +1,17 @@
+<!-- .header -->
+<header>
+	<section class="header">
+		<div class="inner">
+			<h1 class="logo">SUNI</h1>
+			<div class="keyWord">오늘은 <span>Language AI</span>를 검색해 보세요.</div>
+			<div class="inputBox sch dpb">
+				<input type="text" class="inp">
+				<button type="button" class="btn inpReset">초기화</button>
+				<button type="button" class="btn schBtn">검색</button>
+			</div>
+		</div>
+		<button type="button" class="gnbOpen">전체 메뉴 열기</button>
+		@@include("gnb.html")
+	</section>
+</header>
+<!-- // .header -->

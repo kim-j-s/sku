@@ -1,0 +1,40 @@
+@@include("head.html")
+<body>
+@@include('listheader.html',{
+	"title" : "Learning"
+})
+<!-- .content -->
+<section class="content">
+	
+	<div class="tabBox">
+		<div class="menuWrap">
+			<div class="menu">
+				<a href="#" class="active">In progress</a>
+				<a href="#">In My list<span class="count">+30</span></a>
+				<a href="#">Enrolled<span class="count">+30</span></a>
+				<a href="#">Required<span class="count">+99</span></a>
+				<a href="#">Completed<span class="count">+99</span></a>
+				<a>Earned Stamp<span class="count">+99</span></a>
+				<a href="#">Retry<span class="count">+99</span></a>
+			</div>
+		</div>
+	</div>
+
+	<div class="emptyBox">
+		<i class="icon ico noCont"></i>
+		<p class="txt">Required 된 학습 과정이 없습니다.</p>
+		<a href="#" class="btnLink"><span><em>김유니</em>님에게 추천하는 학습 과정 보기</span><i class="ico link"></i></a>
+	</div>
+	
+</section>
+<!-- // .content -->
+
+@@include('toolbar.html', {
+	"ty1": "",
+	"ty2": " on",
+	"ty3": "",
+	"ty4": "",
+	"ty5": ""
+})
+</body>
+</html>

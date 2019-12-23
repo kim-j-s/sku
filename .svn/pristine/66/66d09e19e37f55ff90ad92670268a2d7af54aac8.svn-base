@@ -1,0 +1,178 @@
+
+
+// script yjm
+
+function changeInputDesign(){
+	var $designWrap = $('.inpD');
+	$designWrap.each(function(){
+		if ($(this).find('input').prop('checked')) {
+			$(this).addClass('checked')
+		} else {
+			$(this).removeClass('checked')
+		}
+	})	
+}
+
+function inputRadioDesign(){
+	$('.inpD').each(function(){
+		$(this).find('input[type="radio"]').on('change',function(){
+			$(this).parents('.inpD').addClass('checked')
+			.closest('li').siblings().find('.inpD').removeClass('checked')
+		})
+	})
+}
+
+
+function inputCheckDesign(){
+	$('.inpD').each(function(){
+		$(this).find('input[type="checkbox"]').on('change',function(){
+			if ($(this).prop('checked')) {
+				$(this).parents('.inpD').addClass('checked')
+			} else {
+				$(this).parents('.inpD').removeClass('checked')
+			}
+		})
+	})
+}
+
+function courseCard(){	
+	$('.cardToggle').click(function(){
+		if ($(this).closest('.cardWrap').hasClass('open')){
+			$(this).closest('.card').siblings().slideUp(300)
+			.closest('.cardWrap').removeClass('open');
+		} else {
+			$(this).closest('.card').siblings().slideDown(300).css('display','block')
+			.closest('.cardWrap').addClass('open');
+		}
+		return false;
+	})
+}
+
+function accordion(){
+	$('.accordion').each(function(){
+		$(this).children('.open').find('.sub').show();
+		$(this).find('.anch').click(function(){
+			if ($(this).closest('li').hasClass('open')) {
+				$(this).closest('.viewBox').next('.sub').slideUp(200)
+				.closest('li').removeClass('open');
+				return false;
+			} else {
+				$(this).closest('.viewBox').next('.sub').slideDown(200)
+				.closest('li').addClass('open')
+				.siblings('li').removeClass('open').find('.sub').slideUp(200);
+				return false;
+			}
+		})
+	})
+}
+
+function cmntMoreView(){
+	$('.cmntArea .reply').hide()	.filter('.on').show()
+	.siblings('.box').find('.moreReply').addClass('opened');
+	$('.cmntArea .moreReply').click(function(){
+		if ($(this).hasClass('opened')) {
+			$(this).removeClass('opened').closest('li').find('.reply').hide().removeClass('on');	
+		} else {
+			$(this).addClass('opened').closest('li').find('.reply').show().addClass('on');
+		}
+	})
+}
+
+function starRate(){
+	$('.starRate.edit > i').click(function(){
+		$(this).addClass('on').siblings().removeClass('on');
+		$(this).prevAll().addClass('on');
+	})
+}
+
+function cmntFocus(){
+	$('.cmntEnter').each(function(){
+		$('.cmntEnter textarea').focus(function(){
+			$(this).closest('.cmntEnter').addClass('focus');
+		})
+		$('.cmntEnter textarea').blur(function(){
+			$(this).closest('.cmntEnter').removeClass('focus');
+		})
+	})
+}
+
+function textLengthLimit(){
+	$('.cmntEnter').each(function(){
+		var $inputCount = $(this).find('textarea');
+		var $leftTxt = $(this).find('.left');
+		var $totalTxt = $(this).find('.total');
+		var maxLength = 500;
+		// var maxLength = $inputCount.attr('maxlength');
+		var txtLength = $inputCount.val().length;
+		$totalTxt.text(maxLength);
+		$inputCount.keyup(function(){
+			var txtLength = $inputCount.val().length;
+			if (txtLength < 0) {
+				$leftTxt.text(0)				
+			}if (txtLength <= maxLength){
+				$leftTxt.text(txtLength);
+				$(this).closest('.cmntEnter').removeClass('txtOver')
+			}else{
+				$leftTxt.text(txtLength);
+				$(this).closest('.cmntEnter').addClass('txtOver').find('input.btn').attr('disabled', true);
+			}	
+		})
+	})	
+}
+
+
+$(function(){
+
+	//console.log('test yjm');
+	inputRadioDesign();
+	inputCheckDesign();
+	changeInputDesign();
+	courseCard();
+	accordion();
+	cmntMoreView();
+	starRate();
+	cmntFocus();
+	textLengthLimit();
+
+	$('.box .moreRead').click(function(){
+		$(this).hide().closest('.box').find('.flowText').addClass('opened');
+	})
+
+
+	$('.ico.tip').on('click', function(){
+		if ( $(this).next('.tipBox').css('display') == 'block')
+		{
+			$(this).next('.tipBox').hide();
+		} else {
+			var winWidth = $(window).width();
+			if (winWidth < 350)
+			{
+				$(this).next('.tipBox').css('min-width','300px');
+			}
+			$(this).next('.tipBox').show();
+		}
+	});
+
+	$('.tipBox .closeTip').on('click', function(){
+		$(this).closest('.tipBox').hide();
+	});
+
+	// $('.autoH').height( $(this).prop('scrollHeight') );	
+	// $('.autoH').on('keydown', function () {
+	// 	$(this).height($(this).prop('scrollHeight') );	
+	// });
+
+
+
+
+	
+
+
+	
+
+
+	
+
+
+	// mobile script
+});

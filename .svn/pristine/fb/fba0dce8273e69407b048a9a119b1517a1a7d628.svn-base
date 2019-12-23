@@ -1,0 +1,251 @@
+// script kjs
+$(function(){
+
+	// logo 사라지는 현상
+	$(window).on('load', function(){
+		setTimeout(function(){
+			$('.logo').addClass('on');
+		},3000);
+
+		setTimeout(function(){
+			$('.header .keyWord').addClass('on');
+		},4000);
+
+		/*
+		setTimeout(function(){
+			$('.inputBox.sch').addClass('on');
+		},4000);
+		*/
+	});
+
+	// 헤더 검색창 bg
+	$(document).on('click', '.inputBox.sch > .inp', function(){
+		$(this).closest('.inputBox').addClass('on');
+	});
+
+	/// 공지사항 닫기
+	$(document).on('click', '.noticeWrap > .btn.close', function(){
+		$(this).closest('.noticeWrap').addClass('on');
+	});
+
+	//gnb 호출
+	$(document).on('click', '.gnbOpen', function(){
+		$('nav').addClass('on');
+	});
+
+	//gnb 닫기
+	$(document).on('click', '.navTop > button', function(){
+		$('nav').removeClass('on');
+	});
+
+	//입력창 리셋 버튼
+	InputReset();
+
+	//Short Cut 메뉴 활성화/비활성화
+	$('.scMenuBtn').on('click', function(){
+		if ($('.shortCutList').css('display') == 'none') {
+			$('.shortCutList').stop(true, true).slideDown();
+			return false;
+		} else {
+			$('.shortCutList').stop(true, true).slideUp();
+			return false;
+		}
+	});
+
+	// main swiper
+	if ( $('.recCourse').find('.swiper-slide').length > 1 )
+	{
+		var swiperH = new Swiper('.recCourse', {
+			loop: true,
+			pagination: {
+				el: '.swiper-pager',
+				clickable: true,
+			},
+		});
+	} else {
+		$('.recCourse .swiper-pagination').remove();
+	}
+
+	// page top
+	$(document).on('click', '.gototop', function(){
+		$('html, body').animate({ 
+			scrollTop: 0 
+		}, 500);
+	});
+
+	// toolbar 존재에 따른 하단 여백 조정
+	if ( $('.toolBar').length > 0)
+	{
+		$('.content').css('padding-bottom','55px');
+	}
+
+
+	// My Page Chart
+	var pieVal = $('.pie').data('value');
+	$('.pieRightBg').css({ 'WebkitTransform': 'rotate(' + pieVal + 'deg)'})
+					.css({ '-webkit-transform': 'rotate(' + pieVal + 'deg)'})
+					.css({ '-moz-transform': 'rotate(' + pieVal + 'deg)'})
+					.css({ '-o-transform': 'rotate(' + pieVal + 'deg)'})
+					.css({ 'transform': 'rotate(' + pieVal + 'deg)'});
+	if (pieVal > 180)
+	{
+		$('.pieRightBg').css({ 'WebkitTransform': 'rotate(' + 180 + 'deg)'})
+					.css({ '-webkit-transform': 'rotate(' + 180 + 'deg)'})
+					.css({ '-moz-transform': 'rotate(' + 180 + 'deg)'})
+					.css({ '-o-transform': 'rotate(' + 180 + 'deg)'})
+					.css({ 'transform': 'rotate(' + 180 + 'deg)'});
+
+		pieVal = pieVal - 180;
+		$('.pieLeftBg').css({ 'WebkitTransform': 'rotate(' + pieVal + 'deg)'})
+						.css({ '-webkit-transform': 'rotate(' + pieVal + 'deg)'})
+						.css({ '-moz-transform': 'rotate(' + pieVal + 'deg)'})
+						.css({ '-o-transform': 'rotate(' + pieVal + 'deg)'})
+						.css({ 'transform': 'rotate(' + pieVal + 'deg)'});
+	}
+
+	// mobile script
+
+	var menuWrapOff = $('.menuWrap').offset();
+	$(window).on('scroll', function(){
+		// header box shadow on off
+		var winTop = $(window).scrollTop();
+		var listHeaderHeight = $('.listHeader').outerHeight();
+		
+		
+		if (winTop > 0)
+		{
+			$('.header').addClass('on');
+			$('.detailHeader').addClass('on');
+			$('.listHeader').addClass('on');
+		} else {
+			$('.header').removeClass('on');
+			$('.detailHeader').removeClass('on');
+			$('.listHeader').removeClass('on');
+		}
+
+		// menuWrap floating
+		if ($('.listHeader').length > 0 && $('.menuWrap').length > 0)
+		{		
+			if (winTop > (menuWrapOff.top - listHeaderHeight))
+			{
+				$('.listHeader').removeClass('on');
+				$('.menuWrap').addClass('on');
+				$('.menuWrap').css('top',listHeaderHeight);
+			} else {
+				$('.menuWrap').removeClass('on').removeAttr('style');
+			}
+		}
+
+		// page Top
+		if ($('.recCourseWrap').length > 0)
+		{
+			var recOff = $('.recCourseWrap').offset();
+			var recH = $('.recCourseWrap').outerHeight();
+			var headerH = $('.header').outerHeight();
+			var cut = (recOff.top + recH) - headerH;
+			//console.log(winTop + ' , ' + cut);
+
+			if (winTop > cut)
+			{
+				$('.pageTop').addClass('on');
+			} else {
+				$('.pageTop').removeClass('on');
+			}
+		}
+
+	});
+});
+
+
+
+
+
+function InputReset() {
+	// input reset
+	$('.inpReset').click(function(){
+		$(this).closest('.inputBox').find('.inp').val('');
+		$(this).removeClass('on');
+	});
+
+	// input reset button display
+	var InpObj = $('input:text, input:password');
+	$(InpObj).on('keyup', function(e) {
+		if($(this).val().length >= 1) {
+			$(this).addClass('on');
+			$(this).closest('.inputBox').find('.inpReset').addClass('on');
+		}
+		if ( $(this).val().length == 0 )
+		{
+			$(this).removeClass('on');
+			$(this).closest('.inputBox').find('.inpReset').removeClass('on');
+		}
+	});
+
+	$(InpObj).unbind('focusin').focusin(function(){
+		console.log('focus in');
+		if($(this).val().length >= 1) {
+			$(this).addClass('on');
+			$(this).closest('.inputBox').find('.inpReset').addClass('on');
+		}
+	});
+
+	$(InpObj).unbind('focusout').focusout(function(){
+		obj = this;
+		setTimeout(function(){
+			$(obj).removeClass('on');
+			$(obj).closest('.inputBox').find('.inpReset').removeClass('on');
+		}, 10);
+	});
+}
+
+
+
+
+// script yjm
+
+function courseCard(){	
+	$('.cardToggle').click(function(){
+		if ($(this).closest('.cardWrap').hasClass('open')){
+			$(this).closest('.card').siblings().slideUp(300)
+			.closest('.cardWrap').removeClass('open');
+		} else {
+			$(this).closest('.card').siblings().slideDown(300).css('display','block')
+			.closest('.cardWrap').addClass('open');
+		}
+		return false;
+	})
+}
+
+function accordion(){
+	$('.accordion').each(function(){
+		$(this).find('.anch').click(function(){
+			if ($(this).closest('li').hasClass('open')) {
+				$(this).closest('.viewBox').next('.sub').slideUp(200)
+				.closest('li').removeClass('open');
+				return false;
+			} else {
+				$(this).closest('.viewBox').next('.sub').slideDown(200)
+				.closest('li').addClass('open')
+				.siblings('li').removeClass('open').find('.sub').slideUp(200);
+				return false;
+			}
+		})
+	})
+}
+
+$(function(){
+
+	//console.log('test yjm');
+	courseCard();
+	accordion();
+
+	$('.flowText .moreRead').click(function(){
+		$(this).hide().siblings('.inner').addClass('open');
+	})
+
+
+	
+
+
+	// mobile script
+});

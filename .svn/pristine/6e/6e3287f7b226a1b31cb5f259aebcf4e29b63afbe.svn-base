@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, maximum-scale=1.0, minimum-scale=1.0" />
+    <title>skuniversity</title>
+    <link rel="stylesheet" href="../../css/swiper.min.css">
+    <link rel="stylesheet" href="../../css/style.css">
+    <script src="../../js/jquery-1.12.4.js"></script>
+    <script src="../../js/swiper.min.js"></script>
+    <script src="../../js/Chart.min.js"></script>
+    <script src="../../js/ui.js"></script>
+</head>
+
+<body>
+    <style>
+        .content {
+            padding-bottom: 60px;
+        }
+
+        h2.tt {
+            display: block;
+            padding: 0 10px;
+            margin: 50px 0 15px;
+            font-size: 13px;
+            font-weight: 700;
+        }
+
+        h2.tt span {
+            display: block;
+            margin-top: 2px;
+            color: red;
+            text-decoration: underline;
+        }
+
+        *+h2.tt {
+            margin-top: 60px;
+        }
+
+        .BtmBtn {
+            box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.2)
+        }
+    </style>
+    <!-- .content -->
+    <section class="content">
+
+        <div class="cardBox">
+
+            <h2 class="tt">Cube / floating_button(버튼1개)</h2>
+
+            <div class="BtmBtn">
+                <div class="btnGroup">
+                    <button type="button" class="btnOrange">Enrollment</button>
+                </div>
+            </div>
+
+            <h2 class="tt">Cube / floating_button(버튼1개+상태값)_01</h2>
+
+            <div class="BtmBtn">
+                <div class="stateTxt">Waiting for approval</div>
+                <div class="btnGroup">
+                    <button type="button" class="btnOrange">Enrollment</button>
+                </div>
+            </div>
+
+            <h2 class="tt">Cube / floating_button(버튼1개+상태값)_02
+                <span>Cancel 제공될 경우</span>
+            </h2>
+
+            <div class="BtmBtn">
+                <div class="stateTxt">Waiting for approval</div>
+                <div class="btnGroup">
+                    <button type="button" class="btnBlack">Cancel</button>
+                </div>
+            </div>
+
+            <h2 class="tt">Cube / floating_button(버튼2개+상태값)_01
+                <span>좌측버튼  / Cancel 제공될 경우</span>
+            </h2>
+
+            <div class="BtmBtn">
+                <div class="stateTxt">Waiting for approval</div>
+                <div class="btnGroup">
+                    <button type="button" class="btnBlack">Cancel</button>
+                    <button type="button" class="btnOrange">Change Series</button>
+                </div>
+            </div>
+
+            <h2 class="tt">Cube / floating_button(버튼2개+상태값)_02
+                <span>좌측버튼  / Retry, Mark comlete, Test 제공될 경우</span>
+            </h2>
+
+            <div class="BtmBtn">
+                <div class="stateTxt">In progress</div>
+                <div class="btnGroup">
+                    <button type="button" class="btnBlue">Report</button>
+                    <button type="button" class="btnOrange">Learning Start</button>
+                </div>
+            </div>
+
+            <h2 class="tt">Cube / floating_button(버튼2개)
+                <span>좌측버튼  / Mark complete 제공될 경우</span>
+            </h2>
+
+            <div class="BtmBtn">
+                <div class="btnGroup">
+                    <button type="button" class="btnBlue">Mark complete</button>
+                    <button type="button" class="btnOrange">Play</button>
+                </div>
+            </div>
+
+            <h2 class="tt">Cube / floating_button(상태값)</h2>
+
+            <div class="BtmBtn">
+                <div class="stateTxt">In progress</div>
+            </div>
+
+            <h2 class="tt">Course / floating_button(버튼1개)
+                <span>Test, Retry 제공될 경우</span>
+            </h2>
+
+            <div class="BtmBtn">
+                <div class="btnGroup">
+                    <button type="button" class="btnOrange">Test</button>
+                </div>
+            </div>
+
+        </div>
+
+    </section>
+    <!-- // .content -->
+</body>
+
+</html>

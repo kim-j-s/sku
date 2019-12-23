@@ -1,0 +1,59 @@
+
+
+/* common */
+.dpi { display:inline !important;}
+.dpb { display:block !important;}
+.dpib { display:inline-block !important;}
+.dpn { display:none !important;}
+
+/* common element */
+/* iput */
+.inputBox {position:relative; display:inline-block;}
+.inputBox.full {width:100% !important;}
+.inputBox .inp {display:block; width:100%; height:35px; padding:0 15px; border:1px solid #d5d5d5; font-size:14px; transition:0.3s; background:transparent;}
+.inputBox .inp:disabled {}
+.inputBox .inp:focus {}
+
+.inputBox.sch {position:static;}
+.inputBox.sch .inp {border:1px solid #f4f4f4; border-radius:3px;}
+.inputBox.sch .inp:focus, .inputBox.sch .inp.on {}
+.inputBox.sch .inp {background:transparent;}
+.inputBox.sch .inp:focus {background:#f4f4f4;}
+.inputBox.sch .schBtn {position:absolute; top:5px; right:10px;}
+.inputBox.sch.on {z-index:2;}
+.inputBox.sch.on .inp {background:#f4f4f4;}
+
+
+/* button */
+.btn {display:inline-block; font-size:0;}
+.btn.schBtn {width:25px; height:25px; background:url(../img/icon_gnb_search_50_px.svg) left top no-repeat; background-size:100%;}
+.btn.close {position:relative; width:24px; height:24px; padding:5px; overflow:hidden;}
+.btn.close:before {content:''; position:absolute; top:11px; left:3px; width:18px; border-bottom:2px solid #000; transform: rotate(45deg);}
+.btn.close:after {content:''; position:absolute; top:11px; right:3px; width:18px; border-bottom:2px solid #000; transform: rotate(135deg);}
+
+/* ----------- kjs ----------- */
+header {position:relative; height:55px;}
+
+header h1 {position:absolute; top:0; left:0;  width:100%; height:100%; z-index:-1; overflow:hidden; text-indent:-9999px; background:#f4f4f4;}
+header h1:before {content:''; position:absolute; top:12px; left:15px; width:81px; height:14px; background:url(../img/logo.svg) center center no-repeat; background-size:100%;}
+header h1.on:before {opacity:0; transition:1s;}
+
+header .keyWord {position:absolute; top:0; left:0; width:100%; height:100%; z-index:-2; padding:9px 40px 8px 15px; overflow:hidden; text-overflow:ellipsis; white-space:nowrap; font-size:12px; color:#666; line-height:18px; background:#f4f4f4;}
+header .keyWord > span {color:#e1002a;}
+header .keyWord.on {z-index:-1;}
+
+/* header Type Main */
+.header {position:fixed; top:0; left:0; width:100%; padding:10px 15px 10px 53px; background:#fff;}
+.header > .inner {position:relative;}
+
+/* gnb */
+.gnbOpen {position:absolute; top:10px; left:15px; width:24px; height:35px; overflow:hidden; text-indent:-9999px; background:url(../img/menu_normal.svg) left top no-repeat; background-size:cover;}
+.gnb {display:none;}
+
+
+/* 공지사항 */
+.noticeWrap {position:relative; padding:16px 56px 16px 15px; border-top:1px solid #c8d0e0; overflow:hidden;}
+.noticeWrap.on {height:0; padding:0 40px 0 15px; border:none; transition:.5s;}
+.noticeWrap > a {position:relative; display:block; padding-left:27px; line-height:16px; font-size:12px; color:#666; overflow: hidden; text-overflow: ellipsis; white-space: nowrap;}
+.noticeWrap > a:before {content:''; position:absolute; top:0; left:0; width:16px; height:16px; background:url(../img/notice.svg) center center no-repeat; background-size:100%;}
+.noticeWrap > .btn.close {position:absolute; top:13px; right:16px;}

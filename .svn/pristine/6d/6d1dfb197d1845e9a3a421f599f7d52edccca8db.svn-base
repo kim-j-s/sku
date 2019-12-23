@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, maximum-scale=1.0, minimum-scale=1.0" />
+    <title>skuniversity</title>
+    <link rel="stylesheet" href="../../css/swiper.min.css">
+    <link rel="stylesheet" href="../../css/style.css">
+    <script src="../../js/jquery-1.12.4.js"></script>
+    <script src="../../js/swiper.min.js"></script>
+    <script src="../../js/Chart.min.js"></script>
+    <script src="../../js/ui.js"></script>
+</head>
+
+<body>
+    <style>
+        h2.tt {
+            padding: 0 15px;
+            color: red;
+            margin: 20px 0 5px;
+            font-weight: 700;
+        }
+    </style>
+    <!-- .content -->
+    <section class="content">
+
+        <div class="cardBox">
+
+            <h2 class="tt">Default 카드 </h2>
+
+            <a href="#" class="card">
+                <div class="cardInner">
+                    <div class="titleArea">
+                        <div class="topRight">
+                            <span class="icon">Video<i class="ico video"></i></span>
+                        </div>
+                        <p class="category navy">SK하이닉스시스템아이씨</p>
+                        <strong class="title">UI/UX design with Adobe XD: Design & Prototype</strong>
+                    </div>
+                    <div class="infoArea">
+                        <p class="label"><i class="ico time"></i><b>2h 40m</b></p>
+                    </div>
+                    <div class="btmArea">
+                        <div class="starRate s2">
+                            <i></i><i></i><i></i><i></i><i></i>
+                        </div>
+                        <div><em>7,203</em>명 이수</div>
+                    </div>
+                </div>
+            </a>
+
+            <h2 class="tt">상태값을 가진 카드 </h2>
+
+            <a href="#" class="card">
+                <div class="cardInner">
+                    <div class="titleArea">
+                        <div class="topRight">
+                            <span class="apply">수강신청</span>
+                            <span class="icon">e-learning<i class="ico learning"></i></span>
+                        </div>
+                        <p class="category red">혁신디자인</p>
+                        <strong class="title">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</strong>
+                    </div>
+                    <div class="infoArea">
+                        <p class="label"><i class="ico time"></i><b>2h 40m</b></p>
+                    </div>
+                    <div class="btmArea">
+                        <div class="state"><i class="ico check"></i><em>2019.10.10</em>부터 학습 시작</div>
+                    </div>
+                </div>
+            </a>
+
+            <h2 class="tt">Course 카드</h2>
+
+            <a href="#" class="card">
+                <div class="cardInner">
+                    <div class="titleArea">
+                        <div class="topRight">
+                            <span class="icon">Course<i class="ico course"></i></span>
+                        </div>
+                        <p class="category red">혁신디자인</p>
+                        <strong class="title">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Expedita quibusdam porro odio, illum tenetur, dolore mollitia corrupti. Amet, provident, saepe.</strong>
+                    </div>
+                    <div class="infoArea">
+                        <p class="label"><i class="ico time"></i><b>2h 40m</b></p>
+                        <p class="label"><i class="ico stamp"></i><b>Stamp x2 </b></p>
+                    </div>
+                </div>
+                <div class="btmArea">
+                    <div class="starRate s2">
+                        <i></i><i></i><i></i><i></i><i></i>
+                    </div>
+                    <div><em>7,203</em>명 이수</div>
+                </div>
+            </a>
+
+            <h2 class="tt">상태값을 가진 Course 카드</h2>
+
+            <a href="#" class="card">
+                <div class="cardInner">
+                    <div class="titleArea">
+                        <div class="topRight">
+                            <span class="icon">Course<i class="ico course"></i></span>
+                        </div>
+                        <p class="category red">혁신디자인</p>
+                        <strong class="title">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Expedita quibusdam porro odio, illum tenetur, dolore mollitia corrupti. Amet, provident, saepe.</strong>
+                    </div>
+                    <div class="infoArea">
+                        <p class="label"><i class="ico time"></i><b>2h 40m</b></p>
+                        <p class="label"><i class="ico stamp"></i><b>Stamp x2 </b></p>
+                    </div>
+                </div>
+                <div class="btmArea">
+                    <div class="state"><i class="ico check"></i><em>2019.10.10</em> 필수 학습 등록</div>
+                </div>
+            </a>
+
+            <h2 class="tt">Classroom 카드</h2>
+
+            <a href="#" class="card">
+                <div class="cardInner">
+                    <div class="titleArea">
+                        <div class="topRight">
+                            <span class="apply">수강신청</span>
+                            <span class="icon">Classroom<i class="ico classroom"></i></span>
+                        </div>
+                        <p class="category red">혁신디자인</p>
+                        <strong class="title">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Expedita quibusdam porro odio, illum tenetur, dolore mollitia corrupti. Amet, provident, saepe.</strong>
+                    </div>
+                    <div class="infoArea">
+                        <p class="label"><i class="ico time"></i><b>2h 40m</b></p>
+                        <p class="label"><i class="ico map"></i><b>G plant</b></p>
+                    </div>
+                </div>
+                <div class="btmArea">
+                    <div class="starRate s2">
+                        <i></i><i></i><i></i><i></i><i></i>
+                    </div>
+                    <div><em>7,203</em>명 이수</div>
+                </div>
+            </a>
+
+            <h2 class="tt">상태값을 가진 Classroom 카드</h2>
+
+            <a href="#" class="card">
+                <div class="cardInner">
+                    <div class="titleArea">
+                        <div class="topRight">
+                            <span class="apply">수강신청</span>
+                            <span class="icon">Classroom<i class="ico classroom"></i></span>
+                        </div>
+                        <p class="category red">혁신디자인</p>
+                        <strong class="title">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Expedita quibusdam porro odio, illum tenetur, dolore mollitia corrupti. Amet, provident, saepe.</strong>
+                    </div>
+                    <div class="infoArea">
+                        <p class="label"><i class="ico time"></i><b>2h 40m</b></p>
+                        <p class="label"><i class="ico map"></i><b>오프라인 장소 주소노출 이상 말줄임 말줄임 말줄임 말줄임 말줄임 </b></p>
+                    </div>
+                </div>
+                <div class="btmArea">
+                    <div class="state"><i class="ico check"></i><em>2019.10.10</em>부터 학습 시작</div>
+                </div>
+            </a>
+
+            <h2 class="tt">코스 상세 내 큐브카드</h2>
+
+            <a href="#" class="card">
+                <div class="cardInner">
+                    <div class="titleArea">
+                        <div class="topRight">
+                            <span class="apply">수강신청</span>
+                            <span class="icon">Classroom<i class="ico classroom"></i></span>
+                        </div>
+                        <p class="category red">혁신디자인</p>
+                        <strong class="title">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Expedita quibusdam porro odio, illum tenetur, dolore mollitia corrupti. Amet, provident, saepe.</strong>
+                    </div>
+                    <div class="infoArea">
+                        <p class="label"><i class="ico time"></i><b>2h 40m</b></p>
+                        <p class="label"><i class="ico map"></i><b>G plant</b></p>
+                    </div>
+                </div>
+                <div class="btmArea">
+                    <div class="starRate s44">
+                        <i></i><i></i><i></i><i></i><i></i>
+                    </div>
+                    <div><em>7,203</em>명 이수</div>
+                </div>
+            </a>
+
+
+            <h2 class="tt">코스 상세 내 코스카드</h2>
+
+            <div class="cardWrap">
+
+                <a href="#" class="card course">
+                    <div class="cardInner">
+                        <div class="titleArea">
+                            <div class="topRight">
+                                <span class="icon">Course<i class="ico course"></i></span>
+                            </div>
+                            <p class="category teal">Management</p>
+                            <strong class="title">Swift4로 배우는 iOS11 프로그래밍 인공지능(AI) 아이폰 앱 개발</strong>
+                        </div>
+                        <div class="infoArea">
+                            <p class="date">2020.02.01 ~ 2020.12.31</p>
+                        </div>
+                        <button type="button" class="cardToggle"></button>
+                    </div>
+                </a>
+
+                <a href="#" class="card">
+                    <div class="cardInner">
+                        <div class="titleArea">
+                            <div class="topRight">
+                                <span class="apply">수강신청</span>
+                                <span class="icon">Classroom<i class="ico classroom"></i></span>
+                            </div>
+                            <p class="category red">혁신디자인</p>
+                            <strong class="title">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Expedita quibusdam porro odio, illum tenetur, dolore mollitia corrupti. Amet, provident, saepe.</strong>
+                        </div>
+                        <div class="infoArea">
+                            <p class="label"><i class="ico time"></i><b>2h 40m</b></p>
+                            <p class="label"><i class="ico map"></i><b>G plant</b></p>
+                        </div>
+                    </div>
+                    <div class="btmArea">
+                        <div class="starRate s2">
+                            <i></i><i></i><i></i><i></i><i></i>
+                        </div>
+                        <div><em>7,203</em>명 이수</div>
+                    </div>
+                </a>
+
+                <a href="#" class="card">
+                    <div class="cardInner">
+                        <div class="titleArea">
+                            <div class="topRight">
+                                <span class="icon">Video<i class="ico video"></i></span>
+                            </div>
+                            <p class="category red">혁신디자인</p>
+                            <strong class="title">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Expedita quibusdam porro odio, illum tenetur, dolore mollitia corrupti. Amet, provident, saepe.</strong>
+                        </div>
+                        <div class="infoArea">
+                            <p class="label"><i class="ico time"></i><b>2h 40m</b></p>
+                            <p class="label"><i class="ico map"></i><b>G plant</b></p>
+                        </div>
+                    </div>
+                    <div class="btmArea">
+                        <div class="starRate s4">
+                            <i></i><i></i><i></i><i></i><i></i>
+                        </div>
+                        <div><em>7,203</em>명 이수</div>
+                    </div>
+                </a>
+            </div>
+
+
+        </div>
+
+    </section>
+    <!-- // .content -->
+</body>
+
+</html>

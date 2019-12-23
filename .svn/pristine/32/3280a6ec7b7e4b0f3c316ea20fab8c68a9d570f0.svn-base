@@ -1,0 +1,147 @@
+@@include("head.html")
+<body>
+@@include('listheader.html',{
+	"title" : "Recommend"
+})
+<!-- .content -->
+<section class="content">
+	<div class="recViews">
+		<p class="tit etc">
+			<span class="cName">HR</span>
+			<span class="txt">채널의 추천과정</span>
+			<span class="cnt">(20)</span>
+		</p>
+		<div class="sortChannel">
+			<div class="inner">
+				<div class="sorting">
+					<button type="button" class="btn sort ty1"><span>채널변경</span></button>
+				</div>
+				<div class="sorting">
+					<button type="button" class="btn sort ty2"><span>최신순</span></button>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<ul class="recList">
+		<li>
+			<a href="#" class="card">
+				<div class="cardInner">
+					<div class="titleArea">
+						<div class="topRight">
+							<span class="apply">수강신청</span>
+							<span class="icon">Classroom<i class="ico ico classroom"></i></span>
+						</div>
+						<p class="category red">혁신디자인</p>
+						<strong class="title">Mobile App UI/UX GUI Design Tutorials 모바일 앱 UX UI GUI</strong>
+					</div>
+					<div class="infoArea">
+						<p class="label"><i class="ico time"></i><b>2h 40m</b></p>
+						<p class="label"><i class="ico map"></i><b>G plant</b></p>
+					</div>
+				</div>
+				<div class="btmArea">
+					<div class="starRate s4">
+						<i></i><i></i><i></i><i></i><i></i>
+					</div>
+					<div><em>7,203</em>명 이수</div>
+				</div>
+			</a>
+			<a href="#" class="card">
+				<div class="cardInner">
+					<div class="titleArea">
+						<div class="topRight">
+							<span class="icon">Video<i class="ico video"></i></span>
+						</div>
+						<p class="category teal">Management</p>
+						<strong class="title">Swift4로 배우는 iOS11 프로그래밍 인공지능(AI) 아이폰 앱 개발</strong>
+					</div>
+					<div class="infoArea">
+						<p class="label"><i class="ico time"></i><b>2h 40m</b></p>
+					</div>
+				</div>
+				<div class="btmArea">
+					<div class="starRate s4">
+						<i></i><i></i><i></i><i></i><i></i>
+					</div>
+					<div><em>7,203</em>명 이수</div>
+				</div>
+			</a>
+			<a href="#" class="card">
+				<div class="cardInner">
+					<div class="titleArea">
+						<div class="topRight">
+							<span class="apply">수강신청</span>
+							<span class="icon">Classroom<i class="ico classroom"></i></span>
+						</div>
+						<p class="category purple">AI</p>
+						<strong class="title">UI/UX design with Adobe XD: Design &amp; Prototype</strong>
+					</div>
+					<div class="infoArea">
+						<p class="label"><i class="ico time"></i><b>2h 40m</b></p>
+						<p class="label"><i class="ico map"></i><b>G plant</b></p>
+					</div>
+				</div>
+				<div class="btmArea">
+					<div class="starRate s4">
+						<i></i><i></i><i></i><i></i><i></i>
+					</div>
+					<div><em>7,203</em>명 이수</div>
+				</div>
+			</a>
+			<a href="#" class="card">
+				<div class="cardInner">
+					<div class="titleArea">
+						<div class="topRight">
+							<span class="icon">Webpage<i class="ico webpage"></i></span>
+						</div>
+						<p class="category blue">Leadership</p>
+						<strong class="title">실습 위주의 안드로이드 어플리케이션 해킹 기초 강의</strong>
+					</div>
+					<div class="infoArea">
+						<p class="label"><i class="ico time"></i><b>2h 40m</b></p>
+					</div>
+				</div>
+				<div class="btmArea">
+					<div class="starRate s4">
+						<i></i><i></i><i></i><i></i><i></i>
+					</div>
+					<div><em>7,203</em>명 이수</div>
+				</div>
+			</a>
+			<a href="#" class="card">
+				<div class="cardInner">
+					<div class="titleArea">
+						<div class="topRight">
+							<span class="apply">수강신청</span>
+							<span class="icon">Classroom<i class="ico classroom"></i></span>
+						</div>
+						<p class="category violet">DT</p>
+						<strong class="title">TensorFlow로 배우는 Generative Models 알고리즘 실습하기</strong>
+					</div>
+					<div class="infoArea">
+						<p class="label"><i class="ico time"></i><b>2h 40m</b></p>
+						<p class="label"><i class="ico map"></i><b>G plant</b></p>
+					</div>
+				</div>
+				<div class="btmArea">
+					<div class="starRate s4">
+						<i></i><i></i><i></i><i></i><i></i>
+					</div>
+					<div><em>7,203</em>명 이수</div>
+				</div>
+			</a>
+			<button type="button" class="btnListMore" type="button"><i class="ico plus"></i>list more (<em>5</em>/<em>20</em>)</button>	
+		</li>
+	</ul>
+</section>
+<!-- // .content -->
+@@include('toolbar.html', {
+	"ty1": "",
+	"ty2": "",
+	"ty3": "",
+	"ty4": "",
+	"ty5": ""
+})
+</body>
+</html>

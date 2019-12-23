@@ -1,0 +1,106 @@
+@@include("head.html")
+<body>
+<style>
+	h2.tt{padding: 0 15px; color: red; margin: 20px 0 5px; font-weight: 700;}
+</style>
+<!-- .content -->
+<section class="content">
+
+	<div class="cardBox">
+
+		<h2 class="tt">코스 상세 내 큐브카드</h2>
+
+		<a href="#" class="card">
+			<div class="cardInner">
+				<div class="titleArea">
+					<div class="topRight">
+						<span class="icon">Classroom<i class="ico classroom"></i></span>
+					</div>
+					<p class="category red">혁신디자인</p>
+					<strong class="title">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Expedita quibusdam porro odio, illum tenetur, dolore mollitia corrupti. Amet, provident, saepe.</strong>
+				</div>
+				<div class="infoArea">
+					<p class="label"><i class="ico time"></i><b>2h 40m</b></p>
+					<p class="label"><i class="ico map"></i><b>G plant</b></p>
+				</div>
+			</div>
+			<div class="btmArea">
+				<div class="starRate s44">
+					<i></i><i></i><i></i><i></i><i></i>
+				</div>
+				<div><em>7,203</em>명 이수</div>
+			</div>
+		</a>
+
+
+		<h2 class="tt">코스 상세 내 코스카드</h2>
+
+		<div class="cardWrap">
+
+			<a href="#" class="card course">
+				<div class="cardInner">
+					<div class="titleArea">
+						<div class="topRight">
+							<span class="icon">Course<i class="ico course"></i></span>
+						</div>
+						<p class="category teal">Management</p>
+						<strong class="title">Swift4로 배우는 iOS11 프로그래밍 인공지능(AI) 아이폰 앱 개발</strong>
+					</div>
+					<div class="infoArea">
+						<p class="date">2020.02.01 ~ 2020.12.31</p>
+					</div>
+					<button type="button" class="cardToggle"></button>
+				</div>
+			</a>
+
+			<a href="#" class="card">
+				<div class="cardInner">
+					<div class="titleArea">
+						<div class="topRight">
+							<span class="icon">Classroom<i class="ico classroom"></i></span>
+						</div>
+						<p class="category red">혁신디자인</p>
+						<strong class="title">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Expedita quibusdam porro odio, illum tenetur, dolore mollitia corrupti. Amet, provident, saepe.</strong>
+					</div>
+					<div class="infoArea">
+						<p class="label"><i class="ico time"></i><b>2h 40m</b></p>
+						<p class="label"><i class="ico map"></i><b>G plant</b></p>
+					</div>
+				</div>
+				<div class="btmArea">
+					<div class="starRate s2">
+						<i></i><i></i><i></i><i></i><i></i>
+					</div>
+					<div><em>7,203</em>명 이수</div>
+				</div>
+			</a>
+
+			<a href="#" class="card">
+				<div class="cardInner">
+					<div class="titleArea">
+						<div class="topRight">
+							<span class="icon">Video<i class="ico video"></i></span>
+						</div>
+						<p class="category red">혁신디자인</p>
+						<strong class="title">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Expedita quibusdam porro odio, illum tenetur, dolore mollitia corrupti. Amet, provident, saepe.</strong>
+					</div>
+					<div class="infoArea">
+						<p class="label"><i class="ico time"></i><b>2h 40m</b></p>
+						<p class="label"><i class="ico map"></i><b>G plant</b></p>
+					</div>
+				</div>
+				<div class="btmArea">
+					<div class="starRate s4">
+						<i></i><i></i><i></i><i></i><i></i>
+					</div>
+					<div><em>7,203</em>명 이수</div>
+				</div>
+			</a>
+		</div>
+
+	</div>
+	
+</section>
+<!-- // .content -->
+</body>
+</html>

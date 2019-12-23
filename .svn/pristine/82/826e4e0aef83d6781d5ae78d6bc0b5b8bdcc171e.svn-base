@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, maximum-scale=1.0, minimum-scale=1.0" />
+    <title>skuniversity</title>
+    <link rel="stylesheet" href="../../css/swiper.min.css">
+    <link rel="stylesheet" href="../../css/style.css">
+    <script src="../../js/jquery-1.12.4.js"></script>
+    <script src="../../js/swiper.min.js"></script>
+    <script src="../../js/Chart.min.js"></script>
+    <script src="../../js/ui.js"></script>
+</head>
+
+<body>
+    <!-- .header -->
+    <header>
+        <section class="header">
+            <div class="inner">
+                <h1 class="logo">SK University</h1>
+                <div class="keyWord">오늘은 <span>Language AI</span>를 검색해 보세요.</div>
+                <div class="inputBox sch dpb">
+                    <input type="text" class="inp">
+                    <button type="button" class="btn inpReset">초기화</button>
+                    <button type="button" class="btn schBtn">검색</button>
+                </div>
+            </div>
+            <button type="button" class="gnbOpen">전체 메뉴 열기</button>
+            <nav>
+                <div class="navTop">
+                    <button type="button" class="btn close2">닫기</button>
+                </div>
+                <div class="gnb">
+                    <ul class="gnbList">
+                        <li class="ty1"><a href="#">Home</a></li>
+                        <li class="ty2">
+                            <span>Learning</span>
+                            <ul class="gnbListDept">
+                                <li><a href="#">In Progress <span>(20)</span></a></li>
+                                <li><a href="#">Required <span>(20)</span></a></li>
+                                <li><a href="#">In My list <span>(20)</span></a></li>
+                                <li><a href="#">Enrolled <span>(20)</span></a></li>
+                                <li><a href="#">Completed <span>(20)</span></a></li>
+                                <li><a href="#">Retry <span>(20)</span></a></li>
+                            </ul>
+                        </li>
+                        <li class="ty8">
+                            <span>Category</span>
+                            <ul class="gnbListDept">
+                                <li><a href="#">AI <span>(20)</span></a></li>
+                                <li><a href="#">DT <span>(20)</span></a></li>
+                                <li><a href="#">행복 <span>(20)</span></a></li>
+                                <li><a href="#">SV <span>(20)</span></a></li>
+                                <li><a href="#">혁신디자인 <span>(20)</span></a></li>
+                                <li><a href="#">Global <span>(20)</span></a></li>
+                                <li><a href="#">Leadership <span>(20)</span></a></li>
+                                <li><a href="#">Management <span>(20)</span></a></li>
+                            </ul>
+                        </li>
+                        <li class="ty3"><a href="#">Recommend</a></li>
+                        <li class="ty4"><a href="#">Community</a></li>
+                        <li class="ty5"><a href="#">Support</a></li>
+                        <li class="ty6"><a href="#">Search</a></li>
+                        <li class="ty7"><a href="#">My Page</a></li>
+                        <li class="ty9">
+                            <a href="#">Help Desk <small>(24시간 운영)</small></a>
+                            <a href="tel:1600-5252" class="tel">1600-5252</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </section>
+    </header>
+    <!-- // .header -->
+    <!-- .content -->
+    <section class="content">
+        <div class="recTit">
+            <strong class="cName">College</strong> <span class="txt">를 선택해주세요.</span>
+        </div>
+        <ul class="collegeList">
+            <li>
+                <a href="#" class="collegeItem">
+                    <strong class="collegeTit ty1">AI <span>(242)</span></strong>
+                    <p class="txt">全 구성원 대상 AI 이해/<br> 적용 역량 개발</p>
+                </a>
+            </li>
+            <li>
+                <a href="#" class="collegeItem">
+                    <strong class="collegeTit ty2">DT <span>(14)</span></strong>
+                    <p class="txt">Big Data/IoT/Cloud 등<br> Digital Literacy 개발</p>
+                </a>
+            </li>
+            <li>
+                <a href="#" class="collegeItem">
+                    <strong class="collegeTit ty3">행복 <span>(55)</span></strong>
+                    <p class="txt">개인 및 조직차원<br> 실천역량 강화 촉진</p>
+                </a>
+            </li>
+            <li>
+                <a href="#" class="collegeItem">
+                    <strong class="collegeTit ty4">SV <span>(23)</span></strong>
+                    <p class="txt">BM 혁신과 사회 혁신을<br> 동시에</p>
+                </a>
+            </li>
+            <li>
+                <a href="#" class="collegeItem">
+                    <strong class="collegeTit ty5">혁신디자인 <span>(34)</span></strong>
+                    <p class="txt">Deep Change &amp;<br> Design</p>
+                </a>
+            </li>
+            <li>
+                <a href="#" class="collegeItem">
+                    <strong class="collegeTit ty6">Global <span>(13)</span></strong>
+                    <p class="txt">Globalization을 위한<br> 새로운 시작</p>
+                </a>
+            </li>
+            <li>
+                <a href="#" class="collegeItem">
+                    <strong class="collegeTit ty7">Leadership <span>(13)</span></strong>
+                    <p class="txt">Deep Change Leader<br>로 성장</p>
+                </a>
+            </li>
+            <li>
+                <a href="#" class="collegeItem">
+                    <strong class="collegeTit ty8">Management <span>(13)</span></strong>
+                    <p class="txt">SK인이 꼭 알아야 할<br> 경영지식</p>
+                </a>
+            </li>
+        </ul>
+    </section>
+    <!-- // .content -->
+    <!-- .pageTop -->
+    <div class="pageTop">
+        <button type="button" class="btn gototop"><span>Top</span></button>
+    </div>
+    <!-- // .pageTop -->
+
+    <!-- .toolBar -->
+    <section class="toolBar">
+        <ul class="toolList">
+            <li class="ty1"><a href="#"><span>Home</span></a></li>
+            <li class="ty2"><a href="#"><span>Learning</span></a></li>
+            <li class="ty3"><a href="#"><span>Community</span></a></li>
+            <li class="ty4"><a href="#"><span>Notice</span></a></li>
+            <li class="ty5"><a href="#"><span>My page</span></a></li>
+        </ul>
+    </section>
+    <!-- // .toolBar -->
+</body>
+
+</html>

@@ -1,0 +1,75 @@
+@@include("head.html")
+<body style="overflow: hidden;">
+@@include('listheader.html',{
+	"title" : "Learning"
+})
+<!-- .content -->
+<section class="content">
+</section>
+<!-- // .content -->
+
+<!-- layer -->
+<section class="popWrap full">
+	<div class="popBox">
+		<div class="popTitle">
+			<p>Download</p>
+			<a href="#" class="btnClose">닫기</a>
+		</div>
+		<div class="popCont">
+
+			<div class="topDesc"><p>다운로드 받으실 항목을 선택해 주세요</p></div>
+
+			<!-- 전체선택 -->
+			<div class="topAllSel">
+				<span class="inpD black">
+					<label>
+						<span class="txt">Filename</span>
+						<input type="checkbox">
+						<i class="ico checkBox"></i>
+					</label>
+				</span>
+			</div>
+			<!-- //전체선택 -->
+
+			<ul class="downloadList">				
+				<li>
+					<span class="inpD">
+						<label>
+							<span class="txt">Learning materials_UX community.pptx</span>
+							<input type="checkbox">
+							<i class="ico checkBox"></i>
+						</label>
+					</span>
+				</li>
+				<li>
+					<span class="inpD">
+						<label>
+							<span class="txt">Learning materials_UX community.pptx</span>
+							<input type="checkbox">
+							<i class="ico checkBox"></i>
+						</label>
+					</span>
+				</li>
+				<li>
+					<span class="inpD">
+						<label>
+							<span class="txt">Learning materials_UX community.pptx</span>
+							<input type="checkbox">
+							<i class="ico checkBox"></i>
+						</label>
+					</span>
+				</li>
+			</ul>
+		</div>
+
+		<div class="BtmBtn floating">
+			<div class="btnGroup">
+				<button type="button" class="btnOrange">Select Download</button>
+			</div>
+		</div>
+	</div>
+</section>
+<!-- //layer -->
+
+</body>
+</html>

@@ -1,0 +1,9 @@
+
+
+// script yjm
+$(function(){
+
+	console.log('test yjm');
+
+	// mobile script
+});

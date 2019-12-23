@@ -1,0 +1,28 @@
+
+
+// script yjm
+
+function courseCard(){	
+	$('.cardToggle').click(function(){
+		if ($(this).closest('.cardWrap').hasClass('open')){
+			$(this).closest('.card').siblings().slideUp(300)
+			.closest('.cardWrap').removeClass('open');
+		} else {
+			$(this).closest('.card').siblings().slideDown(300)
+			.closest('.cardWrap').addClass('open');
+		}
+		return false;
+	})
+}
+
+$(function(){
+
+	//console.log('test yjm');
+	courseCard();
+
+
+	
+
+
+	// mobile script
+});

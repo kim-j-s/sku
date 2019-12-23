@@ -1,0 +1,44 @@
+@@include("head.html")
+<body>
+@@include('listheader.html',{
+	"title" : "Recommend"
+})
+<!-- .content -->
+<section class="content">
+	<div class="recViews">
+		<p class="tit etc">
+			<span class="cName">AI Fundamental</span>
+			<span class="txt">채널의 추천과정</span>
+			<span class="cnt">(20)</span>
+		</p>
+		<div class="sortChannel">
+			<div class="inner">
+				<div class="sorting">
+					<button type="button" class="btn sort ty1"><span>채널변경</span></button>
+				</div>
+				<div class="sorting">
+					<button type="button" class="btn sort ty2"><span>최신순</span></button>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<ul class="recList">
+		<li>
+			<div class="emptyBox">
+				<i class="icon ico noCont"></i>
+				<p class="txt">선택하신 채널에 해당하는<br> 추천 학습 과정이 없습니다.</p>
+			</div>
+		</li>
+	</ul>
+</section>
+<!-- // .content -->
+@@include('toolbar.html', {
+	"ty1": "",
+	"ty2": "",
+	"ty3": "",
+	"ty4": "",
+	"ty5": ""
+})
+</body>
+</html>

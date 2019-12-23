@@ -1,0 +1,62 @@
+// script kjs
+$(function(){
+
+	// logo 사라지는 현상
+	$(window).on('load', function(){
+		setTimeout(function(){
+			$('.logo').addClass('on');
+		},3000);
+
+		setTimeout(function(){
+			$('.keyWord').addClass('on');
+		},4000);
+
+		/*
+		setTimeout(function(){
+			$('.inputBox.sch').addClass('on');
+		},4000);
+		*/
+	});
+
+	// 헤더 검색창 bg
+	$(document).on('click', '.inputBox.sch > .inp', function(){
+		$(this).closest('.inputBox').addClass('on');
+	});
+
+	/// 공지사항 닫기
+	$(document).on('click', '.noticeWrap > .btn.close', function(){
+		$(this).closest('.noticeWrap').addClass('on');
+	});
+
+	// mobile script
+});
+
+
+
+
+// script yjm
+
+function courseCard(){	
+	$('.cardToggle').click(function(){
+		if ($(this).closest('.cardWrap').hasClass('open')){
+			$(this).closest('.card').siblings().slideUp(300)
+			.closest('.cardWrap').removeClass('open');
+		} else {
+			$(this).closest('.card').siblings().slideDown(300)
+			.closest('.cardWrap').addClass('open');
+		}
+		return false;
+	})
+}
+
+$(function(){
+
+	//console.log('test yjm');
+	courseCard();
+
+
+	
+
+
+	// mobile script
+});

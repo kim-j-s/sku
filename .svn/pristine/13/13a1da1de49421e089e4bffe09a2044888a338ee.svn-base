@@ -1,0 +1,17 @@
+<!-- .pageTop -->
+<div class="pageTop">
+	<button type="button" class="btn gototop">Go To Top</button>
+</div>
+<!-- // .pageTop -->
+
+<!-- .toolBar -->
+<section class="toolBar">
+	<ul class="toolList">
+		<li class="ty1@@ty1"><a href="#"><span>Home</span></a></li>
+		<li class="ty2@@ty2"><a href="#"><span>Learning</span></a></li>
+		<li class="ty3@@ty3"><a href="#"><span>Community</span></a></li>
+		<li class="ty4@@ty4"><a href="#"><span>Notice</span></a></li>
+		<li class="ty5@@ty5"><a href="#"><span>My page</span></a></li>
+	</ul>
+</section>
+<!-- // .toolBar -->

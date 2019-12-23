@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, maximum-scale=1.0, minimum-scale=1.0" />
+    <title>SUNI</title>
+    <link rel="stylesheet" href="../../css/swiper.min.css">
+    <link rel="stylesheet" href="../../css/style.css">
+    <script src="../../js/jquery-1.12.4.js"></script>
+    <script src="../../js/swiper.min.js"></script>
+    <script src="../../js/Chart.min.js"></script>
+    <script src="../../js/ui.js"></script>
+</head>
+
+<body style="overflow: hidden;">
+    <!-- .header -->
+    <header>
+        <section class="listHeader">
+            <a href="#" class="btn pageBack">이전 페이지</a>
+            <div class="keyWord">Learning</div>
+        </section>
+    </header>
+    <!-- // .header -->
+    <!-- .content -->
+    <section class="content">
+    </section>
+    <!-- // .content -->
+
+    <!-- layer -->
+    <section class="popWrap full">
+        <div class="popBox">
+            <div class="popTitle">
+                <p>Report</p>
+                <a href="#" class="btnClose">닫기</a>
+            </div>
+            <div class="popCont">
+
+                <ul class="reportStep">
+                    <li>
+                        <div>
+                            <strong class="title"><span>Step.01</span>Report Download</strong>
+                            <p class="desc">아래 버튼으로 등록되어 있는 Report 파일을 다운로드 받으세요.</p>
+                            <button type="button" class="btnNormal"><i class="ico down red"></i>Report Download</button>
+                        </div>
+                    </li>
+                    <li>
+                        <div>
+                            <strong class="title"><span>Step.02</span>Report Download</strong>
+                            <p class="desc">다운로드 받은 파일의 내용을 작성하신 후 업로드 해주세요. <br>등록하신 파일은 재 등록할 수 없으니 등록 시 주의해주세요.</p>
+
+                                <div class="inputFile on">
+                                    <span class="box">
+								<input type="text" placeholder="파일을 업로드해주세요." value="Education UX/UI class_1.pptx" readonly>
+								<button type="button" class="del"><i class="ico clear"></i></button>
+							</span>
+                                    <label>파일찾기<input type="file"></label>
+                                </div>
+                        </div>
+                    </li>
+                </ul>
+
+            </div>
+
+            <div class="BtmBtn floating">
+                <div class="btnGroup">
+                    <button type="button" class="btnOrange">Submit</button>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- //layer -->
+
+</body>
+
+</html>

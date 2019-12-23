@@ -1,0 +1,46 @@
+@@include("head.html")
+<body style="overflow: hidden;">
+@@include('detailheader.html')
+<!-- .content -->
+<section class="content">
+</section>
+<!-- // .content -->
+
+<!-- layer -->
+<section class="popWrap full">
+	<div class="popBox">
+		<div class="popTitle dark">
+			<p>Lecture score</p>
+			<a href="#" class="btnClose">닫기</a>
+		</div>
+		<div class="popCont">
+			<div class="topView">
+				<div class="inner">
+					<p class="category teal">Management</p>
+					<strong class="title">Mobile App UI/UX GUI Design Tutorials 모바일 앱 UX UI GUI 이론을 통한 실전</strong>
+					<div class="infoArea">
+						<span class="icon"><i class="ico video"></i>Video</span>
+						<span>HR Trend & Insight</span>
+					</div>
+					<p class="date">2020.02.01 ~ 2020.12.31</p>
+				</div>
+			</div>
+			<div class="starRate edit w70">
+				<i></i>
+				<i></i>
+				<i></i>
+				<i></i>
+				<i></i>
+			</div>
+		</div>
+		<div class="BtmBtn floating">
+			<div class="btnGroup">
+				<button type="button" class="btnOrange">OK</button>
+			</div>
+		</div>
+	</div>
+</section>
+<!-- //layer -->
+
+</body>
+</html>

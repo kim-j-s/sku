@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, maximum-scale=1.0, minimum-scale=1.0" />
+    <title>skuniversity</title>
+    <link rel="stylesheet" href="../../css/style.css">
+    <script src="../../js/jquery-1.12.4.js"></script>
+    <script src="../../js/jquery.bxslider.js"></script>
+    <script src="../../js/swiper.min.js"></script>
+    <script src="../../js/ui.js"></script>
+</head>
+
+
+<body>
+    <!-- .header -->
+    <header>
+        이곳은 헤더영역
+    </header>
+
+    <style>
+        header {
+            text-align: center;
+            line-height: 100px;
+            background: #ddd;
+        }
+    </style>
+
+    <!-- // .header -->
+    <!-- .content -->
+    <section class="content">
+        content
+    </section>
+    <!-- // .content -->
+</body>
+
+</html>
